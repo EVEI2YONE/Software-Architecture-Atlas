@@ -13,9 +13,9 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertEqual(search("concurrency", limit=4), search("concurrency", limit=4))
 
     def test_filter(self):
-        result = search("async thread", category="runtime", status="stub")
+        result = search("event consistency", category="distributed-systems", status="stub")
         self.assertTrue(result["results"])
-        self.assertTrue(all(hit["category"] == "runtime" and hit["status"] == "stub" for hit in result["results"]))
+        self.assertTrue(all(hit["category"] == "distributed-systems" and hit["status"] == "stub" for hit in result["results"]))
 
     def test_project_structure_gap_discoverable(self):
         result = search("file structure for UI API Functions WebJobs enterprise")
@@ -98,6 +98,18 @@ class SearchCatalogTests(unittest.TestCase):
             "ubiquitous-language", "context-mapping",
             "domain-services-vs-application-services", "transactional-invariants",
             "anti-corruption-layers", "data-access-boundaries", "isolation-levels",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b11_canonical_retrieval(self):
+        for concept_id in [
+            "async-await", "thread-safety", "backpressure",
+            "cancellation-propagation", "structured-concurrency",
+            "lock-contention-and-deadlocks", "workload-isolation",
+            "async-streams-and-channels",
         ]:
             hit = search(concept_id)["results"][0]
             self.assertEqual(hit["id"], concept_id)
