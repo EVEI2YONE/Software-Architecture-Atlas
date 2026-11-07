@@ -43,6 +43,16 @@ ALIASES = {
     "strangler migration": "incremental-boundary-migration",
     "branch by abstraction": "incremental-boundary-migration",
     "consolidate services": "incremental-boundary-migration",
+    "slo error budget": "reliability-objectives",
+    "rto rpo": "reliability-objectives",
+    "canary deployment": "deployment-strategies",
+    "blue green rollback": "deployment-strategies",
+    "observability tracing": "observability",
+    "retry cascade": "resilience workload-admission",
+    "load shedding": "workload-admission",
+    "capacity planning": "scalability",
+    "operational costs": "operational-costs",
+    "cost attribution": "operational-costs",
 }
 
 def terms(value):
