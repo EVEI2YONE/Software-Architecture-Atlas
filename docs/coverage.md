@@ -1,6 +1,6 @@
 # Initial architecture coverage
 
-**All 30 initial topics and the additional project-structure-selection topic are research stubs, not independently curated guidance.** Each is a discoverable research target.
+**The original 30 topics began as research stubs.** In B1, `feature-first-folders` and `code-simplification` were promoted to scoped `reviewed` guidance with cited sources; the remaining 29 topics (including `project-structure-selection`) remain stubs. Reviewed principles are not evidence of improvements in any target application.
 
 | Category | Count | Scope |
 |---|---:|---|
@@ -18,6 +18,8 @@
 
 ## Initial backlog beyond the scaffold
 Language-specific implementation standards (C#/.NET, Java, Scala, JavaScript/TypeScript, Python), lockfile/package-manager examples, Sonar rule mapping, static complexity metrics by language, API versioning, data migration, security architecture, threat modeling, rate limiting, tenancy, resource budgets, deployment topology, integration contracts, and operational cost models. Add only when properly scoped and sourced.
+
+See [B1 research context and findings](batch-1-code-organization.md) for source-backed file-navigation and simplification alternatives, measurement criteria and outstanding runtime-specific gaps.
 
 ## Added research gap: application code/file structure
 
