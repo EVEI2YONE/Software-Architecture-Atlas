@@ -16,6 +16,7 @@ This is a **knowledge/reference repository**, not a claim that every scaffolded 
 - [Batch B3: security, contracts, data and correctness](docs/batch-3-security-contracts-data.md)
 - [Batch B4: application type file-structure archetypes](docs/batch-4-project-archetypes.md)
 - [Batch B5: prototype to enterprise evolution](docs/batch-5-maturity-evolution.md)
+- [Batch B6: operations, reliability and scalability](docs/batch-6-operations-reliability.md)
 - [Navigation and retrieval guide](docs/agent-search.md)
 - [Source and evidence policy](docs/evidence-policy.md)
 - [Knowledge-gap and curation workflow](docs/curation-workflow.md)
