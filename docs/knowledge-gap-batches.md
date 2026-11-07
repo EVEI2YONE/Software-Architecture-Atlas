@@ -24,7 +24,7 @@ A **batch** is a research and verification milestone, not a release or blanket p
 
 ## B0 — Evidence, catalog integrity and agent retrieval
 
-**Research:** Audit the canonical indexed entries (43 after B5, including six application-type archetypes), checking current statuses rather than assuming all are stubs; identify missing sources, duplicate tags/related IDs, outdated applicability and retrieval misses. Preserve the distinction between discoverability and verified advice.
+**Research:** Audit the canonical indexed entries (47 after B6, including six application-type archetypes), checking current statuses rather than assuming all are stubs; identify missing sources, duplicate tags/related IDs, outdated applicability and retrieval misses. Preserve the distinction between discoverability and verified advice.
 
 **Deliverables:**
 - Evidence rubric with source quality, technology versions, applicability, failure modes, counterexamples and review dates.
@@ -106,6 +106,8 @@ A **batch** is a research and verification milestone, not a release or blanket p
 
 ## B6 — Deployment, reliability, performance and operations
 
+**Execution report:** [B6 operational research and verification matrix](batch-6-operations-reliability.md). Three earlier stubs plus four newly indexed concepts reviewed with scoped source-based methods. Actual workload tests and recovery drills remain open.
+
 **Research:** GAP-07, GAP-08, GAP-09, GAP-11, GAP-12; expand `observability`, `resilience`, `scalability`, `backpressure`, `caching`, `quality-gates`.
 
 **Deliverables:** Version-scoped runtime examples; measured workload baseline, p95/p99 and resource budgets; SLI/SLO/recovery questions; release and schema-safe rollback considerations; cost and runbook ownership; static analysis guidance tied to the **actual** project quality profile.
@@ -138,4 +140,4 @@ Every batch starts **proposed / not completed**. Completion requires reviewable 
 | B3 | Partially curated — 6 scoped concepts reviewed; application testing pending | Unassigned | [B3 context and validation matrix](batch-3-security-contracts-data.md) |
 | B4 | Partially curated — 6 scoped archetypes indexed; app metrics and broader runtimes pending | Unassigned | [B4 source review and decisions](batch-4-project-archetypes.md) |
 | B5 | Partially curated — 2 scoped concepts reviewed; real project metrics pending | Unassigned | [B5 maturity and evolution report](batch-5-maturity-evolution.md) |
-| B6 | Proposed | Unassigned | Not yet linked |
+| B6 | Partially curated — 7 scoped concepts reviewed; production evidence pending | Unassigned | [B6 operations report](batch-6-operations-reliability.md) |
