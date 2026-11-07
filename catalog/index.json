@@ -614,8 +614,8 @@
       "domain": "maintainability",
       "category": "code-organization",
       "path": "concepts/code-organization/project-structure-selection.md",
-      "status": "stub",
-      "summary": "Research file and project organization for UI, API, Functions, WebJobs, libraries and multi-project systems across prototype, MVP, growth and enterprise; optimize navigation, code reduction and modularity",
+      "status": "reviewed",
+      "summary": "Choose file and project organization across UI, API, Functions, WebJobs, libraries and maturity stages using observed navigation and ownership constraints",
       "tags": [
         "file-structure",
         "project-structure",
@@ -635,11 +635,13 @@
       "related": [
         "feature-first-folders",
         "modularity",
-        "code-simplification",
-        "dependency-inversion"
+        "multi-project-structure",
+        "architecture-evolution",
+        "package-by-feature-vs-layer",
+        "monorepo-vs-multirepo"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "threat-modeling",
@@ -1124,6 +1126,123 @@
       "related": [
         "architecture-drivers",
         "modularity"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "vertical-slice-architecture",
+      "title": "Vertical slice architecture",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/vertical-slice-architecture.md",
+      "status": "reviewed",
+      "summary": "Organize feature-change paths without mandating handlers or mediators",
+      "tags": [
+        "vertical-slice",
+        "feature-first",
+        "handlers",
+        "navigation",
+        "features"
+      ],
+      "related": [
+        "feature-first-folders",
+        "package-by-feature-vs-layer",
+        "project-structure-selection"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "package-by-feature-vs-layer",
+      "title": "Package by feature versus package by layer",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/package-by-feature-vs-layer.md",
+      "status": "reviewed",
+      "summary": "Compare vertical feature ownership and technical layering using real navigation evidence",
+      "tags": [
+        "package-by-feature",
+        "package-by-layer",
+        "layers",
+        "navigation",
+        "cohesion"
+      ],
+      "related": [
+        "vertical-slice-architecture",
+        "feature-first-folders",
+        "modularity"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "module-public-contracts",
+      "title": "Module public contracts and ownership",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/module-public-contracts.md",
+      "status": "reviewed",
+      "summary": "Define narrow consumer-facing module APIs and prevent reliance on internals",
+      "tags": [
+        "module-api",
+        "public-contracts",
+        "encapsulation",
+        "versioning",
+        "ownership"
+      ],
+      "related": [
+        "modularity",
+        "dependency-inversion",
+        "api-contracts",
+        "information-hiding"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-dependency-rules",
+      "title": "Architecture dependency rules",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/architecture-dependency-rules.md",
+      "status": "reviewed",
+      "summary": "Express and verify allowed module and project dependency direction",
+      "tags": [
+        "dependency-rules",
+        "module-boundaries",
+        "cycles",
+        "lint",
+        "architecture-tests"
+      ],
+      "related": [
+        "modularity",
+        "module-public-contracts",
+        "dependency-inversion"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "monorepo-vs-multirepo",
+      "title": "Monorepo versus multiple repositories",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/monorepo-vs-multirepo.md",
+      "status": "reviewed",
+      "summary": "Choose repository topology by coordination, access and workflow costs",
+      "tags": [
+        "monorepo",
+        "polyrepo",
+        "multirepo",
+        "workspace",
+        "ci",
+        "ownership"
+      ],
+      "related": [
+        "multi-project-structure",
+        "module-public-contracts",
+        "architecture-evolution"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
