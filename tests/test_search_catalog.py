@@ -23,11 +23,17 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertEqual(result["results"][0]["status"], "stub")
         self.assertEqual(result["results"][0]["evidence"], "unknown")
 
+    def test_b3_retrieval(self):
+        self.assertEqual(search("threat model")["results"][0]["id"], "threat-modeling")
+        self.assertEqual(search("api versioning")["results"][0]["id"], "api-contracts")
+        self.assertEqual(search("database migration")["results"][0]["id"], "schema-evolution")
+        self.assertEqual(search("identity-and-access")["results"][0]["status"], "reviewed")
+
     def test_unmatched(self):
         self.assertEqual(search("zzzzzzzzzzzz")["results"], [])
 
     def test_no_stub_as_evidence(self):
-        self.assertEqual(search("idempotency")["results"][0]["evidence"], "unknown")
+        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "unknown")
 
     def test_related_expansion_deduped(self):
         hits = search("idempotency", limit=1, expand=2)["results"]
