@@ -1853,6 +1853,168 @@
       ],
       "source_count": 3,
       "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "adr-lifecycle",
+      "title": "ADR lifecycle and supersession",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/adr-lifecycle.md",
+      "status": "reviewed",
+      "summary": "Maintain decision statuses, replacement links and revisit triggers",
+      "tags": [
+        "adr",
+        "governance",
+        "supersession",
+        "decision-history"
+      ],
+      "related": [
+        "decision-records",
+        "architecture-drivers",
+        "knowledge-index-validation"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "dotnet-and-csharp-overlay",
+      "title": ".NET and C# architecture overlay",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/dotnet-and-csharp-overlay.md",
+      "status": "reviewed",
+      "summary": "Choose .NET project and feature boundaries using TFM, DI and deployment constraints",
+      "tags": [
+        "dotnet",
+        "csharp",
+        "aspnet",
+        "csproj",
+        "azure-functions"
+      ],
+      "related": [
+        "project-structure-selection",
+        "multi-project-structure",
+        "functions-project-structure",
+        "libraries-project-structure"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "typescript-and-node-overlay",
+      "title": "TypeScript and Node.js architecture overlay",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/typescript-and-node-overlay.md",
+      "status": "reviewed",
+      "summary": "Preserve Node package exports and TypeScript runtime/bundler module boundaries",
+      "tags": [
+        "typescript",
+        "nodejs",
+        "javascript",
+        "esm",
+        "package-exports"
+      ],
+      "related": [
+        "ui-project-structure",
+        "api-project-structure",
+        "module-public-contracts",
+        "monorepo-vs-multirepo"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "java-and-scala-overlay",
+      "title": "Java and Scala architecture overlay",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/java-and-scala-overlay.md",
+      "status": "reviewed",
+      "summary": "Evaluate JVM package exports, Scala build modules and verified interoperability",
+      "tags": [
+        "java",
+        "scala",
+        "jvm",
+        "jpms",
+        "sbt",
+        "gradle"
+      ],
+      "related": [
+        "package-by-feature-vs-layer",
+        "module-public-contracts",
+        "cyclic-dependency-prevention"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "python-overlay",
+      "title": "Python architecture and packaging overlay",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/python-overlay.md",
+      "status": "reviewed",
+      "summary": "Choose Python installable packages and src/flat layouts with real imports and entrypoints",
+      "tags": [
+        "python",
+        "pyproject",
+        "src-layout",
+        "packaging"
+      ],
+      "related": [
+        "libraries-project-structure",
+        "functions-project-structure",
+        "project-structure-selection"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "knowledge-index-validation",
+      "title": "Knowledge index validation and evidence integrity",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/knowledge-index-validation.md",
+      "status": "reviewed",
+      "summary": "Validate canonical catalog metadata and separately review citation-to-claim support",
+      "tags": [
+        "catalog",
+        "schema",
+        "validation",
+        "citations",
+        "evidence"
+      ],
+      "related": [
+        "retrieval-evaluation",
+        "decision-records",
+        "testing-strategy"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "retrieval-evaluation",
+      "title": "Agent retrieval evaluation and query disambiguation",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/retrieval-evaluation.md",
+      "status": "reviewed",
+      "summary": "Test human paraphrases and canonical IDs with deterministic evidence-bound retrieval",
+      "tags": [
+        "retrieval",
+        "agent-search",
+        "evaluation",
+        "aliases",
+        "disambiguation"
+      ],
+      "related": [
+        "knowledge-index-validation",
+        "project-structure-selection",
+        "decision-records"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     }
   ]
 }
