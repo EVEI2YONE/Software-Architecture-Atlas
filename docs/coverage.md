@@ -56,3 +56,7 @@ After B9, the shared PR branch records **64 indexed, 53 reviewed, 11 stubs** (no
 ## B10 domain design and data architecture (campaign PR #3)
 
 The shared campaign branch adds seven dedicated domain/data concepts and upgrades `bounded-contexts`, `aggregates`, `domain-events`, and `cqrs` to scoped reviewed guidance. It now records **71 indexed / 64 reviewed / 7 stubs**. [B10 research and decisions](batch-10-domain-data.md) describe database isolation, transactional invariants, language/context mapping, event timing and CQRS trade-offs. This is a branch-level inventory, not necessarily merged `main`; reviewed status is not proof of an application’s consistency, performance or correctness.
+
+## B11 async and concurrency (campaign PR #3)
+
+The campaign branch upgraded the three remaining runtime stubs and indexed five new runtime concepts. It now contains **76 concepts, 72 reviewed and 4 stubs**. See [B11 source review and decision matrix](batch-11-async-concurrency.md) for async/await, cancellation, structured concurrency, locks, backpressure, workload isolation and channels. These are scoped references: no target application task leaks, races, load behavior or throughput improvements were measured.
