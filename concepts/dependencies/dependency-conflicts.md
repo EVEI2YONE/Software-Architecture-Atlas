@@ -2,41 +2,46 @@
 id: dependency-conflicts
 title: "Dependency conflict management"
 category: dependencies
-status: stub
-reviewed_at: null
+status: reviewed
+reviewed_at: 2026-11-07
 ---
 
 # Dependency conflict management
 
-> **Status: research stub.** This page is a structured topic placeholder, **not** a verified best-practice claim. Curators must research and cite evidence before marking it reviewed.
+> **Reviewed: scoped source-backed decision guidance.** The citations support ecosystem behavior or testing/quality methods, not verified improvements in an uninspected target application.
 
-## Why this matters
-Control package versions, transitive resolution and compatibility drift.
+## Problem and context
+Package restore or runtime failures after changing direct/transitive versions.
 
-## Decision questions
-- What actual workload, ownership boundaries and constraints justify this approach?
-- Which simpler alternative would meet the same requirements?
-- What failure modes, operational costs and maintainability risks does it introduce?
-- How would the benefit be measured and tested?
+## Applicability and constraints
+Select advice using actual package manager, runtime, framework versions, deployment topology, test ownership and active analyzer/quality profile. Prototype, MVP and enterprise contexts may warrant different levels of formal enforcement; no universal tooling or numeric threshold is implied.
 
-## Guidance to research
-- Appropriate contexts and counterexamples
-- Language/runtime-specific caveats and version applicability
-- Trade-offs against at least one viable alternative
-- Measurable acceptance or review criteria
-- Migration and rollback considerations
+## Decision and trade-offs
+Diagnose declared versus resolved graphs and peer/target constraints before remediation; distinguish observed failures from plausible conflicts.
+
+### Simpler/no-change option
+Keep compatible supported versions and remove proven-unused packages before introducing forced overrides.
+
+### Risks, failure modes and counterexamples
+Locks cannot guarantee runtime ABI compatibility; forcing downgrades may fail resolution.
+
+## Illustrative application example
+In a UI/API/worker solution, inspect the package declarations, lockfiles, import graph and CI execution before changing module boundaries, removing dependencies or claiming static-analysis compliance. A single coherent change with clear tests is preferable to extracting layers or reducing raw LOC without evidence.
+
+## Verification, migration and rollback
+Record resolver outputs, lockfile diff, build, runtime smoke test and rollback. Record observed evidence versus inference, tested consumers, a reversible change plan and the stop criteria. **Sonar status remains not run/unknown** for any target project unless actual scanner output is provided.
 
 ## Search aliases
-- Dependency conflict management
-- dependency conflicts
+dependency conflict management; dependency conflicts; maintainability; software quality; dependency hygiene
 
 ## Related concepts
 - [supply-chain](../dependencies/supply-chain.md)
-- [dependency-inversion](../code-organization/dependency-inversion.md)
+- [transitive-dependency-resolution](../dependencies/transitive-dependency-resolution.md)
+- [package-locking-and-version-policy](../dependencies/package-locking-and-version-policy.md)
 
 ## Evidence and sources
-_None curated yet. Do not represent this stub as validated guidance._
+1. NuGet dependency resolution, https://learn.microsoft.com/en-us/nuget/concepts/dependency-resolution (accessed 2026-11-07). Applicability: the named ecosystem/tool and the specific behavior described above; not a benchmark of architectural success.
+2. npm package.json peer dependencies, https://docs.npmjs.com/cli/configuring-npm/package-json/ (accessed 2026-11-07). Applicability: the named ecosystem/tool and the specific behavior described above; not a benchmark of architectural success.
 
 ## Maintenance
-- Research status: backlog
-- Suggested revisit trigger: new framework version, production incident, or contradictory evidence
+Reviewed 2026-11-07. Revisit on new tool/runtime versions, conflicting vendor behavior, target-specific incidents or independent claim-source audit. No real application code was changed or tested.
