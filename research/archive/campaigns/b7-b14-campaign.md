@@ -1,0 +1,145 @@
+# B7–B14 research campaign: historical context and completion records
+
+> **Archived campaign record.** The initial planning matrix below captures the state before each batch was performed; its "not started" entries are historical and are superseded by the later completion board. Current inventory is maintained in [catalog/index.json](../catalog/index.json), not this snapshot.
+
+Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107`. Scope: catalog curation only, not application refactoring.
+
+## Baseline and source-of-truth rules
+- `catalog/index.json`: 47 indexed concepts; 26 reviewed, 21 stubs before this campaign. Review status means scoped citations were supplied, **not** independent source-claim or target-application verification.
+- Existing reports: [B0 integrity](batch-0-catalog-integrity.md), [B1–B6 plan and reports](knowledge-gap-batches.md), [coverage](coverage.md), [foundational gaps](foundational-gap-assessment.md).
+- [Evidence policy](evidence-policy.md), [curation workflow](curation-workflow.md), [concept template](../templates/concept.md), [agent guidance](../AGENTS.md). Keep source counts and dates consistent with index and page; test links; do not invent tests or benefits.
+- This file is **context collected for every batch before knowledge-gap implementations**. Research questions and source targets are not evidence that a proposed concept is missing from *all prose*. Check exact IDs and neighboring pages again before creating each one.
+- Existing reviewed work to reuse: modularity, dependency inversion, code simplification, six app structure archetypes, architecture evolution, ADRs, idempotency, transactions, API contracts, schema evolution, identity/access, threat modeling, scalability, reliability, deployment, operational costs, observability and workload admission.
+
+## Initial context matrix for all batches
+
+| Batch | Existing stubs to finish | Candidate additional IDs (deduplicate before adding) | Existing reviewed neighbors | Key questions / primary-source research targets | Status |
+| --- | --- | --- | --- | --- | --- |
+| **B7 Foundations and judgment** | solid; separation-of-concerns; dry-vs-abstraction; kiss-yagni | composition-vs-inheritance; cohesion-and-coupling; information-hiding; architecture-drivers; architecture-styles | modularity, dependency-inversion, decision-records, architecture-evolution | Which principle is relevant to actual change pressure? Which simpler option? Official design/architecture guidance, original software design literature; architecture-style constraints; measurable quality attributes | Context captured; first implementation |
+| **B8 Structure and navigation** | project-structure-selection | vertical-slice-architecture; package-by-feature-vs-layer; module-public-contracts; architecture-dependency-rules; monorepo-vs-multirepo | feature-first-folders; UI/API/Functions/WebJobs/libraries/multi-project structure; incremental-boundary-migration | Compare prototype/MVP/growth/enterprise by project type and framework; trace a feature from entrypoint to tests; measure navigation, import cycles and code churn; official framework layout guidance | Context captured; not started |
+| **B9 Dependencies and quality** | dependency-conflicts; supply-chain; cognitive-complexity; quality-gates; testing-strategy | transitive-dependency-resolution; package-locking-and-version-policy; cyclic-dependency-prevention; dead-code-and-dependency-removal; sonar-rules-and-quality-profiles; mutation-and-contract-testing; architecture-fitness-functions | code-simplification; dependency-inversion; API contracts | NuGet/npm/Python/JVM official resolver docs, language-aware Sonar rule documentation, tests and real quality profiles; distinguish predicted vs observed failures | Context captured; not started |
+| **B10 Domain and data** | bounded-contexts; aggregates; domain-events; cqrs | ubiquitous-language; context-mapping; domain-services-vs-application-services; transactional-invariants; anti-corruption-layers; data-access-boundaries; isolation-levels | transactions; schema-evolution; API contracts | Business invariants, domain ownership, transaction/isolation semantics, migration and API stability; primary DDD and database vendor references | Context captured; not started |
+| **B11 Async and concurrency** | async-await; thread-safety; backpressure | cancellation-propagation; structured-concurrency; lock-contention-and-deadlocks; workload-isolation; async-streams-and-channels | workload-admission; resilience | Framework/runtime docs for .NET, JS, JVM, Python; cancellation, structured tasks, bounded queue behavior, deadlocks, saturation and reproducible tests | Context captured; not started |
+| **B12 Distributed integration** | consistency; event-driven; queues | delivery-guarantees; outbox-pattern; sagas-and-compensation; schema-and-event-versioning; service-boundaries | idempotency; API contracts; resilience; transactions | Broker/database vendor guarantees and ordering boundaries; duplicate effects; schema compatibility; partial failure and reconciliation | Context captured; not started |
+| **B13 Caching/performance** | caching | cache-invalidation-and-stampedes; load-testing-and-baselines; rate-limiting; partitioning-and-sharding; resource-budgets | scalability; workload-admission; observability; operational-costs | Workload baselines and bottlenecks; cache TTL/invalidation; hot keys, backpressure, quotas, partitioning costs; official datastore/performance references | Context captured; not started |
+| **B14 Agent retrieval/governance** | none | adr-lifecycle; dotnet-and-csharp-overlay; typescript-and-node-overlay; java-and-scala-overlay; python-overlay; knowledge-index-validation; retrieval-evaluation | decision-records; B0 validator and 20-query lexical benchmark | Query false negatives, aliases, versioned snippets, source-to-claim audit, retrieval tests across application archetypes; prevent overlapping ADR governance | Context captured; not started |
+
+## Batch acceptance and evidence policy
+1. For each new ID, check `catalog/index.json`, title, tags, related IDs and neighbor articles for duplication; prefer extending an existing concept where its scope already covers the question.
+2. Gather and inspect primary authoritative sources; record exact URLs, access date and applicability. Explicitly distinguish source-backed claims, inference and unknown project-specific outcomes.
+3. Supply applicability, simpler/no-change option, decision trade-offs, failure modes, example and counterexample, verification, migration/rollback and revisit trigger.
+4. Update canonical page, index metadata, category README and relevant cross-links. Promote a stub to reviewed only when its claims and citations were manually examined; otherwise leave as draft/stub.
+5. Run `python scripts/validate_catalog.py` and `python -m unittest discover -s tests -v`; record actual outcomes. Do not represent a future CI run as a pass.
+6. Use this same branch and PR for B7–B14; one independently reviewable batch at a time.
+
+## Completion board (update only after verified deliverables)
+| Batch | Context gathered | Concept curation | Validation | State |
+| --- | --- | --- | --- | --- |
+| B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | 9 pages passed metadata/source/link checks; GitHub Actions succeeded on commit 9a61420 | Complete (scoped catalog curation) |
+| B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | GitHub Actions succeeded on commit 2e48665; catalog and retrieval tests | Complete (scoped catalog curation) |
+| B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | GitHub Actions run 42357794660 succeeded; connector links and metadata passed | Complete (scoped catalog curation) |
+| B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | GitHub Actions 42358088882 succeeded; 11 direct page checks passed | Complete (scoped catalog curation) |
+| B11 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358308490 success; 8 direct checks passed | Complete (scoped catalog curation) |
+| B12 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358524699 success; 8 direct checks passed | Complete (scoped catalog curation) |
+| B13 | Yes | 6/6 reviewed pages (1 stub upgrade, 5 new) | GitHub Actions 42359097375 succeeded; 6 direct checks passed | Complete (scoped catalog curation) |
+| B14 | Yes | 7/7 reviewed new pages and exact query-intent search | GitHub Actions 42359409846 succeeded; 7 direct page checks passed | Complete (scoped catalog curation) |
+
+## Open constraints
+No target application's repository, performance traces, measured developer navigation or project-specific Sonar profile was supplied for this campaign. Accordingly no page may assert measured code reduction, compliance, capacity, security or deployment improvements. External primary-source verification remains topic-by-topic, not automatically satisfied by this context capture.
+
+## B7 implementation record (2026-11-07)
+- Source pages: `solid`, `separation-of-concerns`, `dry-vs-abstraction`, `kiss-yagni` upgraded from stub, plus new `composition-vs-inheritance`, `cohesion-and-coupling`, `information-hiding`, `architecture-drivers`, `architecture-styles`.
+- Index: 52 total, 35 reviewed, 17 stubs; category READMEs updated.
+- Source leads examined: Microsoft Learn architecture styles, common .NET web architectures and microservices; Martin Fowler Yagni, Beck Design Rules and Is Design Dead?; Refactoring.Guru Replace Inheritance with Delegation.
+- B7 limitations: scoped conceptual research; no production code evaluation, independent expert review or claims of measured improvement. `git clone` failed in the local container because `github.com` DNS could not resolve; therefore `scripts/validate_catalog.py` and Python unit tests have NOT been executed locally. Remote CI status must be inspected separately.
+
+## B7 verification (follow-up)
+- Connector-based checks of all nine B7 pages: frontmatter/index consistency, `source_count` vs numbered source URLs, and local concept links: 9 checked, 0 errors.
+- GitHub Actions pull-request workflow on commit `9a61420781e80390bec4defe47d61946c936c8f9`: completed with **success**. The local Python commands were not run due to container DNS. Verify the associated workflow logs for exact test coverage before asserting the specific commands passed.
+
+## B8 implementation record (2026-11-07)
+- Context/research documented in [B8 report](batch-8-structure-navigation.md), after comparison with existing archetypes and feature-first, modularity, and evolution entries.
+- Upgraded `project-structure-selection` from stub; added `vertical-slice-architecture`, `package-by-feature-vs-layer`, `module-public-contracts`, `architecture-dependency-rules`, `monorepo-vs-multirepo` as scoped reviewed guidance.
+- Index: 57 total, 41 reviewed, 16 stubs; category README and branch coverage report updated.
+- Six B8 page checks performed via GitHub connector: frontmatter/index consistency, numbered citation metadata and local concept links; **0 errors**. Not a substitute for executing all repo Python validation/tests; remote CI result recorded separately when available.
+- Sources: official Microsoft Learn architectural and ASP.NET Core feature-organization guidance; Nx module-boundary and monorepo/polyrepo tool documentation (Nx product-vendor view, not independent empirical outcome).
+- No target application was inspected or refactored; navigation or code reduction benefits remain hypotheses to test on actual projects.
+
+## B8 regression repair
+- Initial GitHub Actions run `42357378764` reported `CATALOG VALID: 57 indexed concepts`, but failed six retrieval tests because previously fixed expectations still labelled `project-structure-selection` as a stub.
+- Updated `tests/test_search_catalog.py`, `tests/test_retrieval_gold.py`, and `tests/fixtures/retrieval_gold.json` to reflect its documented promotion to `reviewed`, add canonical retrieval coverage for five new B8 IDs, and retain a negative regression using the actual `caching` stub (evidence remains `unknown`).
+- CI status for subsequent commits must be checked independently. Do not label the entire validation suite successful based only on connector-side checks.
+
+## B8 completed verification
+- GitHub Actions workflow run `42357485179` on commit `2e486651fb00b220c762cf3d24396f88abac0081` completed **success** after updating the final stale test assertion.
+- Prior CI logs independently confirmed catalog validation against 57 concepts and revealed the original test expectation mismatch. All B8 metadata/source-count/local-concept-link checks reported zero errors.
+- This is catalog schema and regression-test verification; it does not independently certify references or prove target-application benefit.
+
+## B9 curation record (2026-11-07)
+- Source context and decision boundaries in [B9 report](batch-9-dependencies-quality.md). Five existing stubs upgraded: `dependency-conflicts`, `supply-chain`, `cognitive-complexity`, `quality-gates`, `testing-strategy`.
+- Seven scoped reviewed pages added: `transitive-dependency-resolution`, `package-locking-and-version-policy`, `cyclic-dependency-prevention`, `dead-code-and-dependency-removal`, `sonar-rules-and-quality-profiles`, `mutation-and-contract-testing`, `architecture-fitness-functions`.
+- Canonical index: 64 total, 53 reviewed, 11 stubs on campaign branch; category READMEs, coverage, 37-case golden query fixture and search regression tests updated.
+- Connector-side checks on all 12 pages verified index/frontmatter consistency, numbered source counts and related/local concept links; 0 errors. CI status recorded separately. No target app package graph or Sonar scan supplied.
+
+## B9 completed verification
+- GitHub Actions PR workflow run `42357794660` for commit `15719e40650c05bcdf1ac66e9302f4f457400a9b`: **completed successfully**. It includes the configured catalog validation and retrieval-test jobs.
+- The 12 pages' frontmatter, reference counts, internal links and indexed relations also passed direct checks. No application-specific Sonar scan, package conflict, build optimization or runtime test was performed; no such claim should be inferred.
+- Batch campaign progress: **3 of 8 completed (37.5%)**. B10 is the next research batch.
+
+## B10 implementation (2026-11-07)
+- Source context, decisions and evidence: [B10 domain/data report](batch-10-domain-data.md). Upgraded `bounded-contexts`, `aggregates`, `domain-events`, `cqrs` from stub; created `ubiquitous-language`, `context-mapping`, `domain-services-vs-application-services`, `transactional-invariants`, `anti-corruption-layers`, `data-access-boundaries`, and `isolation-levels`.
+- Catalog index: 71 total, 64 reviewed, 7 stubs. Updated domain-design/data READMEs, coverage matrix, B10 research report, and retrieval corpus (48 gold queries).
+- Direct checks on all 11 B10 pages: frontmatter, source counts, internal concept links and related ID integrity, **0 errors**. Remote CI must be checked before final completion classification.
+- DDD source guidance from Microsoft .NET materials and Azure patterns; transaction isolation is PostgreSQL 18-specific. No target application data model, actual database isolation tests or production consistency observed.
+
+## B10 completed verification
+- GitHub Actions PR workflow run `42358088882` on commit `4d68681222ebc78662faa276f6b04d9f4c2939cf`: **success**, covering configured catalog validation and retrieval regression tests. The prior retrieval-fixture commit also passed CI.
+- Direct B10 checks: 11 pages, zero metadata/source-count/related-ID/local concept link failures.
+- Campaign progress: **4/8 batches (50%)**. Next B11 — async and concurrency; same branch and PR #3.
+
+## B11 implementation (2026-11-07)
+- Context and runtime/platform applicability: [B11 research report](batch-11-async-concurrency.md).
+- Upgraded `async-await`, `thread-safety`, `backpressure`; added `cancellation-propagation`, `structured-concurrency`, `lock-contention-and-deadlocks`, `workload-isolation`, `async-streams-and-channels`.
+- Catalog branch index: **76 indexed / 72 reviewed / 4 stubs**. Runtime README and coverage updated. Retrieval test includes eight B11 IDs and 56-case golden fixture; remaining-stub filter moved to distributed-systems.
+- Direct checks on eight pages: frontmatter, cited-source counts, internal links and related IDs, **zero errors**. GitHub Actions result must be recorded separately.
+- Platform caveats: Java 25 structured concurrency is preview; Python TaskGroup requires cancellation discipline; .NET bounded channel full-mode can wait or drop (loss is a business-policy decision). No project-specific concurrency or load tests were performed.
+
+## B11 completed verification
+- GitHub Actions run `42358308490` on commit `eed56c726b4cf93fa96b9a1810d8e170430b039c` **succeeded**, including configured catalog validation and search regression tests. Eight B11 concept pages passed direct metadata/source-count/local-link checks without discrepancies.
+- Campaign progress **5 of 8 batches = 62.5%**. B12 distributed systems next, on the same draft PR #3. No target application race/throughput correctness has been claimed.
+
+## B12 implementation (2026-11-07)
+- Context, sources and boundaries: [B12 report](batch-12-distributed-integration.md). Upgraded `consistency`, `event-driven`, `queues`; added `delivery-guarantees`, `outbox-pattern`, `sagas-and-compensation`, `schema-and-event-versioning`, `service-boundaries`.
+- Branch index **81 total / 80 reviewed / 1 stub (`caching`)**. Updated distributed README, coverage and search tests with 64-case gold fixture. Preserved the caching stub as unknown evidence.
+- Direct connector checks: eight B12 pages, zero metadata/source-count/related-ID/link errors; PR GitHub Actions validation to be recorded separately.
+- Material distinctions: broker duplicate detection is bounded, not universal exactly-once effects; outbox does not prevent duplicate delivery; saga compensation is not ACID rollback; schema compatibility depends on format and direction. No actual application integration was executed.
+
+## B12 completed verification
+- GitHub Actions workflow run `42358524699` succeeded on commit `e971c36b0a41e93b37fcfe7b143d017c91475fbc`, including configured catalog validator and retrieval regression suite; earlier retrieval fixture commit `1d3ca40` also passed CI.
+- Eight B12 pages passed direct frontmatter, numbered source metadata, related IDs and internal concept-link checks with no errors. This validates catalog consistency, not real queue delivery semantics or business correctness.
+- Overall progress: **6 of 8 batches (75%)**. B13 caching and performance next, on the same PR #3.
+
+## B13 implementation (2026-11-07)
+- Context first: reviewed the remaining `caching` stub, existing `scalability`, `workload-admission`, `observability`, `operational-costs`, and distributed `consistency`. Detailed evidence notes: [B13 report](batch-13-performance.md).
+- Upgraded `caching` from stub. Added `cache-invalidation-and-stampedes`, `load-testing-and-baselines`, `rate-limiting`, `partitioning-and-sharding`, and `resource-budgets` as scoped reviewed guidance.
+- Index: **86 total / 86 reviewed / 0 stubs**, updated performance README, branch coverage, 69-case retrieval fixture and search regression suite.
+- Six pages passed direct index-frontmatter/source-count/related-ID/internal link validation with no errors. GitHub Actions must be checked before full completion.
+- Zero stubs does **not** complete B14; its proposed agent-retrieval and governance topics remain planned. No measured target-app performance, security, capacity or cache correctness is claimed.
+
+## B13 verification and completion
+- Initial workflow `42359033902` showed catalog validation passed but one retrieval test assumed `caching` was still a stub. Updated `tests/test_retrieval_gold.py` to check `reviewed` and `requires-source-inspection`; there are now no remaining stubs in the branch index.
+- GitHub Actions run `42359097375` on commit `94a2785c80f3c24da1696f5c6bf4c43d8d9071ab` completed **success**, including catalog validator and retrieval regression tests. Six direct concept page metadata/source-count/local-link checks passed with zero errors.
+- Campaign **7/8 batches (87.5%)**. B14 agent retrieval/governance is the final planned batch; zero stubs does not imply B14 is done. No application performance was measured.
+
+## B14 implementation and research (2026-11-07)
+- Gathered context from current index, taxonomy, validator, offline lexical search, B0 retrieval benchmark, evidence policy, existing ADR decisions and general project-structure guidance before new pages. Detailed research: [B14 agent search and language overlays](batch-14-agent-retrieval.md).
+- Added 7 scoped reviewed concepts: `adr-lifecycle`, `dotnet-and-csharp-overlay`, `typescript-and-node-overlay`, `java-and-scala-overlay`, `python-overlay`, `knowledge-index-validation`, `retrieval-evaluation`. No new category introduced. Existing `decision-records` retains the ADR format and earlier project-kind pages remain canonical for general structure decisions.
+- Implemented seven **exact normalized** human-query intents in `scripts/search_catalog.py`; broad lexical search, canonical-ID precedence, category/status filters and related expansion remain. Updated README, governance and code-organization navigation, agent search documentation and 83-case golden retrieval fixture (up from 69).
+- Index: **93 indexed, 93 scoped reviewed, 0 stubs**. Seven concept pages passed frontmatter/index, numbered source count, local links and related IDs with **0 errors**. Retrieval-golden commit GitHub Actions run `42359351062` passed. Latest documentation commit CI still requires a separate result.
+- Remaining limitations: not all claims independently checked against their exact external sources; no source-freshness monitor or real-world search user relevance evaluation. No application-specific code change, security/Sonar scan, performance result or reduction in maintained code was measured.
+
+## B14 final verification and completion
+- GitHub Actions workflow run `42359409846` on commit `824c97895481a5814914bd114795c14b72e63d38` **succeeded**, including configured canonical catalog validator and search regression tests. Earlier golden-fixture run `42359351062` passed.
+- Seven B14 concept pages passed direct frontmatter/index, source-count and local-concept-link checks without errors. Final index on the campaign branch: **93 total, 93 scoped reviewed, 0 stubs**; golden retrieval fixture includes **83 queries**, including 7 exact normalized B14 paraphrases.
+- **B7–B14 campaign: 8 of 8 planned batches (100%) implemented and verified by catalog CI.** This is *not* a claim of comprehensive independent citation review, external-user retrieval effectiveness, or application-specific performance, quality or correctness.
+- The shared draft PR #3 remains open and unmerged for human review, source-claim sampling and optional follow-on improvements.
