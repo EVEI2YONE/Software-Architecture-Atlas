@@ -60,3 +60,7 @@ The shared campaign branch adds seven dedicated domain/data concepts and upgrade
 ## B11 async and concurrency (campaign PR #3)
 
 The campaign branch upgraded the three remaining runtime stubs and indexed five new runtime concepts. It now contains **76 concepts, 72 reviewed and 4 stubs**. See [B11 source review and decision matrix](batch-11-async-concurrency.md) for async/await, cancellation, structured concurrency, locks, backpressure, workload isolation and channels. These are scoped references: no target application task leaks, races, load behavior or throughput improvements were measured.
+
+## B12 distributed systems integration (campaign PR #3)
+
+The shared PR branch now records **81 indexed concepts / 80 reviewed / 1 stub** after three distributed concept stub upgrades and five new source-scoped integration concepts. The remaining stub is `caching` (B13). See [B12 evidence review and decision matrix](batch-12-distributed-integration.md). This count is a branch inventory until merged; no target broker, production transaction, delivery or exactly-once business-effect guarantee was validated by catalog curation.
