@@ -13,9 +13,9 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertEqual(search("concurrency", limit=4), search("concurrency", limit=4))
 
     def test_filter(self):
-        result = search("caching", category="performance", status="stub")
+        result = search("caching", category="performance", status="reviewed")
         self.assertTrue(result["results"])
-        self.assertTrue(all(hit["category"] == "performance" and hit["status"] == "stub" for hit in result["results"]))
+        self.assertTrue(all(hit["category"] == "performance" and hit["status"] == "reviewed" for hit in result["results"]))
 
     def test_project_structure_gap_discoverable(self):
         result = search("file structure for UI API Functions WebJobs enterprise")
@@ -58,15 +58,16 @@ class SearchCatalogTests(unittest.TestCase):
             result = search(query)
             self.assertEqual(result["results"][0]["id"], expected, query)
             self.assertEqual(result["results"][0]["status"], "reviewed")
-        self.assertEqual(search("caching")["results"][0]["status"], "stub")
+        self.assertEqual(search("caching")["results"][0]["status"], "reviewed")
 
     def test_unmatched(self):
         self.assertEqual(search("zzzzzzzzzzzz")["results"], [])
 
-    def test_no_stub_as_evidence(self):
+    def test_no_reviewed_hit_claims_verified_evidence(self):
         hit = search("caching")["results"][0]
-        self.assertEqual(hit["status"], "stub")
-        self.assertEqual(hit["evidence"], "unknown")
+        self.assertEqual(hit["status"], "reviewed")
+        self.assertEqual(hit["evidence"], "requires-source-inspection")
+        self.assertEqual(search("caching", status="stub")["results"], [])
 
     def test_b8_canonical_retrieval(self):
         for concept_id in [
@@ -121,6 +122,17 @@ class SearchCatalogTests(unittest.TestCase):
             "consistency", "event-driven", "queues", "delivery-guarantees",
             "outbox-pattern", "sagas-and-compensation",
             "schema-and-event-versioning", "service-boundaries",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b13_canonical_retrieval(self):
+        for concept_id in [
+            "caching", "cache-invalidation-and-stampedes",
+            "load-testing-and-baselines", "rate-limiting",
+            "partitioning-and-sharding", "resource-budgets",
         ]:
             hit = search(concept_id)["results"][0]
             self.assertEqual(hit["id"], concept_id)
