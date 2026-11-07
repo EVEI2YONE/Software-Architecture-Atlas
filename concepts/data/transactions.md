@@ -33,6 +33,10 @@ ACID; transaction isolation; serializable; data integrity; database boundary
 - [consistency](../distributed-systems/consistency.md)
 - [schema evolution](schema-evolution.md)
 
+## PostgreSQL and SQLAlchemy-specific extension
+
+For practical row-lock choices, a bounded SQLAlchemy 2.x Session unit of work, SKIP LOCKED caveats, transaction retry ownership and a **real PostgreSQL** concurrency test matrix, see [PostgreSQL transactional concurrency](postgresql-transactional-concurrency.md). This is a scoped supplement; it is not evidence that the reader's database is safe.
+
 ## Evidence and sources
 1. PostgreSQL 18 Documentation, *Transaction Isolation*: https://www.postgresql.org/docs/18/transaction-iso.html (accessed 2026-11-07). PostgreSQL-specific semantics; other databases differ.
 2. RFC 9110 *HTTP Semantics*: https://www.rfc-editor.org/rfc/rfc9110.html (accessed 2026-11-07). HTTP retry safety is separate from database atomicity.
