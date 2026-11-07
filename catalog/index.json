@@ -176,7 +176,7 @@
       "domain": "maintainability",
       "category": "code-organization",
       "path": "concepts/code-organization/feature-first-folders.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Optimize finding, changing and deleting cohesive features",
       "tags": [
         "code-organization",
@@ -189,8 +189,8 @@
         "modularity",
         "code-simplification"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "code-simplification",
@@ -198,7 +198,7 @@
       "domain": "maintainability",
       "category": "code-organization",
       "path": "concepts/code-organization/code-simplification.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Remove accidental complexity without sacrificing clarity or explicit behavior",
       "tags": [
         "code-organization",
@@ -210,8 +210,8 @@
         "dry-vs-abstraction",
         "cognitive-complexity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "dependency-inversion",
