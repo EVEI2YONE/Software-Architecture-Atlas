@@ -43,6 +43,11 @@ class SearchCatalogTests(unittest.TestCase):
             self.assertEqual(hit["status"], "reviewed")
         self.assertEqual(search("project-structure-selection")["results"][0]["status"], "stub")
 
+    def test_b5_growth_and_migration_retrieval(self):
+        self.assertEqual(search("prototype MVP enterprise")["results"][0]["id"], "architecture-evolution")
+        self.assertEqual(search("strangler migration")["results"][0]["id"], "incremental-boundary-migration")
+        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "unknown")
+
     def test_unmatched(self):
         self.assertEqual(search("zzzzzzzzzzzz")["results"], [])
 
