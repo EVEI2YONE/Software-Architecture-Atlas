@@ -34,7 +34,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | Batch | Context gathered | Concept curation | Validation | State |
 | --- | --- | --- | --- | --- |
 | B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | 9 pages passed metadata/source/link checks; GitHub Actions succeeded on commit 9a61420 | Complete (scoped catalog curation) |
-| B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | Catalog validation passed; retrieval tests updated, latest CI pending | Concept curation complete; CI confirmation pending |
+| B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | GitHub Actions succeeded on commit 2e48665; catalog and retrieval tests | Complete (scoped catalog curation) |
 | B9 | Yes | Not started | Not run | 0% |
 | B10 | Yes | Not started | Not run | 0% |
 | B11 | Yes | Not started | Not run | 0% |
@@ -67,3 +67,8 @@ No target application's repository, performance traces, measured developer navig
 - Initial GitHub Actions run `42357378764` reported `CATALOG VALID: 57 indexed concepts`, but failed six retrieval tests because previously fixed expectations still labelled `project-structure-selection` as a stub.
 - Updated `tests/test_search_catalog.py`, `tests/test_retrieval_gold.py`, and `tests/fixtures/retrieval_gold.json` to reflect its documented promotion to `reviewed`, add canonical retrieval coverage for five new B8 IDs, and retain a negative regression using the actual `caching` stub (evidence remains `unknown`).
 - CI status for subsequent commits must be checked independently. Do not label the entire validation suite successful based only on connector-side checks.
+
+## B8 completed verification
+- GitHub Actions workflow run `42357485179` on commit `2e486651fb00b220c762cf3d24396f88abac0081` completed **success** after updating the final stale test assertion.
+- Prior CI logs independently confirmed catalog validation against 57 concepts and revealed the original test expectation mismatch. All B8 metadata/source-count/local-concept-link checks reported zero errors.
+- This is catalog schema and regression-test verification; it does not independently certify references or prove target-application benefit.
