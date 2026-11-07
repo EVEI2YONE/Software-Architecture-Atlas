@@ -1,5 +1,7 @@
 # Software Architecture Atlas
 
+[![Support me on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20me-cc1d1d?logo=ko-fi&logoColor=white)](https://ko-fi.com/S5C12A839Y)
+
 A **human-readable and agent-searchable** knowledge catalog covering software architecture, design principles, dependency health, clean code, asynchronous and distributed systems, scalability, and maintainability.
 
 This is a **knowledge/reference repository**, not a claim that every scaffolded concept is vetted. The initial 30 concept pages began as research stubs. Concept status now varies; always check the canonical index, reviewed source evidence and applicable runtime constraints.
