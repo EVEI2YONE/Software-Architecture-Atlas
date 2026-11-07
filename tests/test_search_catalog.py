@@ -13,9 +13,9 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertEqual(search("concurrency", limit=4), search("concurrency", limit=4))
 
     def test_filter(self):
-        result = search("testing quality", category="quality", status="stub")
+        result = search("async thread", category="runtime", status="stub")
         self.assertTrue(result["results"])
-        self.assertTrue(all(hit["category"] == "quality" and hit["status"] == "stub" for hit in result["results"]))
+        self.assertTrue(all(hit["category"] == "runtime" and hit["status"] == "stub" for hit in result["results"]))
 
     def test_project_structure_gap_discoverable(self):
         result = search("file structure for UI API Functions WebJobs enterprise")
@@ -73,6 +73,19 @@ class SearchCatalogTests(unittest.TestCase):
             "project-structure-selection", "vertical-slice-architecture",
             "package-by-feature-vs-layer", "module-public-contracts",
             "architecture-dependency-rules", "monorepo-vs-multirepo",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b9_canonical_retrieval(self):
+        for concept_id in [
+            "dependency-conflicts", "supply-chain", "cognitive-complexity",
+            "quality-gates", "testing-strategy", "transitive-dependency-resolution",
+            "package-locking-and-version-policy", "cyclic-dependency-prevention",
+            "dead-code-and-dependency-removal", "sonar-rules-and-quality-profiles",
+            "mutation-and-contract-testing", "architecture-fitness-functions",
         ]:
             hit = search(concept_id)["results"][0]
             self.assertEqual(hit["id"], concept_id)
