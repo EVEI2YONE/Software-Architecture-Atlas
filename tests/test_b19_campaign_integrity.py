@@ -64,7 +64,7 @@ class CampaignIntegrityTests(unittest.TestCase):
         doc = REPORT.read_text(encoding="utf-8")
         self.assertIn("do **not** execute PostgreSQL", doc)
         self.assertIn("Application exit", doc)
-        self.assertIn("still", doc.lower())
+        self.assertIn("remains open", doc.lower())
 
     def test_b18_reuses_existing_canonical_concepts(self):
         for path in B18_EXISTING:
