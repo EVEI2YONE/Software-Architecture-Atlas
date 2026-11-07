@@ -36,7 +36,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | 9 pages passed metadata/source/link checks; GitHub Actions succeeded on commit 9a61420 | Complete (scoped catalog curation) |
 | B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | GitHub Actions succeeded on commit 2e48665; catalog and retrieval tests | Complete (scoped catalog curation) |
 | B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | GitHub Actions run 42357794660 succeeded; connector links and metadata passed | Complete (scoped catalog curation) |
-| B10 | Yes | Not started | Not run | 0% |
+| B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | 11 direct metadata/source/link checks passed; CI pending | Curated, pending CI |
 | B11 | Yes | Not started | Not run | 0% |
 | B12 | Yes | Not started | Not run | 0% |
 | B13 | Yes | Not started | Not run | 0% |
@@ -83,3 +83,9 @@ No target application's repository, performance traces, measured developer navig
 - GitHub Actions PR workflow run `42357794660` for commit `15719e40650c05bcdf1ac66e9302f4f457400a9b`: **completed successfully**. It includes the configured catalog validation and retrieval-test jobs.
 - The 12 pages' frontmatter, reference counts, internal links and indexed relations also passed direct checks. No application-specific Sonar scan, package conflict, build optimization or runtime test was performed; no such claim should be inferred.
 - Batch campaign progress: **3 of 8 completed (37.5%)**. B10 is the next research batch.
+
+## B10 implementation (2026-11-07)
+- Source context, decisions and evidence: [B10 domain/data report](batch-10-domain-data.md). Upgraded `bounded-contexts`, `aggregates`, `domain-events`, `cqrs` from stub; created `ubiquitous-language`, `context-mapping`, `domain-services-vs-application-services`, `transactional-invariants`, `anti-corruption-layers`, `data-access-boundaries`, and `isolation-levels`.
+- Catalog index: 71 total, 64 reviewed, 7 stubs. Updated domain-design/data READMEs, coverage matrix, B10 research report, and retrieval corpus (48 gold queries).
+- Direct checks on all 11 B10 pages: frontmatter, source counts, internal concept links and related ID integrity, **0 errors**. Remote CI must be checked before final completion classification.
+- DDD source guidance from Microsoft .NET materials and Azure patterns; transaction isolation is PostgreSQL 18-specific. No target application data model, actual database isolation tests or production consistency observed.
