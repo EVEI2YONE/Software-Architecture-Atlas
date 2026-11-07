@@ -1,4 +1,6 @@
-# B7–B14 research campaign: context and progress
+# B7–B14 research campaign: historical context and completion records
+
+> **Archived campaign record.** The initial planning matrix below captures the state before each batch was performed; its "not started" entries are historical and are superseded by the later completion board. Current inventory is maintained in [catalog/index.json](../catalog/index.json), not this snapshot.
 
 Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107`. Scope: catalog curation only, not application refactoring.
 

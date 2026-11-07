@@ -14,3 +14,7 @@ Prefer a concrete explanation of trade-offs over dogmatic rules, case studies ov
 - Related IDs exist; relative Markdown links resolve.
 - Avoid duplicating concepts without explaining their boundaries.
 - Run `python scripts/validate_catalog.py` and correct any errors.
+
+## Retrieval and documentation regression
+
+When changing IDs, titles, aliases, category READMEs, `related` links, or retrieval implementation, run `python -m unittest discover -s tests -v` in addition to the catalog validator. Verify current coverage totals against `catalog/index.json` and keep historical research clearly labeled. A `reviewed` metadata value does not certify every individual claim.

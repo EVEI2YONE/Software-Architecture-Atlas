@@ -36,6 +36,10 @@ knowledge index validation; knowledge index validation and evidence integrity; c
 - [decision-records](../governance/decision-records.md)
 - [testing-strategy](../quality/testing-strategy.md)
 
+## Evidence scope and uncertainty
+
+The GitHub CODEOWNERS and Python unittest references demonstrate ownership and testing tooling, respectively; neither independently establishes that this catalog's technical claims are correct or citations are relevant. A manual claim-to-source audit remains necessary.
+
 ## Evidence and sources
 1. GitHub Docs, About code owners: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners (accessed 2026-11-07). Scope: the named platform, documentation workflow or evaluation approach, not a benchmark of this catalog.
 2. Python Standard Library, unittest: https://docs.python.org/3/library/unittest.html (accessed 2026-11-07). Scope: the named platform, documentation workflow or evaluation approach, not a benchmark of this catalog.

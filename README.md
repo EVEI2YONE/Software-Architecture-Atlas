@@ -9,7 +9,8 @@ This is a **knowledge/reference repository**, not a claim that every scaffolded 
 - [Agent reading and contribution instructions](AGENTS.md)
 - [Full concept index](catalog/index.json) (machine-readable)
 - [Topic taxonomy](catalog/taxonomy.json)
-- [Concept coverage matrix](docs/coverage.md)
+- [Current concept coverage](docs/coverage.md)
+- [Research archive and remaining evidence gaps](research/README.md)
 - [Sequenced knowledge-gap research batches](docs/knowledge-gap-batches.md)
 - [Batch B0: catalog evidence integrity and agent retrieval benchmark](docs/batch-0-catalog-integrity.md)
 - [Batch B1: code organization research and measurement guide](docs/batch-1-code-organization.md)
@@ -18,7 +19,7 @@ This is a **knowledge/reference repository**, not a claim that every scaffolded 
 - [Batch B4: application type file-structure archetypes](docs/batch-4-project-archetypes.md)
 - [Batch B5: prototype to enterprise evolution](docs/batch-5-maturity-evolution.md)
 - [Batch B6: operations, reliability and scalability](docs/batch-6-operations-reliability.md)
-- [Navigation and retrieval guide](docs/agent-search.md)
+- [Navigation and retrieval guide](docs/retrieval.md)
 - [Source and evidence policy](docs/evidence-policy.md)
 - [Knowledge-gap and curation workflow](docs/curation-workflow.md)
 - [Entry template](templates/concept.md)
@@ -54,7 +55,7 @@ Prioritize realistic simplicity and developer comprehension over maximal archite
 
 ## Agent-friendly search
 
-Run `python scripts/search_catalog.py "dependency hell" --json` for deterministic offline, machine-readable concept lookup, or `python scripts/search_catalog.py "idempotency" --expand 2 --json` to traverse related concepts. See [agentic search guide](docs/agentic-search.md) for result schema, evidence handling, limitations and examples. Run `python -m unittest discover -s tests -v` for retrieval tests.
+Run `python scripts/search_catalog.py "dependency hell" --json` for deterministic offline, machine-readable concept lookup, or `python scripts/search_catalog.py "idempotency" --expand 2 --json` to traverse related concepts. See [agentic search guide](docs/retrieval.md) for result schema, evidence handling, limitations and examples. Run `python -m unittest discover -s tests -v` for retrieval tests.
 
 ## B7–B14 campaign and architecture overlays
 

@@ -1,7 +1,7 @@
 # Knowledge-gap research batches
 
 **Created:** 2026-11-07  
-**Status:** Proposed curation roadmap. These are research tasks, **not reviewed guidance**.  
+**Status:** Historical B0–B6 curation roadmap; batch curation was completed. Remaining independent source-claim and target-application verification is tracked separately. These original research tasks are **not themselves reviewed guidance**.  
 **Source of truth:** [Foundational gap assessment](foundational-gap-assessment.md) and [canonical index](../catalog/index.json).
 
 ## Purpose
