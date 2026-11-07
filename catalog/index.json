@@ -238,8 +238,8 @@
       "domain": "dependencies",
       "category": "dependencies",
       "path": "concepts/dependencies/dependency-conflicts.md",
-      "status": "stub",
-      "summary": "Control package versions, transitive resolution and compatibility drift",
+      "status": "reviewed",
+      "summary": "Diagnose observed dependency resolution and compatibility failures",
       "tags": [
         "dependencies",
         "dependency",
@@ -249,8 +249,8 @@
         "supply-chain",
         "dependency-inversion"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "supply-chain",
@@ -258,8 +258,8 @@
       "domain": "dependencies",
       "category": "dependencies",
       "path": "concepts/dependencies/supply-chain.md",
-      "status": "stub",
-      "summary": "Review provenance, licensing, vulnerabilities and update policy",
+      "status": "reviewed",
+      "summary": "Review provenance, license, vulnerabilities and pipeline trust",
       "tags": [
         "dependencies",
         "supply",
@@ -269,8 +269,8 @@
         "dependency-conflicts",
         "quality-gates"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "async-await",
@@ -497,8 +497,8 @@
       "domain": "quality",
       "category": "quality",
       "path": "concepts/quality/cognitive-complexity.md",
-      "status": "stub",
-      "summary": "Prioritize clear control flow over metric gaming",
+      "status": "reviewed",
+      "summary": "Use readability and cognitive complexity signals without metric gaming",
       "tags": [
         "quality",
         "cognitive",
@@ -508,8 +508,8 @@
         "code-simplification",
         "quality-gates"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "quality-gates",
@@ -517,8 +517,8 @@
       "domain": "quality",
       "category": "quality",
       "path": "concepts/quality/quality-gates.md",
-      "status": "stub",
-      "summary": "Use configured Sonar profiles for bugs, vulnerabilities, hotspots, smells and duplication",
+      "status": "reviewed",
+      "summary": "Interpret actual project-configured Sonar quality gates and scan evidence",
       "tags": [
         "quality",
         "gates"
@@ -527,8 +527,8 @@
         "cognitive-complexity",
         "testing-strategy"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "testing-strategy",
@@ -536,8 +536,8 @@
       "domain": "quality",
       "category": "quality",
       "path": "concepts/quality/testing-strategy.md",
-      "status": "stub",
-      "summary": "Balance unit, integration, contract and end-to-end tests",
+      "status": "reviewed",
+      "summary": "Choose tests around architectural risks and integration boundaries",
       "tags": [
         "quality",
         "testing",
@@ -547,8 +547,8 @@
         "quality-gates",
         "modularity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "observability",
@@ -1243,6 +1243,149 @@
         "multi-project-structure",
         "module-public-contracts",
         "architecture-evolution"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "transitive-dependency-resolution",
+      "title": "Transitive dependency resolution",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/transitive-dependency-resolution.md",
+      "status": "reviewed",
+      "summary": "Interpret resolved graphs and transitive version constraints",
+      "tags": [
+        "transitive",
+        "dependencies",
+        "resolution"
+      ],
+      "related": [
+        "dependency-conflicts",
+        "package-locking-and-version-policy"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "package-locking-and-version-policy",
+      "title": "Package locking and version policy",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/package-locking-and-version-policy.md",
+      "status": "reviewed",
+      "summary": "Design reproducible package restores and version update policy",
+      "tags": [
+        "lockfile",
+        "versions",
+        "packages"
+      ],
+      "related": [
+        "transitive-dependency-resolution",
+        "supply-chain"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "cyclic-dependency-prevention",
+      "title": "Cyclic dependency prevention",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/cyclic-dependency-prevention.md",
+      "status": "reviewed",
+      "summary": "Identify and break package or module dependency cycles",
+      "tags": [
+        "cycles",
+        "module-boundaries",
+        "imports"
+      ],
+      "related": [
+        "architecture-dependency-rules",
+        "module-public-contracts",
+        "dependency-inversion"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "dead-code-and-dependency-removal",
+      "title": "Dead code and dependency removal",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/dead-code-and-dependency-removal.md",
+      "status": "reviewed",
+      "summary": "Safely remove unused code and packages with consumer evidence",
+      "tags": [
+        "dead-code",
+        "removal",
+        "dependencies"
+      ],
+      "related": [
+        "code-simplification",
+        "supply-chain",
+        "dependency-conflicts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "sonar-rules-and-quality-profiles",
+      "title": "Sonar rules and quality profiles",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/sonar-rules-and-quality-profiles.md",
+      "status": "reviewed",
+      "summary": "Distinguish analyzer rules and active profiles from project gates",
+      "tags": [
+        "sonar",
+        "rules",
+        "quality-profiles"
+      ],
+      "related": [
+        "quality-gates",
+        "cognitive-complexity"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "mutation-and-contract-testing",
+      "title": "Mutation and contract testing",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/mutation-and-contract-testing.md",
+      "status": "reviewed",
+      "summary": "Assess test assertion sensitivity and consumer/provider compatibility",
+      "tags": [
+        "mutation",
+        "contract-testing",
+        "integration"
+      ],
+      "related": [
+        "testing-strategy",
+        "api-contracts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-fitness-functions",
+      "title": "Architecture fitness functions",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/architecture-fitness-functions.md",
+      "status": "reviewed",
+      "summary": "Codify high-value architectural invariants as executable checks",
+      "tags": [
+        "fitness-functions",
+        "architecture-tests",
+        "module-boundaries"
+      ],
+      "related": [
+        "architecture-dependency-rules",
+        "testing-strategy",
+        "module-public-contracts"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
