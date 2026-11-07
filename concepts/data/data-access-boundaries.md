@@ -39,6 +39,10 @@ data access boundaries; data access boundaries; domain boundaries; transactional
 - [module-public-contracts](../code-organization/module-public-contracts.md)
 - [schema-evolution](../data/schema-evolution.md)
 
+## SQLAlchemy and database ownership
+
+Keep a short-lived Session and transaction within the owning API request/job, and do not let modules bypass tenant scope or atomic balance/receipt updates. See [PostgreSQL transactional concurrency](postgresql-transactional-concurrency.md) for an illustrative Session pattern and its limits.
+
 ## Evidence and sources
 1. Microsoft Learn, Domain model, https://learn.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/microservice-domain-model (accessed 2026-11-07). Applies to the named framework/database architecture or platform behavior; not verified on the user's applications.
 2. Microsoft Learn, Application layer, https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api (accessed 2026-11-07). Applies to the named framework/database architecture or platform behavior; not verified on the user's applications.
