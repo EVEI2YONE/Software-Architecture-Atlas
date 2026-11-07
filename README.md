@@ -67,6 +67,12 @@ Run `python scripts/search_catalog.py "dependency hell" --json` for deterministi
 
 A `reviewed` page means scoped references and curation metadata are present, **not** that its source claims or recommendations were independently validated on the reader's application.
 
+## B15–B19: Final Expanse blocker research
+
+- [Shared campaign tracker](docs/final-expanse-blocker-campaign.md)
+- [B15: PostgreSQL transactional concurrency](docs/batch-15-postgresql-concurrency.md)
+- This focused research extends architecture guidance and does not certify the Final Expanse application.
+
 ## Support This Project
 
 [![Support on Ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-13C3FF?logo=ko-fi&logoColor=white)](https://ko-fi.com/S5C12A839Y)
