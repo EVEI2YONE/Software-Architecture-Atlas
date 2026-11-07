@@ -2,41 +2,47 @@
 id: queues
 title: "Queues and messaging"
 category: distributed-systems
-status: stub
-reviewed_at: null
+status: reviewed
+reviewed_at: 2026-11-07
 ---
 
 # Queues and messaging
 
-> **Status: research stub.** This page is a structured topic placeholder, **not** a verified best-practice claim. Curators must research and cite evidence before marking it reviewed.
+> **Reviewed, scoped source-backed guidance.** Broker features and guarantees apply only to specified products, tiers and configurations. This page does not certify any target system's delivery, consistency or resilience.
 
-## Why this matters
-Handle ordering, dead-letter routing, throughput and consumer ownership.
+## Problem and context
+A scheduled worker consumes orders from a durable queue while retries and multiple consumers can change processing order.
 
-## Decision questions
-- What actual workload, ownership boundaries and constraints justify this approach?
-- Which simpler alternative would meet the same requirements?
-- What failure modes, operational costs and maintainability risks does it introduce?
-- How would the benefit be measured and tested?
+## Applicability
+Record real service/data owners, message broker and edition, runtime and SDK, contractual consistency and security requirements, consumer deployment lifecycles, backlog and incident evidence. For a prototype or MVP, compare no change and a simpler direct or local transaction. For growing/enterprise systems, do not confuse independent modules with separate network deployables.
 
-## Guidance to research
-- Appropriate contexts and counterexamples
-- Language/runtime-specific caveats and version applicability
-- Trade-offs against at least one viable alternative
-- Measurable acceptance or review criteria
-- Migration and rollback considerations
+## Decision and trade-offs
+Specify broker/tier, message lock and acknowledgment, retry policy, TTL, dead-letter ownership, session/partition ordering and consumer concurrency. Azure Service Bus sessions can preserve per-session ordered processing; default general queues do not automatically preserve completion order across consumers.
+
+### Simpler/no-change alternative
+A bounded in-process channel is simpler for disposable work inside one process; direct calls can fit immediate-response flows. Use a durable queue only where asynchronous recovery or decoupling is justified.
+
+### Failure modes and counterexamples
+Dead-lettering is operational debt unless monitored and replayed safely. Broker duplicate-detection windows and tier limits do not make downstream side effects exactly once. Acknowledging before durable effects risks loss, after effects risks duplicates.
+
+## Illustrative workflow
+An Orders API commits its own business state, then downstream inventory and notification responsibilities react through explicitly versioned contracts if asynchronous integration is justified. Each separate consumer defines its duplicate-handling, ordering, error, recovery and observability policy. These are conceptual choices, not tested implementation or a guarantee of exactly-once business effects.
+
+## Verification, migration and rollback
+Test consumer crash after DB commit before ack, lock expiry, poison messages, duplicate IDs, sessions and dead-letter replay; measure backlog age/throughput and ensure replay is idempotent. Record expected versus observed results, supported versions, unacceptable loss/latency, explicit owners and fallback. Use smaller reversible increments and preserve existing consumers during compatibility windows.
 
 ## Search aliases
-- Queues and messaging
-- queues
+queues and messaging; queues; distributed delivery; integration reliability; messaging failures; service autonomy
 
 ## Related concepts
 - [backpressure](../runtime/backpressure.md)
 - [idempotency](../distributed-systems/idempotency.md)
+- [delivery-guarantees](../distributed-systems/delivery-guarantees.md)
+- [event-driven](../distributed-systems/event-driven.md)
 
 ## Evidence and sources
-_None curated yet. Do not represent this stub as validated guidance._
+1. Microsoft Learn, Azure Service Bus message sessions, https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sessions (accessed 2026-11-07). Primary vendor/platform guidance supports scoped technology behavior; real application guarantees require independent tests.
+2. Microsoft Learn, Azure Service Bus duplicate detection, https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection (accessed 2026-11-07). Primary vendor/platform guidance supports scoped technology behavior; real application guarantees require independent tests.
 
 ## Maintenance
-- Research status: backlog
-- Suggested revisit trigger: new framework version, production incident, or contradictory evidence
+Reviewed 2026-11-07. Revisit for broker tiers/SDK versions, changed consumer contracts, delivery incidents, or source updates. An independent claim-to-source audit and application-specific validation remain open.
