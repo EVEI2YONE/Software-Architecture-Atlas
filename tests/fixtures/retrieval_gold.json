@@ -426,6 +426,16 @@
       "query": "postgresql transactional concurrency",
       "expected_id": "postgresql-transactional-concurrency",
       "expected_status": "reviewed"
+    },
+    {
+      "query": "durable-worker-leases-and-fencing",
+      "expected_id": "durable-worker-leases-and-fencing",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "durable worker leases fencing",
+      "expected_id": "durable-worker-leases-and-fencing",
+      "expected_status": "reviewed"
     }
   ]
 }
