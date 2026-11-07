@@ -34,7 +34,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | Batch | Context gathered | Concept curation | Validation | State |
 | --- | --- | --- | --- | --- |
 | B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | 9 pages passed metadata/source/link checks; GitHub Actions succeeded on commit 9a61420 | Complete (scoped catalog curation) |
-| B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | 6 pages passed connector metadata/source/link checks; GitHub Actions pending | Concept curation complete; CI pending |
+| B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | Catalog validation passed; retrieval tests updated, latest CI pending | Concept curation complete; CI confirmation pending |
 | B9 | Yes | Not started | Not run | 0% |
 | B10 | Yes | Not started | Not run | 0% |
 | B11 | Yes | Not started | Not run | 0% |
@@ -62,3 +62,8 @@ No target application's repository, performance traces, measured developer navig
 - Six B8 page checks performed via GitHub connector: frontmatter/index consistency, numbered citation metadata and local concept links; **0 errors**. Not a substitute for executing all repo Python validation/tests; remote CI result recorded separately when available.
 - Sources: official Microsoft Learn architectural and ASP.NET Core feature-organization guidance; Nx module-boundary and monorepo/polyrepo tool documentation (Nx product-vendor view, not independent empirical outcome).
 - No target application was inspected or refactored; navigation or code reduction benefits remain hypotheses to test on actual projects.
+
+## B8 regression repair
+- Initial GitHub Actions run `42357378764` reported `CATALOG VALID: 57 indexed concepts`, but failed six retrieval tests because previously fixed expectations still labelled `project-structure-selection` as a stub.
+- Updated `tests/test_search_catalog.py`, `tests/test_retrieval_gold.py`, and `tests/fixtures/retrieval_gold.json` to reflect its documented promotion to `reviewed`, add canonical retrieval coverage for five new B8 IDs, and retain a negative regression using the actual `caching` stub (evidence remains `unknown`).
+- CI status for subsequent commits must be checked independently. Do not label the entire validation suite successful based only on connector-side checks.
