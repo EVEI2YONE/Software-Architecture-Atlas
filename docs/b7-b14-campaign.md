@@ -39,7 +39,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | GitHub Actions 42358088882 succeeded; 11 direct page checks passed | Complete (scoped catalog curation) |
 | B11 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358308490 success; 8 direct checks passed | Complete (scoped catalog curation) |
 | B12 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358524699 success; 8 direct checks passed | Complete (scoped catalog curation) |
-| B13 | Yes | Not started | Not run | 0% |
+| B13 | Yes | 6/6 reviewed pages (1 stub upgrade, 5 new) | 6 direct checks passed; GitHub Actions pending | Curated, pending CI |
 | B14 | Yes | Not started | Not run | 0% |
 
 ## Open constraints
@@ -116,3 +116,10 @@ No target application's repository, performance traces, measured developer navig
 - GitHub Actions workflow run `42358524699` succeeded on commit `e971c36b0a41e93b37fcfe7b143d017c91475fbc`, including configured catalog validator and retrieval regression suite; earlier retrieval fixture commit `1d3ca40` also passed CI.
 - Eight B12 pages passed direct frontmatter, numbered source metadata, related IDs and internal concept-link checks with no errors. This validates catalog consistency, not real queue delivery semantics or business correctness.
 - Overall progress: **6 of 8 batches (75%)**. B13 caching and performance next, on the same PR #3.
+
+## B13 implementation (2026-11-07)
+- Context first: reviewed the remaining `caching` stub, existing `scalability`, `workload-admission`, `observability`, `operational-costs`, and distributed `consistency`. Detailed evidence notes: [B13 report](batch-13-performance.md).
+- Upgraded `caching` from stub. Added `cache-invalidation-and-stampedes`, `load-testing-and-baselines`, `rate-limiting`, `partitioning-and-sharding`, and `resource-budgets` as scoped reviewed guidance.
+- Index: **86 total / 86 reviewed / 0 stubs**, updated performance README, branch coverage, 69-case retrieval fixture and search regression suite.
+- Six pages passed direct index-frontmatter/source-count/related-ID/internal link validation with no errors. GitHub Actions must be checked before full completion.
+- Zero stubs does **not** complete B14; its proposed agent-retrieval and governance topics remain planned. No measured target-app performance, security, capacity or cache correctness is claimed.
