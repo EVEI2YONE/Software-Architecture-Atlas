@@ -15,6 +15,11 @@ ALIASES = {
     "throughput": "scalability backpressure",
     "race condition": "thread-safety",
     "retry duplicate": "idempotency",
+    "file structure": "project-structure-selection",
+    "folder structure": "project-structure-selection",
+    "project organization": "project-structure-selection",
+    "webjobs": "project-structure-selection",
+    "vertical slice": "project-structure-selection feature-first-folders",
 }
 
 def terms(value):
