@@ -35,7 +35,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | --- | --- | --- | --- | --- |
 | B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | 9 pages passed metadata/source/link checks; GitHub Actions succeeded on commit 9a61420 | Complete (scoped catalog curation) |
 | B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | GitHub Actions succeeded on commit 2e48665; catalog and retrieval tests | Complete (scoped catalog curation) |
-| B9 | Yes | Not started | Not run | 0% |
+| B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | 12 connector page checks passed; CI pending | Curated, awaiting workflow validation |
 | B10 | Yes | Not started | Not run | 0% |
 | B11 | Yes | Not started | Not run | 0% |
 | B12 | Yes | Not started | Not run | 0% |
@@ -72,3 +72,9 @@ No target application's repository, performance traces, measured developer navig
 - GitHub Actions workflow run `42357485179` on commit `2e486651fb00b220c762cf3d24396f88abac0081` completed **success** after updating the final stale test assertion.
 - Prior CI logs independently confirmed catalog validation against 57 concepts and revealed the original test expectation mismatch. All B8 metadata/source-count/local-concept-link checks reported zero errors.
 - This is catalog schema and regression-test verification; it does not independently certify references or prove target-application benefit.
+
+## B9 curation record (2026-11-07)
+- Source context and decision boundaries in [B9 report](batch-9-dependencies-quality.md). Five existing stubs upgraded: `dependency-conflicts`, `supply-chain`, `cognitive-complexity`, `quality-gates`, `testing-strategy`.
+- Seven scoped reviewed pages added: `transitive-dependency-resolution`, `package-locking-and-version-policy`, `cyclic-dependency-prevention`, `dead-code-and-dependency-removal`, `sonar-rules-and-quality-profiles`, `mutation-and-contract-testing`, `architecture-fitness-functions`.
+- Canonical index: 64 total, 53 reviewed, 11 stubs on campaign branch; category READMEs, coverage, 37-case golden query fixture and search regression tests updated.
+- Connector-side checks on all 12 pages verified index/frontmatter consistency, numbered source counts and related/local concept links; 0 errors. CI status recorded separately. No target app package graph or Sonar scan supplied.
