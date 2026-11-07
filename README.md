@@ -1,6 +1,5 @@
 # Software Architecture Atlas
 
-[![Support me on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20me-cc1d1d?logo=ko-fi&logoColor=white)](https://ko-fi.com/S5C12A839Y)
 
 A **human-readable and agent-searchable** knowledge catalog covering software architecture, design principles, dependency health, clean code, asynchronous and distributed systems, scalability, and maintainability.
 
@@ -67,3 +66,7 @@ Run `python scripts/search_catalog.py "dependency hell" --json` for deterministi
 - [Evidence and agent search governance](concepts/governance/README.md): ADR lifecycle, index validation and retrieval evaluation
 
 A `reviewed` page means scoped references and curation metadata are present, **not** that its source claims or recommendations were independently validated on the reader's application.
+
+## Support This Project
+
+[![Support on Ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-13C3FF?logo=ko-fi&logoColor=white)](https://ko-fi.com/S5C12A839Y)
