@@ -64,7 +64,9 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertEqual(search("zzzzzzzzzzzz")["results"], [])
 
     def test_no_stub_as_evidence(self):
-        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "unknown")
+        hit = search("caching")["results"][0]
+        self.assertEqual(hit["status"], "stub")
+        self.assertEqual(hit["evidence"], "unknown")
 
     def test_b8_canonical_retrieval(self):
         for concept_id in [
