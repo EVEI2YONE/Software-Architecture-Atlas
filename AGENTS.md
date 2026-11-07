@@ -27,3 +27,8 @@ Use this catalog as a retrieval-first, evidence-aware guide for architecture rev
 
 ## Self-heal
 When a user or validation flags omissions, wrong links, weak evidence or broken retrieval, explain the failure mode, fix the relevant source/schema/index/test, and record a generalizable prevention rule in `docs/curation-workflow.md` rather than patching only the symptom.
+
+## Executable agent retrieval
+- Use `python scripts/search_catalog.py "<question>" --json` as an optional deterministic, offline index-first lookup; `--category`, `--status`, `--limit`, `--expand` refine search. See `docs/agentic-search.md` for the response schema.
+- Retrieve only matching concept pages via returned `path`; never treat `stub` or `draft` as verified. Zero hits can be a lexical retrieval gap, not proof of absent knowledge.
+- Run `python -m unittest discover -s tests -v` when editing the search implementation or its aliases.
