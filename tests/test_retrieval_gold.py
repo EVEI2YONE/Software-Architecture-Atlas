@@ -28,7 +28,9 @@ class RetrievalGoldTests(unittest.TestCase):
     def test_no_reviewed_guarantee_from_retrieval(self):
         hit = search("idempotency")["results"][0]
         self.assertNotEqual(hit["evidence"], "verified")
-        self.assertIn("stub", search("project-structure-selection")["results"][0]["status"])
+        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "requires-source-inspection")
+        self.assertEqual(search("caching")["results"][0]["status"], "stub")
+        self.assertEqual(search("caching")["results"][0]["evidence"], "unknown")
 
 
 if __name__ == "__main__":
