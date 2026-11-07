@@ -93,8 +93,8 @@
       "domain": "domain",
       "category": "domain-design",
       "path": "concepts/domain-design/bounded-contexts.md",
-      "status": "stub",
-      "summary": "Align context boundaries with business language and ownership",
+      "status": "reviewed",
+      "summary": "Define consistent domain language and ownership boundaries without requiring services",
       "tags": [
         "domain-design",
         "domain",
@@ -105,8 +105,8 @@
         "aggregates",
         "modularity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "aggregates",
@@ -114,8 +114,8 @@
       "domain": "domain",
       "category": "domain-design",
       "path": "concepts/domain-design/aggregates.md",
-      "status": "stub",
-      "summary": "Define consistency boundaries and transaction-scoped invariants",
+      "status": "reviewed",
+      "summary": "Protect business invariants within appropriate transactional aggregate roots",
       "tags": [
         "domain-design",
         "domain",
@@ -125,8 +125,8 @@
         "bounded-contexts",
         "transactions"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "domain-events",
@@ -134,8 +134,8 @@
       "domain": "domain",
       "category": "domain-design",
       "path": "concepts/domain-design/domain-events.md",
-      "status": "stub",
-      "summary": "Model business-significant changes without incidental coupling",
+      "status": "reviewed",
+      "summary": "Describe domain facts and distinguish local reactions from durable integration delivery",
       "tags": [
         "domain-design",
         "domain",
@@ -145,8 +145,8 @@
         "bounded-contexts",
         "event-driven"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "modularity",
@@ -440,8 +440,8 @@
       "domain": "data",
       "category": "data",
       "path": "concepts/data/cqrs.md",
-      "status": "stub",
-      "summary": "Separate read and write models only when complexity and workload justify it",
+      "status": "reviewed",
+      "summary": "Separate reads and commands only when business or workload constraints justify it",
       "tags": [
         "data",
         "cqrs"
@@ -450,8 +450,8 @@
         "transactions",
         "event-driven"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "caching",
@@ -1386,6 +1386,151 @@
         "architecture-dependency-rules",
         "testing-strategy",
         "module-public-contracts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "ubiquitous-language",
+      "title": "Ubiquitous language",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/ubiquitous-language.md",
+      "status": "reviewed",
+      "summary": "Shared context-specific vocabulary in names, APIs and business conversations",
+      "tags": [
+        "ubiquitous-language",
+        "domain-vocabulary"
+      ],
+      "related": [
+        "bounded-contexts",
+        "context-mapping"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "context-mapping",
+      "title": "DDD context mapping",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/context-mapping.md",
+      "status": "reviewed",
+      "summary": "Map ownership, upstream/downstream relationships and translation between models",
+      "tags": [
+        "context-map",
+        "integration",
+        "domain-ownership"
+      ],
+      "related": [
+        "bounded-contexts",
+        "anti-corruption-layers",
+        "module-public-contracts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "domain-services-vs-application-services",
+      "title": "Domain services versus application services",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/domain-services-vs-application-services.md",
+      "status": "reviewed",
+      "summary": "Separate intrinsic domain policy from application orchestration and infrastructure",
+      "tags": [
+        "domain-services",
+        "application-services",
+        "ddd"
+      ],
+      "related": [
+        "aggregates",
+        "bounded-contexts",
+        "data-access-boundaries"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "transactional-invariants",
+      "title": "Transactional invariants",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/transactional-invariants.md",
+      "status": "reviewed",
+      "summary": "Specify atomic business rules, concurrency tests and transaction boundaries",
+      "tags": [
+        "transactions",
+        "invariants",
+        "consistency"
+      ],
+      "related": [
+        "aggregates",
+        "transactions",
+        "isolation-levels"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "anti-corruption-layers",
+      "title": "Anti-corruption layers",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/anti-corruption-layers.md",
+      "status": "reviewed",
+      "summary": "Translate conflicting external models without contaminating local semantics",
+      "tags": [
+        "anti-corruption",
+        "adapters",
+        "legacy"
+      ],
+      "related": [
+        "context-mapping",
+        "bounded-contexts",
+        "api-contracts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "data-access-boundaries",
+      "title": "Data access boundaries",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/data-access-boundaries.md",
+      "status": "reviewed",
+      "summary": "Define owned persistence boundaries and avoid unnecessary generic repositories",
+      "tags": [
+        "repositories",
+        "data-ownership",
+        "persistence"
+      ],
+      "related": [
+        "transactions",
+        "module-public-contracts",
+        "schema-evolution"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "isolation-levels",
+      "title": "Database isolation levels",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/isolation-levels.md",
+      "status": "reviewed",
+      "summary": "Choose database-specific isolation guarantees from actual concurrent anomalies",
+      "tags": [
+        "isolation",
+        "serializable",
+        "mvcc"
+      ],
+      "related": [
+        "transactions",
+        "transactional-invariants",
+        "schema-evolution"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
