@@ -13,7 +13,7 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 | B16 | Worker leases, fencing, retry and crash-recovery ownership | Research complete; CI passed | Failure matrix and no-stale-worker verification protocol |
 | B17 | Trusted exchange market data and trading-decision eligibility | Research complete; CI passed | Data validation states and reject/skip fixture matrix |
 | B18 | Worker telemetry, hosted OIDC/tenant isolation, reproducible frontend build | Research complete; CI passed | Domain-specific verification recipes and security boundaries |
-| B19 | Consistency, source audits and agent retrieval evaluation | Pending | Catalog validation, golden queries, blocker-to-concept handoff |
+| B19 | Consistency, source audits and agent retrieval evaluation | Research delivered; CI pending | Catalog validation, golden queries, blocker-to-concept handoff |
 
 ## Operating rules
 
@@ -54,3 +54,10 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 - [B18 production verification runbook](batch-18-production-verification.md) adds worker-specific progress/lease telemetry, failure drills, hosted OIDC/PKCE and account-ownership negative tests, plus clean React/Vite install, typecheck, build and accessibility gates.
 - **No new canonical concepts required:** existing observability, reliability, identity, dependency locking and testing strategy entries were extended and linked to the runbook.
 - GitHub Actions catalog, documentation and agent-search tests passed with the B18 regression file present. No Final Expanse identity provider, hosted worker deployment, npm build, browser or accessibility validation was executed by this Atlas batch. B19 is the final research integration/verification batch.
+
+## B19 outcome and final handoff
+
+- [B19 source/audit and six-blocker handoff](batch-19-final-integration-validation.md) identifies canonical owners, cross-batch terminology, sampled source verification, retrieval limits and real application test gates.
+- [B19 regression checks](../tests/test_b19_campaign_integrity.py) verify three focused concepts, B18 overlays, blockers, terminology and canonical Kraken error reference.
+- **Research status:** all five batches delivered in this one PR; final CI required before marking B19 complete.
+- **Product status:** all six Final Expanse implementation blockers remain open until the actual cloud/browser/PostgreSQL/Kraken/identity checks succeed.
