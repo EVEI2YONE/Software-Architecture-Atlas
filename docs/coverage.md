@@ -52,3 +52,7 @@ On draft PR #3, B7 adds five new source-scoped reviewed concepts and upgrades fo
 ## B9 dependency and quality research (campaign PR #3)
 
 After B9, the shared PR branch records **64 indexed, 53 reviewed, 11 stubs** (not necessarily the merged `main` state). Five existing stubs were promoted and seven scoped dependency/quality concepts were indexed. See [B9 research and validation matrix](batch-9-dependencies-quality.md). Reviewed status records dated sources and scoped decision guidance, not confirmed application dependency health, code reduction, security or Sonar scan passes.
+
+## B10 domain design and data architecture (campaign PR #3)
+
+The shared campaign branch adds seven dedicated domain/data concepts and upgrades `bounded-contexts`, `aggregates`, `domain-events`, and `cqrs` to scoped reviewed guidance. It now records **71 indexed / 64 reviewed / 7 stubs**. [B10 research and decisions](batch-10-domain-data.md) describe database isolation, transactional invariants, language/context mapping, event timing and CQRS trade-offs. This is a branch-level inventory, not necessarily merged `main`; reviewed status is not proof of an application’s consistency, performance or correctness.
