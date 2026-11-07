@@ -170,3 +170,15 @@ Each entry follows the gap-request fields: gap type, proposed ID/category, evide
 - [Validator](../scripts/validate_catalog.py)
 
 **Assessment status:** Inventory verified from the repository metadata and inspected files; topic priority and research plans inferred. No concepts were upgraded to `reviewed` by this assessment.
+
+### GAP-13 — Application code and file-structure guidance across types and scale
+- **Priority/type:** P0 for developer navigation and code-maintainability use cases / absent (now indexed as a research stub).
+- **Proposed ID/category:** `project-structure-selection` / `code-organization`.
+- **Evidence:** Existing indexed concepts cover feature-first folders, modularity and simplification only as stubs; there was no dedicated project type × growth stage decision framework.
+- **Impact/question:** How can a repository reduce unnecessary application code, improve feature discoverability, share only proven reusable behavior, and evolve modularly without multiplying projects or layers?
+- **Dimensions:** UI, API, Functions/serverless, WebJobs/worker services, libraries, multi-project solutions; prototype, MVP, growing business, enterprise.
+- **Related:** `feature-first-folders`, `modularity`, `code-simplification`, `dependency-inversion`.
+- **Research leads:** Official framework/project layout and build/deployment guidance for the specific runtime, maintained language docs, measured change-task case studies, source-based architecture evaluation.
+- **Acceptance:** Compare no-change, framework-native, feature-first and layered variants using real path evidence; consider deployable/project boundaries; report code deletion versus added indirection, navigation time, change footprint, dependency coupling, tests, migration and rollback; include counterexamples and scoped version applicability. Do not assert that any folder layout is universally optimal.
+- **Owner/revisit:** Unassigned curator; revisit with application scale, team ownership and framework upgrades.
+- **Catalog reference:** [Application file and project structure selection](../concepts/code-organization/project-structure-selection.md) (**stub**, not reviewed).
