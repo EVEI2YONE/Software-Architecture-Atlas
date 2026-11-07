@@ -587,7 +587,8 @@
       ],
       "related": [
         "idempotency",
-        "observability"
+        "observability",
+        "trading-market-data-integrity"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -686,7 +687,8 @@
       "related": [
         "idempotency",
         "event-driven",
-        "testing-strategy"
+        "testing-strategy",
+        "trading-market-data-integrity"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -2073,9 +2075,38 @@
         "delivery-guarantees",
         "postgresql-transactional-concurrency",
         "lock-contention-and-deadlocks",
-        "reliability-objectives"
+        "reliability-objectives",
+        "trading-market-data-integrity"
       ],
       "source_count": 6,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "trading-market-data-integrity",
+      "title": "Trading market-data integrity and decision eligibility",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/trading-market-data-integrity.md",
+      "status": "reviewed",
+      "summary": "Kraken spot OHLC candle finality, freshness, source provenance, symbol precision and independent trading eligibility gates",
+      "tags": [
+        "market-data",
+        "kraken",
+        "ohlc",
+        "candle-finality",
+        "freshness",
+        "provenance",
+        "symbol-normalization",
+        "trading-eligibility"
+      ],
+      "related": [
+        "api-contracts",
+        "resilience",
+        "idempotency",
+        "durable-worker-leases-and-fencing",
+        "postgresql-transactional-concurrency"
+      ],
+      "source_count": 7,
       "reviewed_at": "2026-11-07"
     }
   ]
