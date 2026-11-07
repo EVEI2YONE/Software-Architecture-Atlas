@@ -1,11 +1,11 @@
-# data
+# Data
 
-Data models, transactions and access patterns. `transactions` and `schema-evolution` have scoped reviewed guidance; `cqrs` remains a stub.
+Scoped, source-backed data access, transaction, schema, CQRS and isolation guidance. Validate actual database engine/version and workloads before changing consistency guarantees.
 
-- [Transactions and boundaries](transactions.md) — `transactions` (reviewed, scoped)
-- [Schema evolution and migration safety](schema-evolution.md) — `schema-evolution` (reviewed, scoped)
+- [Transactions and boundaries](transactions.md) — `transactions`
+- [Schema evolution and migration safety](schema-evolution.md) — `schema-evolution`
 - [CQRS decision framework](cqrs.md) — `cqrs`
+- [Data access boundaries](data-access-boundaries.md) — `data-access-boundaries`
+- [Database isolation levels](isolation-levels.md) — `isolation-levels`
 
-[Index](../../catalog/index.json) · [Catalog overview](../../README.md)
-
-[B3 research](../../docs/batch-3-security-contracts-data.md)
+[Index](../../catalog/index.json) · [B3 research](../../docs/batch-3-security-contracts-data.md) · [B10 research](../../docs/batch-10-domain-data.md)
