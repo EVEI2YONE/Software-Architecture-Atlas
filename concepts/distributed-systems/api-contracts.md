@@ -34,6 +34,10 @@ api contracts; architecture contracts; data and security boundaries
 - [event-driven](../distributed-systems/event-driven.md)
 - [testing-strategy](../quality/testing-strategy.md)
 
+## Trading market-data specialization
+
+For Kraken Spot OHLC candle finality, source timestamps, symbol normalization, decimal precision and separated customer trading eligibility, see [Trading market-data integrity](../data/trading-market-data-integrity.md). A schema-valid HTTP response is not verified trading input.
+
 ## Evidence and sources
 1. OpenAPI Specification 3.2.1: https://spec.openapis.org/oas/v3.2.1.html (accessed 2026-11-07).
 2. RFC 9110 HTTP Semantics: https://www.rfc-editor.org/rfc/rfc9110.html (accessed 2026-11-07).
