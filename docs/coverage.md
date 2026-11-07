@@ -40,3 +40,7 @@ Two additional scoped source-backed concepts were indexed: `architecture-evoluti
 ## B6 operations and performance research
 
 Three existing concepts (`observability`, `resilience`, `scalability`) and four new canonical concepts (`deployment-strategies`, `reliability-objectives`, `operational-costs`, `workload-admission`) were curated as scoped reviewed methods. **Current catalog: 47 indexed, 26 reviewed, 21 stubs.** No target workload, incident recovery, cost or production deployment was measured. See [B6 report](batch-6-operations-reliability.md).
+
+## B0 catalog hygiene
+
+[Batch B0](batch-0-catalog-integrity.md) added stricter metadata/source-count validation and a fixed agent retrieval benchmark without altering concept review statuses. The catalog remains **47 indexed, 26 reviewed, 21 stubs**; source claims require separate evidence inspection.
