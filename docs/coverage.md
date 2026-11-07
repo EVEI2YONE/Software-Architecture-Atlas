@@ -35,3 +35,7 @@ B16 added [Durable worker leases, fencing and restart recovery](../concepts/dist
 ## B17 extension
 
 B17 added [Trading market-data integrity and decision eligibility](../concepts/data/trading-market-data-integrity.md), a Kraken Spot-specific source-scoped validation reference and unexecuted fault-fixture matrix. Live market access, account eligibility and trading safety remain Final Expanse implementation/verification work. [B17 report](batch-17-trading-market-data-integrity.md).
+
+## B18 targeted reference extensions
+
+B18 extended five existing canonical concepts—[observability](../concepts/operations/observability.md), [reliability objectives](../concepts/operations/reliability-objectives.md), [identity/access](../concepts/governance/identity-and-access.md), [package-locking](../concepts/dependencies/package-locking-and-version-policy.md), and [testing strategy](../concepts/quality/testing-strategy.md)—without increasing catalog concept count. See [B18 verification runbook](batch-18-production-verification.md). Research references are not hosted implementation verification.
