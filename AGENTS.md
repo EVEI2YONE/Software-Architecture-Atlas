@@ -32,3 +32,7 @@ When a user or validation flags omissions, wrong links, weak evidence or broken 
 - Use `python scripts/search_catalog.py "<question>" --json` as an optional deterministic, offline index-first lookup; `--category`, `--status`, `--limit`, `--expand` refine search. See `docs/agentic-search.md` for the response schema.
 - Retrieve only matching concept pages via returned `path`; never treat `stub` or `draft` as verified. Zero hits can be a lexical retrieval gap, not proof of absent knowledge.
 - Run `python -m unittest discover -s tests -v` when editing the search implementation or its aliases.
+
+## Knowledge-gap batching
+- For backlog prioritization, consult `docs/knowledge-gap-batches.md` and the numbered gaps in `docs/foundational-gap-assessment.md`. Batch labels are research units, not verified architectural guidance.
+- Record project type, growth stage, platform/runtime and observed developer-navigation tasks before suggesting file-layout refactors. Prefer no-change and low-risk simplifications when supported.
