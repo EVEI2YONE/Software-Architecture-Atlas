@@ -20,8 +20,8 @@ class SearchCatalogTests(unittest.TestCase):
     def test_project_structure_gap_discoverable(self):
         result = search("file structure for UI API Functions WebJobs enterprise")
         self.assertEqual(result["results"][0]["id"], "project-structure-selection")
-        self.assertEqual(result["results"][0]["status"], "stub")
-        self.assertEqual(result["results"][0]["evidence"], "unknown")
+        self.assertEqual(result["results"][0]["status"], "reviewed")
+        self.assertEqual(result["results"][0]["evidence"], "requires-source-inspection")
 
     def test_b3_retrieval(self):
         self.assertEqual(search("threat model")["results"][0]["id"], "threat-modeling")
@@ -41,12 +41,12 @@ class SearchCatalogTests(unittest.TestCase):
             hit = search(query)["results"][0]
             self.assertEqual(hit["id"], expected, query)
             self.assertEqual(hit["status"], "reviewed")
-        self.assertEqual(search("project-structure-selection")["results"][0]["status"], "stub")
+        self.assertEqual(search("project-structure-selection")["results"][0]["status"], "reviewed")
 
     def test_b5_growth_and_migration_retrieval(self):
         self.assertEqual(search("prototype MVP enterprise")["results"][0]["id"], "architecture-evolution")
         self.assertEqual(search("strangler migration")["results"][0]["id"], "incremental-boundary-migration")
-        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "unknown")
+        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "requires-source-inspection")
 
     def test_b6_operational_retrieval(self):
         for query, expected in [
@@ -65,6 +65,17 @@ class SearchCatalogTests(unittest.TestCase):
 
     def test_no_stub_as_evidence(self):
         self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "unknown")
+
+    def test_b8_canonical_retrieval(self):
+        for concept_id in [
+            "project-structure-selection", "vertical-slice-architecture",
+            "package-by-feature-vs-layer", "module-public-contracts",
+            "architecture-dependency-rules", "monorepo-vs-multirepo",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
 
     def test_related_expansion_deduped(self):
         hits = search("idempotency", limit=1, expand=2)["results"]
