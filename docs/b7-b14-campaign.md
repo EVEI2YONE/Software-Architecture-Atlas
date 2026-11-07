@@ -37,7 +37,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | GitHub Actions succeeded on commit 2e48665; catalog and retrieval tests | Complete (scoped catalog curation) |
 | B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | GitHub Actions run 42357794660 succeeded; connector links and metadata passed | Complete (scoped catalog curation) |
 | B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | GitHub Actions 42358088882 succeeded; 11 direct page checks passed | Complete (scoped catalog curation) |
-| B11 | Yes | Not started | Not run | 0% |
+| B11 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | 8 direct page checks passed; GitHub Actions pending | Curated, pending CI |
 | B12 | Yes | Not started | Not run | 0% |
 | B13 | Yes | Not started | Not run | 0% |
 | B14 | Yes | Not started | Not run | 0% |
@@ -94,3 +94,10 @@ No target application's repository, performance traces, measured developer navig
 - GitHub Actions PR workflow run `42358088882` on commit `4d68681222ebc78662faa276f6b04d9f4c2939cf`: **success**, covering configured catalog validation and retrieval regression tests. The prior retrieval-fixture commit also passed CI.
 - Direct B10 checks: 11 pages, zero metadata/source-count/related-ID/local concept link failures.
 - Campaign progress: **4/8 batches (50%)**. Next B11 — async and concurrency; same branch and PR #3.
+
+## B11 implementation (2026-11-07)
+- Context and runtime/platform applicability: [B11 research report](batch-11-async-concurrency.md).
+- Upgraded `async-await`, `thread-safety`, `backpressure`; added `cancellation-propagation`, `structured-concurrency`, `lock-contention-and-deadlocks`, `workload-isolation`, `async-streams-and-channels`.
+- Catalog branch index: **76 indexed / 72 reviewed / 4 stubs**. Runtime README and coverage updated. Retrieval test includes eight B11 IDs and 56-case golden fixture; remaining-stub filter moved to distributed-systems.
+- Direct checks on eight pages: frontmatter, cited-source counts, internal links and related IDs, **zero errors**. GitHub Actions result must be recorded separately.
+- Platform caveats: Java 25 structured concurrency is preview; Python TaskGroup requires cancellation discipline; .NET bounded channel full-mode can wait or drop (loss is a business-policy decision). No project-specific concurrency or load tests were performed.
