@@ -897,6 +897,57 @@
       ],
       "source_count": 3,
       "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-evolution",
+      "title": "Architecture evolution by product maturity",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/architecture-evolution.md",
+      "status": "reviewed",
+      "summary": "Prototype MVP growing business and enterprise structural decision triggers including consolidation",
+      "tags": [
+        "prototype",
+        "mvp",
+        "growth",
+        "enterprise",
+        "maturity",
+        "file-structure",
+        "architecture-evolution"
+      ],
+      "related": [
+        "project-structure-selection",
+        "modularity",
+        "multi-project-structure",
+        "decision-records"
+      ],
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "incremental-boundary-migration",
+      "title": "Incremental module extraction and consolidation",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/incremental-boundary-migration.md",
+      "status": "reviewed",
+      "summary": "Compare no change, internal module, branch by abstraction, strangler fig and consolidation",
+      "tags": [
+        "migration",
+        "strangler",
+        "extraction",
+        "consolidation",
+        "branch-by-abstraction",
+        "modularity"
+      ],
+      "related": [
+        "architecture-evolution",
+        "modularity",
+        "api-contracts",
+        "schema-evolution"
+      ],
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     }
   ]
 }
