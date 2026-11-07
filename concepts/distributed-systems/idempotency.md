@@ -36,6 +36,10 @@ duplicate request; retry safety; idempotent POST; exactly once; deduplication
 - [event-driven](event-driven.md)
 - [API contracts](api-contracts.md)
 
+## Background worker handoff
+
+HTTP or business-effect idempotency must be designed separately from scheduling ownership. For lease expiry, generation fencing, stale workers and restart replay, see [Durable worker leases and fencing](durable-worker-leases-and-fencing.md). A lease never proves exactly-once side effects.
+
 ## Evidence and sources
 1. IETF RFC 9110, *HTTP Semantics*, Section 9.2.2: https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2 (accessed 2026-11-07).
 2. PostgreSQL 18 Documentation, *Transaction Isolation*: https://www.postgresql.org/docs/18/transaction-iso.html (accessed 2026-11-07). Database concurrency constraints are separate from HTTP semantics.
