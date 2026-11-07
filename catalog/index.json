@@ -39,7 +39,6 @@
         "concerns"
       ],
       "related": [
-        "modularity",
         "modularity"
       ],
       "source_count": 0,
@@ -139,7 +138,6 @@
       "summary": "Model business-significant changes without incidental coupling",
       "tags": [
         "domain-design",
-        "domain",
         "domain",
         "events"
       ],
@@ -244,7 +242,6 @@
       "summary": "Control package versions, transitive resolution and compatibility drift",
       "tags": [
         "dependencies",
-        "dependencies",
         "dependency",
         "conflicts"
       ],
@@ -264,7 +261,6 @@
       "status": "stub",
       "summary": "Review provenance, licensing, vulnerabilities and update policy",
       "tags": [
-        "dependencies",
         "dependencies",
         "supply",
         "chain"
@@ -429,7 +425,6 @@
       "summary": "Choose transaction scope, isolation, and distributed consistency strategy",
       "tags": [
         "data",
-        "data",
         "transactions"
       ],
       "related": [
@@ -448,7 +443,6 @@
       "status": "stub",
       "summary": "Separate read and write models only when complexity and workload justify it",
       "tags": [
-        "data",
         "data",
         "cqrs"
       ],
@@ -469,7 +463,6 @@
       "summary": "Evaluate TTL, consistency, eviction, invalidation and cache stampedes",
       "tags": [
         "performance",
-        "performance",
         "caching"
       ],
       "related": [
@@ -489,7 +482,6 @@
       "summary": "Use measured bottlenecks to choose scaling, sharding and workload controls",
       "tags": [
         "performance",
-        "performance",
         "scalability"
       ],
       "related": [
@@ -508,7 +500,6 @@
       "status": "stub",
       "summary": "Prioritize clear control flow over metric gaming",
       "tags": [
-        "quality",
         "quality",
         "cognitive",
         "complexity"
@@ -530,8 +521,6 @@
       "summary": "Use configured Sonar profiles for bugs, vulnerabilities, hotspots, smells and duplication",
       "tags": [
         "quality",
-        "quality",
-        "quality",
         "gates"
       ],
       "related": [
@@ -550,7 +539,6 @@
       "status": "stub",
       "summary": "Balance unit, integration, contract and end-to-end tests",
       "tags": [
-        "quality",
         "quality",
         "testing",
         "strategy"
@@ -572,7 +560,6 @@
       "summary": "Instrument traces, logs and metrics across ownership boundaries",
       "tags": [
         "operations",
-        "operations",
         "observability"
       ],
       "related": [
@@ -592,7 +579,6 @@
       "summary": "Use timeout, retry budgets, bulkheads and circuit breakers purposefully",
       "tags": [
         "operations",
-        "operations",
         "resilience"
       ],
       "related": [
@@ -611,7 +597,6 @@
       "status": "reviewed",
       "summary": "Record context, constraints, alternatives, consequences and revisit triggers",
       "tags": [
-        "governance",
         "governance",
         "decision",
         "records"
