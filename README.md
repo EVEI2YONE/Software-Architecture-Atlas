@@ -11,6 +11,7 @@ This is a **knowledge/reference repository**, not a claim that every scaffolded 
 - [Topic taxonomy](catalog/taxonomy.json)
 - [Concept coverage matrix](docs/coverage.md)
 - [Sequenced knowledge-gap research batches](docs/knowledge-gap-batches.md)
+- [Batch B0: catalog evidence integrity and agent retrieval benchmark](docs/batch-0-catalog-integrity.md)
 - [Batch B1: code organization research and measurement guide](docs/batch-1-code-organization.md)
 - [Batch B2: architectural drivers and boundary decisions](docs/batch-2-architecture-boundaries.md)
 - [Batch B3: security, contracts, data and correctness](docs/batch-3-security-contracts-data.md)
