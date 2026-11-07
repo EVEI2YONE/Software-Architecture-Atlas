@@ -9,7 +9,7 @@
       "domain": "design",
       "category": "principles",
       "path": "concepts/principles/solid.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Applying SRP, OCP, LSP, ISP and DIP without abstraction inflation",
       "tags": [
         "principles",
@@ -20,8 +20,8 @@
         "modularity",
         "dependency-inversion"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "separation-of-concerns",
@@ -29,7 +29,7 @@
       "domain": "design",
       "category": "principles",
       "path": "concepts/principles/separation-of-concerns.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Keep independent reasons to change isolated while avoiding ceremonial layering",
       "tags": [
         "principles",
@@ -41,8 +41,8 @@
       "related": [
         "modularity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "dry-vs-abstraction",
@@ -50,7 +50,7 @@
       "domain": "design",
       "category": "principles",
       "path": "concepts/principles/dry-vs-abstraction.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Prefer understandable duplication when shared behavior has not stabilized",
       "tags": [
         "principles",
@@ -63,8 +63,8 @@
         "code-simplification",
         "modularity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "kiss-yagni",
@@ -72,7 +72,7 @@
       "domain": "design",
       "category": "principles",
       "path": "concepts/principles/kiss-yagni.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Prefer requirements-led simplicity over speculative generalization",
       "tags": [
         "principles",
@@ -84,8 +84,8 @@
         "code-simplification",
         "decision-records"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "bounded-contexts",
@@ -1023,6 +1023,107 @@
         "backpressure",
         "queues",
         "resilience"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "composition-vs-inheritance",
+      "title": "Composition versus inheritance",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/composition-vs-inheritance.md",
+      "status": "reviewed",
+      "summary": "Compare delegation with stable subtype contracts",
+      "tags": [
+        "composition",
+        "inheritance",
+        "delegation"
+      ],
+      "related": [
+        "solid",
+        "dependency-inversion"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "cohesion-and-coupling",
+      "title": "Cohesion and coupling",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/cohesion-and-coupling.md",
+      "status": "reviewed",
+      "summary": "Select cohesive boundaries and minimize propagation across modules",
+      "tags": [
+        "cohesion",
+        "coupling",
+        "modules"
+      ],
+      "related": [
+        "modularity",
+        "separation-of-concerns"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "information-hiding",
+      "title": "Information hiding",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/information-hiding.md",
+      "status": "reviewed",
+      "summary": "Hide changeable representation and expose focused public capability",
+      "tags": [
+        "encapsulation",
+        "information-hiding",
+        "contracts"
+      ],
+      "related": [
+        "modularity",
+        "dependency-inversion"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-drivers",
+      "title": "Architecture drivers and quality attributes",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/architecture-drivers.md",
+      "status": "reviewed",
+      "summary": "Elicit measurable quality attributes before selecting design styles",
+      "tags": [
+        "quality-attributes",
+        "constraints",
+        "drivers"
+      ],
+      "related": [
+        "decision-records",
+        "architecture-styles"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-styles",
+      "title": "Architecture styles and boundary selection",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/architecture-styles.md",
+      "status": "reviewed",
+      "summary": "Compare layers, modular monoliths and distributed service boundaries",
+      "tags": [
+        "architecture",
+        "styles",
+        "microservices",
+        "monolith"
+      ],
+      "related": [
+        "architecture-drivers",
+        "modularity"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
