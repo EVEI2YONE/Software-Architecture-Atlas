@@ -141,7 +141,7 @@ kraken spot OHLC uncommitted candle; market data freshness; closed candle valida
 3. Kraken Developers, Get Tradable Asset Pairs: https://docs.kraken.com/api-reference/market-data/get-tradable-asset-pairs (accessed 2026-11-07). Instrument metadata examples, precision, minimums and status.
 4. Kraken Support, API Symbols and Tickers: https://support.kraken.com/articles/360000920306-api-symbols-and-tickers (accessed 2026-11-07). REST and WebSocket symbol differences.
 5. Kraken Developers, Get System Status: https://docs.kraken.com/api-reference/market-data/get-system-status (accessed 2026-11-07). Public exchange status endpoint.
-6. Kraken Developers, Spot Error Messages: https://docs.kraken.com/api/docs/guides/spot-errors/ (accessed 2026-11-07). Minimum notional/order size and tick-size rejection categories.
+6. Kraken Developers, Spot Error Messages: https://docs.kraken.com/exchange/guides/general/errors (accessed 2026-11-07). Minimum notional/order size and tick-size rejection categories.
 7. IETF RFC 9110, HTTP Semantics: https://www.rfc-editor.org/rfc/rfc9110.html (accessed 2026-11-07). HTTP behavior is separate from application business-effect idempotency.
 
 ## Maintenance
