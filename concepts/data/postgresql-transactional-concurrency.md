@@ -123,6 +123,10 @@ postgresql concurrency; SQLAlchemy transaction; select for update; skip locked; 
 5. PostgreSQL 18, Explicit Locking: https://www.postgresql.org/docs/18/explicit-locking.html (accessed 2026-11-07). Lock waits and deadlocks.
 6. PostgreSQL 18, Constraints: https://www.postgresql.org/docs/18/ddl-constraints.html (accessed 2026-11-07). Uniqueness and check constraints.
 
+## Multi-process lease handoff
+
+For short atomic claims that continue beyond the database transaction, use the distinct [Durable worker leases and fencing](../distributed-systems/durable-worker-leases-and-fencing.md) design. Holding or skipping PostgreSQL row locks is not an expiring worker lease or a guarantee of safe external side effects.
+
 ## Maintenance
 
 Reviewed 2026-11-07. Check exact server, driver and SQLAlchemy versions; source-claim entailment and real application concurrency remain unverified.
