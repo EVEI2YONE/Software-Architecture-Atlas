@@ -485,7 +485,7 @@
       "domain": "performance",
       "category": "performance",
       "path": "concepts/performance/scalability.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Use measured bottlenecks to choose scaling, sharding and workload controls",
       "tags": [
         "performance",
@@ -496,8 +496,8 @@
         "backpressure",
         "caching"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "cognitive-complexity",
@@ -568,7 +568,7 @@
       "domain": "operations",
       "category": "operations",
       "path": "concepts/operations/observability.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Instrument traces, logs and metrics across ownership boundaries",
       "tags": [
         "operations",
@@ -579,8 +579,8 @@
         "scalability",
         "caching"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "resilience",
@@ -588,7 +588,7 @@
       "domain": "operations",
       "category": "operations",
       "path": "concepts/operations/resilience.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Use timeout, retry budgets, bulkheads and circuit breakers purposefully",
       "tags": [
         "operations",
@@ -599,8 +599,8 @@
         "idempotency",
         "observability"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "decision-records",
@@ -947,6 +947,99 @@
         "schema-evolution"
       ],
       "source_count": 3,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "deployment-strategies",
+      "title": "Deployment strategies and safe rollback",
+      "domain": "operations",
+      "category": "operations",
+      "path": "concepts/operations/deployment-strategies.md",
+      "status": "reviewed",
+      "summary": "Compare rolling canary blue-green releases, health signals, compatible rollback and deployment risk",
+      "tags": [
+        "deployments",
+        "canary",
+        "blue-green",
+        "rollbacks",
+        "delivery"
+      ],
+      "related": [
+        "observability",
+        "resilience",
+        "schema-evolution"
+      ],
+      "source_count": 1,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "reliability-objectives",
+      "title": "Reliability objectives, error budgets and recovery",
+      "domain": "operations",
+      "category": "operations",
+      "path": "concepts/operations/reliability-objectives.md",
+      "status": "reviewed",
+      "summary": "Define user-centered SLI SLO error budgets and business-specific RTO RPO recovery checks",
+      "tags": [
+        "slo",
+        "sli",
+        "error-budget",
+        "recovery",
+        "rto",
+        "rpo"
+      ],
+      "related": [
+        "resilience",
+        "observability",
+        "transactions"
+      ],
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "operational-costs",
+      "title": "Operational ownership and cost attribution",
+      "domain": "operations",
+      "category": "operations",
+      "path": "concepts/operations/operational-costs.md",
+      "status": "reviewed",
+      "summary": "Evaluate workload budgets, owner and runbook assignments, deployment overhead and cost per outcome",
+      "tags": [
+        "cost",
+        "finops",
+        "ownership",
+        "runbooks",
+        "budgets"
+      ],
+      "related": [
+        "scalability",
+        "decision-records",
+        "multi-project-structure"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "workload-admission",
+      "title": "Workload admission, concurrency and overload",
+      "domain": "concurrency",
+      "category": "runtime",
+      "path": "concepts/runtime/workload-admission.md",
+      "status": "reviewed",
+      "summary": "Bound work queues and concurrency while testing overload, retry amplification and load shedding",
+      "tags": [
+        "load-shedding",
+        "admission",
+        "overload",
+        "queues",
+        "concurrency"
+      ],
+      "related": [
+        "backpressure",
+        "queues",
+        "resilience"
+      ],
+      "source_count": 2,
       "reviewed_at": "2026-11-07"
     }
   ]
