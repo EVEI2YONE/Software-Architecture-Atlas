@@ -10,7 +10,7 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 | Batch | Blocker scope | Status | Exit evidence |
 | --- | --- | --- | --- |
 | B15 | PostgreSQL transaction invariants, SQLAlchemy sessions, contention and concurrency tests | Research complete; CI passed | Focused patterns, decision matrix, negative-case test plan, indexed retrieval |
-| B16 | Worker leases, fencing, retry and crash-recovery ownership | Pending | Failure matrix and no-stale-worker verification protocol |
+| B16 | Worker leases, fencing, retry and crash-recovery ownership | Research delivered; CI pending | Failure matrix and no-stale-worker verification protocol |
 | B17 | Trusted exchange market data and trading-decision eligibility | Pending | Data validation states and reject/skip fixture matrix |
 | B18 | Worker telemetry, hosted OIDC/tenant isolation, reproducible frontend build | Pending | Domain-specific verification recipes and security boundaries |
 | B19 | Consistency, source audits and agent retrieval evaluation | Pending | Catalog validation, golden queries, blocker-to-concept handoff |
@@ -35,3 +35,9 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 - [B15 research report](batch-15-postgresql-concurrency.md) and [new indexed concept](../concepts/data/postgresql-transactional-concurrency.md) delivered.
 - GitHub Actions catalog, documentation and retrieval tests passed on the B15 report revision; re-run after any later changes.
 - Real-PostgreSQL Final Expanse concurrency and load/failure tests remain application-level blockers, not resolved by the Atlas.
+
+## B16 outcome
+
+- [B16 research handoff](batch-16-worker-leases-fencing.md) and [canonical lease/fencing concept](../concepts/distributed-systems/durable-worker-leases-and-fencing.md) added, with failure tests and retrieval cases.
+- Source-scoped guidance only; real PostgreSQL cross-process fencing, worker heartbeat and failure injection have **not** been executed on Final Expanse.
+- Next batch: B17 market-data integrity. Continue on the same PR.
