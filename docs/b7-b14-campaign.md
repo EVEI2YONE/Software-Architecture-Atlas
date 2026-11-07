@@ -40,7 +40,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | B11 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358308490 success; 8 direct checks passed | Complete (scoped catalog curation) |
 | B12 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358524699 success; 8 direct checks passed | Complete (scoped catalog curation) |
 | B13 | Yes | 6/6 reviewed pages (1 stub upgrade, 5 new) | GitHub Actions 42359097375 succeeded; 6 direct checks passed | Complete (scoped catalog curation) |
-| B14 | Yes | 7/7 reviewed new pages and exact query-intent search | 7 direct page checks passed; workflow verification pending | Curated, pending final CI |
+| B14 | Yes | 7/7 reviewed new pages and exact query-intent search | GitHub Actions 42359409846 succeeded; 7 direct page checks passed | Complete (scoped catalog curation) |
 
 ## Open constraints
 No target application's repository, performance traces, measured developer navigation or project-specific Sonar profile was supplied for this campaign. Accordingly no page may assert measured code reduction, compliance, capacity, security or deployment improvements. External primary-source verification remains topic-by-topic, not automatically satisfied by this context capture.
@@ -135,3 +135,9 @@ No target application's repository, performance traces, measured developer navig
 - Implemented seven **exact normalized** human-query intents in `scripts/search_catalog.py`; broad lexical search, canonical-ID precedence, category/status filters and related expansion remain. Updated README, governance and code-organization navigation, agent search documentation and 83-case golden retrieval fixture (up from 69).
 - Index: **93 indexed, 93 scoped reviewed, 0 stubs**. Seven concept pages passed frontmatter/index, numbered source count, local links and related IDs with **0 errors**. Retrieval-golden commit GitHub Actions run `42359351062` passed. Latest documentation commit CI still requires a separate result.
 - Remaining limitations: not all claims independently checked against their exact external sources; no source-freshness monitor or real-world search user relevance evaluation. No application-specific code change, security/Sonar scan, performance result or reduction in maintained code was measured.
+
+## B14 final verification and completion
+- GitHub Actions workflow run `42359409846` on commit `824c97895481a5814914bd114795c14b72e63d38` **succeeded**, including configured canonical catalog validator and search regression tests. Earlier golden-fixture run `42359351062` passed.
+- Seven B14 concept pages passed direct frontmatter/index, source-count and local-concept-link checks without errors. Final index on the campaign branch: **93 total, 93 scoped reviewed, 0 stubs**; golden retrieval fixture includes **83 queries**, including 7 exact normalized B14 paraphrases.
+- **B7–B14 campaign: 8 of 8 planned batches (100%) implemented and verified by catalog CI.** This is *not* a claim of comprehensive independent citation review, external-user retrieval effectiveness, or application-specific performance, quality or correctness.
+- The shared draft PR #3 remains open and unmerged for human review, source-claim sampling and optional follow-on improvements.
