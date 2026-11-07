@@ -9,7 +9,7 @@
       "domain": "design",
       "category": "principles",
       "path": "concepts/principles/solid.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Applying SRP, OCP, LSP, ISP and DIP without abstraction inflation",
       "tags": [
         "principles",
@@ -20,8 +20,8 @@
         "modularity",
         "dependency-inversion"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "separation-of-concerns",
@@ -29,7 +29,7 @@
       "domain": "design",
       "category": "principles",
       "path": "concepts/principles/separation-of-concerns.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Keep independent reasons to change isolated while avoiding ceremonial layering",
       "tags": [
         "principles",
@@ -41,8 +41,8 @@
       "related": [
         "modularity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "dry-vs-abstraction",
@@ -50,7 +50,7 @@
       "domain": "design",
       "category": "principles",
       "path": "concepts/principles/dry-vs-abstraction.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Prefer understandable duplication when shared behavior has not stabilized",
       "tags": [
         "principles",
@@ -63,8 +63,8 @@
         "code-simplification",
         "modularity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "kiss-yagni",
@@ -72,7 +72,7 @@
       "domain": "design",
       "category": "principles",
       "path": "concepts/principles/kiss-yagni.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Prefer requirements-led simplicity over speculative generalization",
       "tags": [
         "principles",
@@ -84,8 +84,8 @@
         "code-simplification",
         "decision-records"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "bounded-contexts",
@@ -93,8 +93,8 @@
       "domain": "domain",
       "category": "domain-design",
       "path": "concepts/domain-design/bounded-contexts.md",
-      "status": "stub",
-      "summary": "Align context boundaries with business language and ownership",
+      "status": "reviewed",
+      "summary": "Define consistent domain language and ownership boundaries without requiring services",
       "tags": [
         "domain-design",
         "domain",
@@ -105,8 +105,8 @@
         "aggregates",
         "modularity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "aggregates",
@@ -114,8 +114,8 @@
       "domain": "domain",
       "category": "domain-design",
       "path": "concepts/domain-design/aggregates.md",
-      "status": "stub",
-      "summary": "Define consistency boundaries and transaction-scoped invariants",
+      "status": "reviewed",
+      "summary": "Protect business invariants within appropriate transactional aggregate roots",
       "tags": [
         "domain-design",
         "domain",
@@ -125,8 +125,8 @@
         "bounded-contexts",
         "transactions"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "domain-events",
@@ -134,8 +134,8 @@
       "domain": "domain",
       "category": "domain-design",
       "path": "concepts/domain-design/domain-events.md",
-      "status": "stub",
-      "summary": "Model business-significant changes without incidental coupling",
+      "status": "reviewed",
+      "summary": "Describe domain facts and distinguish local reactions from durable integration delivery",
       "tags": [
         "domain-design",
         "domain",
@@ -145,8 +145,8 @@
         "bounded-contexts",
         "event-driven"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "modularity",
@@ -238,8 +238,8 @@
       "domain": "dependencies",
       "category": "dependencies",
       "path": "concepts/dependencies/dependency-conflicts.md",
-      "status": "stub",
-      "summary": "Control package versions, transitive resolution and compatibility drift",
+      "status": "reviewed",
+      "summary": "Diagnose observed dependency resolution and compatibility failures",
       "tags": [
         "dependencies",
         "dependency",
@@ -249,8 +249,8 @@
         "supply-chain",
         "dependency-inversion"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "supply-chain",
@@ -258,8 +258,8 @@
       "domain": "dependencies",
       "category": "dependencies",
       "path": "concepts/dependencies/supply-chain.md",
-      "status": "stub",
-      "summary": "Review provenance, licensing, vulnerabilities and update policy",
+      "status": "reviewed",
+      "summary": "Review provenance, license, vulnerabilities and pipeline trust",
       "tags": [
         "dependencies",
         "supply",
@@ -269,8 +269,8 @@
         "dependency-conflicts",
         "quality-gates"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "async-await",
@@ -278,8 +278,8 @@
       "domain": "concurrency",
       "category": "runtime",
       "path": "concepts/runtime/async-await.md",
-      "status": "stub",
-      "summary": "Avoid sync-over-async, propagate cancellation and bound concurrent work",
+      "status": "reviewed",
+      "summary": "Choose awaited I/O, cancellation and task ownership without blocking or orphaned errors",
       "tags": [
         "runtime",
         "concurrency",
@@ -290,8 +290,8 @@
         "thread-safety",
         "backpressure"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "thread-safety",
@@ -299,8 +299,8 @@
       "domain": "concurrency",
       "category": "runtime",
       "path": "concepts/runtime/thread-safety.md",
-      "status": "stub",
-      "summary": "Identify races, lock contention, deadlocks and ownership boundaries",
+      "status": "reviewed",
+      "summary": "Control shared mutable state and synchronization to prevent races and deadlocks",
       "tags": [
         "runtime",
         "concurrency",
@@ -311,8 +311,8 @@
         "async-await",
         "backpressure"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "backpressure",
@@ -320,8 +320,8 @@
       "domain": "concurrency",
       "category": "runtime",
       "path": "concepts/runtime/backpressure.md",
-      "status": "stub",
-      "summary": "Limit work admission, queue depth and resource saturation",
+      "status": "reviewed",
+      "summary": "Bound producer/consumer work and choose explicit wait, reject or loss semantics",
       "tags": [
         "runtime",
         "concurrency",
@@ -331,8 +331,8 @@
         "async-await",
         "queues"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "idempotency",
@@ -360,8 +360,8 @@
       "domain": "distributed",
       "category": "distributed-systems",
       "path": "concepts/distributed-systems/consistency.md",
-      "status": "stub",
-      "summary": "Select consistency models using domain invariants and availability needs",
+      "status": "reviewed",
+      "summary": "Choose local atomic invariants and explicit cross-service convergence guarantees",
       "tags": [
         "distributed-systems",
         "distributed",
@@ -371,8 +371,8 @@
         "transactions",
         "aggregates"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "event-driven",
@@ -380,8 +380,8 @@
       "domain": "distributed",
       "category": "distributed-systems",
       "path": "concepts/distributed-systems/event-driven.md",
-      "status": "stub",
-      "summary": "Choose events versus direct calls with delivery, ordering and schema evolution in mind",
+      "status": "reviewed",
+      "summary": "Choose event integration with delivery, schema, lag and failure ownership",
       "tags": [
         "distributed-systems",
         "distributed",
@@ -392,8 +392,8 @@
         "idempotency",
         "domain-events"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "queues",
@@ -401,8 +401,8 @@
       "domain": "distributed",
       "category": "distributed-systems",
       "path": "concepts/distributed-systems/queues.md",
-      "status": "stub",
-      "summary": "Handle ordering, dead-letter routing, throughput and consumer ownership",
+      "status": "reviewed",
+      "summary": "Understand durable queues, ordered sessions, retries and dead-letter operations",
       "tags": [
         "distributed-systems",
         "distributed",
@@ -412,8 +412,8 @@
         "backpressure",
         "idempotency"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "transactions",
@@ -440,8 +440,8 @@
       "domain": "data",
       "category": "data",
       "path": "concepts/data/cqrs.md",
-      "status": "stub",
-      "summary": "Separate read and write models only when complexity and workload justify it",
+      "status": "reviewed",
+      "summary": "Separate reads and commands only when business or workload constraints justify it",
       "tags": [
         "data",
         "cqrs"
@@ -450,8 +450,8 @@
         "transactions",
         "event-driven"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "caching",
@@ -459,18 +459,19 @@
       "domain": "performance",
       "category": "performance",
       "path": "concepts/performance/caching.md",
-      "status": "stub",
-      "summary": "Evaluate TTL, consistency, eviction, invalidation and cache stampedes",
+      "status": "reviewed",
+      "summary": "Evaluate cache-aside, consistency, key ownership, TTL and measured origin benefits",
       "tags": [
         "performance",
         "caching"
       ],
       "related": [
+        "cache-invalidation-and-stampedes",
         "consistency",
         "observability"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "scalability",
@@ -497,8 +498,8 @@
       "domain": "quality",
       "category": "quality",
       "path": "concepts/quality/cognitive-complexity.md",
-      "status": "stub",
-      "summary": "Prioritize clear control flow over metric gaming",
+      "status": "reviewed",
+      "summary": "Use readability and cognitive complexity signals without metric gaming",
       "tags": [
         "quality",
         "cognitive",
@@ -508,8 +509,8 @@
         "code-simplification",
         "quality-gates"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "quality-gates",
@@ -517,8 +518,8 @@
       "domain": "quality",
       "category": "quality",
       "path": "concepts/quality/quality-gates.md",
-      "status": "stub",
-      "summary": "Use configured Sonar profiles for bugs, vulnerabilities, hotspots, smells and duplication",
+      "status": "reviewed",
+      "summary": "Interpret actual project-configured Sonar quality gates and scan evidence",
       "tags": [
         "quality",
         "gates"
@@ -527,8 +528,8 @@
         "cognitive-complexity",
         "testing-strategy"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "testing-strategy",
@@ -536,8 +537,8 @@
       "domain": "quality",
       "category": "quality",
       "path": "concepts/quality/testing-strategy.md",
-      "status": "stub",
-      "summary": "Balance unit, integration, contract and end-to-end tests",
+      "status": "reviewed",
+      "summary": "Choose tests around architectural risks and integration boundaries",
       "tags": [
         "quality",
         "testing",
@@ -547,8 +548,8 @@
         "quality-gates",
         "modularity"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "observability",
@@ -614,8 +615,8 @@
       "domain": "maintainability",
       "category": "code-organization",
       "path": "concepts/code-organization/project-structure-selection.md",
-      "status": "stub",
-      "summary": "Research file and project organization for UI, API, Functions, WebJobs, libraries and multi-project systems across prototype, MVP, growth and enterprise; optimize navigation, code reduction and modularity",
+      "status": "reviewed",
+      "summary": "Choose file and project organization across UI, API, Functions, WebJobs, libraries and maturity stages using observed navigation and ownership constraints",
       "tags": [
         "file-structure",
         "project-structure",
@@ -635,11 +636,13 @@
       "related": [
         "feature-first-folders",
         "modularity",
-        "code-simplification",
-        "dependency-inversion"
+        "multi-project-structure",
+        "architecture-evolution",
+        "package-by-feature-vs-layer",
+        "monorepo-vs-multirepo"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "threat-modeling",
@@ -1023,6 +1026,992 @@
         "backpressure",
         "queues",
         "resilience"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "composition-vs-inheritance",
+      "title": "Composition versus inheritance",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/composition-vs-inheritance.md",
+      "status": "reviewed",
+      "summary": "Compare delegation with stable subtype contracts",
+      "tags": [
+        "composition",
+        "inheritance",
+        "delegation"
+      ],
+      "related": [
+        "solid",
+        "dependency-inversion"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "cohesion-and-coupling",
+      "title": "Cohesion and coupling",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/cohesion-and-coupling.md",
+      "status": "reviewed",
+      "summary": "Select cohesive boundaries and minimize propagation across modules",
+      "tags": [
+        "cohesion",
+        "coupling",
+        "modules"
+      ],
+      "related": [
+        "modularity",
+        "separation-of-concerns"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "information-hiding",
+      "title": "Information hiding",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/information-hiding.md",
+      "status": "reviewed",
+      "summary": "Hide changeable representation and expose focused public capability",
+      "tags": [
+        "encapsulation",
+        "information-hiding",
+        "contracts"
+      ],
+      "related": [
+        "modularity",
+        "dependency-inversion"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-drivers",
+      "title": "Architecture drivers and quality attributes",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/architecture-drivers.md",
+      "status": "reviewed",
+      "summary": "Elicit measurable quality attributes before selecting design styles",
+      "tags": [
+        "quality-attributes",
+        "constraints",
+        "drivers"
+      ],
+      "related": [
+        "decision-records",
+        "architecture-styles"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-styles",
+      "title": "Architecture styles and boundary selection",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/architecture-styles.md",
+      "status": "reviewed",
+      "summary": "Compare layers, modular monoliths and distributed service boundaries",
+      "tags": [
+        "architecture",
+        "styles",
+        "microservices",
+        "monolith"
+      ],
+      "related": [
+        "architecture-drivers",
+        "modularity"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "vertical-slice-architecture",
+      "title": "Vertical slice architecture",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/vertical-slice-architecture.md",
+      "status": "reviewed",
+      "summary": "Organize feature-change paths without mandating handlers or mediators",
+      "tags": [
+        "vertical-slice",
+        "feature-first",
+        "handlers",
+        "navigation",
+        "features"
+      ],
+      "related": [
+        "feature-first-folders",
+        "package-by-feature-vs-layer",
+        "project-structure-selection"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "package-by-feature-vs-layer",
+      "title": "Package by feature versus package by layer",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/package-by-feature-vs-layer.md",
+      "status": "reviewed",
+      "summary": "Compare vertical feature ownership and technical layering using real navigation evidence",
+      "tags": [
+        "package-by-feature",
+        "package-by-layer",
+        "layers",
+        "navigation",
+        "cohesion"
+      ],
+      "related": [
+        "vertical-slice-architecture",
+        "feature-first-folders",
+        "modularity"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "module-public-contracts",
+      "title": "Module public contracts and ownership",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/module-public-contracts.md",
+      "status": "reviewed",
+      "summary": "Define narrow consumer-facing module APIs and prevent reliance on internals",
+      "tags": [
+        "module-api",
+        "public-contracts",
+        "encapsulation",
+        "versioning",
+        "ownership"
+      ],
+      "related": [
+        "modularity",
+        "dependency-inversion",
+        "api-contracts",
+        "information-hiding"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-dependency-rules",
+      "title": "Architecture dependency rules",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/architecture-dependency-rules.md",
+      "status": "reviewed",
+      "summary": "Express and verify allowed module and project dependency direction",
+      "tags": [
+        "dependency-rules",
+        "module-boundaries",
+        "cycles",
+        "lint",
+        "architecture-tests"
+      ],
+      "related": [
+        "modularity",
+        "module-public-contracts",
+        "dependency-inversion"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "monorepo-vs-multirepo",
+      "title": "Monorepo versus multiple repositories",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/monorepo-vs-multirepo.md",
+      "status": "reviewed",
+      "summary": "Choose repository topology by coordination, access and workflow costs",
+      "tags": [
+        "monorepo",
+        "polyrepo",
+        "multirepo",
+        "workspace",
+        "ci",
+        "ownership"
+      ],
+      "related": [
+        "multi-project-structure",
+        "module-public-contracts",
+        "architecture-evolution"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "transitive-dependency-resolution",
+      "title": "Transitive dependency resolution",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/transitive-dependency-resolution.md",
+      "status": "reviewed",
+      "summary": "Interpret resolved graphs and transitive version constraints",
+      "tags": [
+        "transitive",
+        "dependencies",
+        "resolution"
+      ],
+      "related": [
+        "dependency-conflicts",
+        "package-locking-and-version-policy"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "package-locking-and-version-policy",
+      "title": "Package locking and version policy",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/package-locking-and-version-policy.md",
+      "status": "reviewed",
+      "summary": "Design reproducible package restores and version update policy",
+      "tags": [
+        "lockfile",
+        "versions",
+        "packages"
+      ],
+      "related": [
+        "transitive-dependency-resolution",
+        "supply-chain"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "cyclic-dependency-prevention",
+      "title": "Cyclic dependency prevention",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/cyclic-dependency-prevention.md",
+      "status": "reviewed",
+      "summary": "Identify and break package or module dependency cycles",
+      "tags": [
+        "cycles",
+        "module-boundaries",
+        "imports"
+      ],
+      "related": [
+        "architecture-dependency-rules",
+        "module-public-contracts",
+        "dependency-inversion"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "dead-code-and-dependency-removal",
+      "title": "Dead code and dependency removal",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/dead-code-and-dependency-removal.md",
+      "status": "reviewed",
+      "summary": "Safely remove unused code and packages with consumer evidence",
+      "tags": [
+        "dead-code",
+        "removal",
+        "dependencies"
+      ],
+      "related": [
+        "code-simplification",
+        "supply-chain",
+        "dependency-conflicts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "sonar-rules-and-quality-profiles",
+      "title": "Sonar rules and quality profiles",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/sonar-rules-and-quality-profiles.md",
+      "status": "reviewed",
+      "summary": "Distinguish analyzer rules and active profiles from project gates",
+      "tags": [
+        "sonar",
+        "rules",
+        "quality-profiles"
+      ],
+      "related": [
+        "quality-gates",
+        "cognitive-complexity"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "mutation-and-contract-testing",
+      "title": "Mutation and contract testing",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/mutation-and-contract-testing.md",
+      "status": "reviewed",
+      "summary": "Assess test assertion sensitivity and consumer/provider compatibility",
+      "tags": [
+        "mutation",
+        "contract-testing",
+        "integration"
+      ],
+      "related": [
+        "testing-strategy",
+        "api-contracts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "architecture-fitness-functions",
+      "title": "Architecture fitness functions",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/architecture-fitness-functions.md",
+      "status": "reviewed",
+      "summary": "Codify high-value architectural invariants as executable checks",
+      "tags": [
+        "fitness-functions",
+        "architecture-tests",
+        "module-boundaries"
+      ],
+      "related": [
+        "architecture-dependency-rules",
+        "testing-strategy",
+        "module-public-contracts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "ubiquitous-language",
+      "title": "Ubiquitous language",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/ubiquitous-language.md",
+      "status": "reviewed",
+      "summary": "Shared context-specific vocabulary in names, APIs and business conversations",
+      "tags": [
+        "ubiquitous-language",
+        "domain-vocabulary"
+      ],
+      "related": [
+        "bounded-contexts",
+        "context-mapping"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "context-mapping",
+      "title": "DDD context mapping",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/context-mapping.md",
+      "status": "reviewed",
+      "summary": "Map ownership, upstream/downstream relationships and translation between models",
+      "tags": [
+        "context-map",
+        "integration",
+        "domain-ownership"
+      ],
+      "related": [
+        "bounded-contexts",
+        "anti-corruption-layers",
+        "module-public-contracts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "domain-services-vs-application-services",
+      "title": "Domain services versus application services",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/domain-services-vs-application-services.md",
+      "status": "reviewed",
+      "summary": "Separate intrinsic domain policy from application orchestration and infrastructure",
+      "tags": [
+        "domain-services",
+        "application-services",
+        "ddd"
+      ],
+      "related": [
+        "aggregates",
+        "bounded-contexts",
+        "data-access-boundaries"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "transactional-invariants",
+      "title": "Transactional invariants",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/transactional-invariants.md",
+      "status": "reviewed",
+      "summary": "Specify atomic business rules, concurrency tests and transaction boundaries",
+      "tags": [
+        "transactions",
+        "invariants",
+        "consistency"
+      ],
+      "related": [
+        "aggregates",
+        "transactions",
+        "isolation-levels"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "anti-corruption-layers",
+      "title": "Anti-corruption layers",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/anti-corruption-layers.md",
+      "status": "reviewed",
+      "summary": "Translate conflicting external models without contaminating local semantics",
+      "tags": [
+        "anti-corruption",
+        "adapters",
+        "legacy"
+      ],
+      "related": [
+        "context-mapping",
+        "bounded-contexts",
+        "api-contracts"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "data-access-boundaries",
+      "title": "Data access boundaries",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/data-access-boundaries.md",
+      "status": "reviewed",
+      "summary": "Define owned persistence boundaries and avoid unnecessary generic repositories",
+      "tags": [
+        "repositories",
+        "data-ownership",
+        "persistence"
+      ],
+      "related": [
+        "transactions",
+        "module-public-contracts",
+        "schema-evolution"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "isolation-levels",
+      "title": "Database isolation levels",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/isolation-levels.md",
+      "status": "reviewed",
+      "summary": "Choose database-specific isolation guarantees from actual concurrent anomalies",
+      "tags": [
+        "isolation",
+        "serializable",
+        "mvcc"
+      ],
+      "related": [
+        "transactions",
+        "transactional-invariants",
+        "schema-evolution"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "cancellation-propagation",
+      "title": "Cancellation propagation and cleanup",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/cancellation-propagation.md",
+      "status": "reviewed",
+      "summary": "Propagate cooperative cancellation and guarantee scoped cleanup",
+      "tags": [
+        "cancellation",
+        "timeouts",
+        "cleanup"
+      ],
+      "related": [
+        "async-await",
+        "structured-concurrency",
+        "resilience"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "structured-concurrency",
+      "title": "Structured concurrency and task ownership",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/structured-concurrency.md",
+      "status": "reviewed",
+      "summary": "Keep child tasks scoped, observable and cancellable across runtimes",
+      "tags": [
+        "structured-concurrency",
+        "taskgroup",
+        "task-ownership"
+      ],
+      "related": [
+        "async-await",
+        "cancellation-propagation",
+        "workload-isolation"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "lock-contention-and-deadlocks",
+      "title": "Lock contention and deadlocks",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/lock-contention-and-deadlocks.md",
+      "status": "reviewed",
+      "summary": "Manage synchronization ordering, contention and deadlock verification",
+      "tags": [
+        "locks",
+        "deadlocks",
+        "contention"
+      ],
+      "related": [
+        "thread-safety",
+        "workload-isolation",
+        "async-streams-and-channels"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "workload-isolation",
+      "title": "Workload isolation and concurrency budgets",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/workload-isolation.md",
+      "status": "reviewed",
+      "summary": "Protect critical work from noisy workloads using measured concurrency budgets",
+      "tags": [
+        "bulkheads",
+        "isolation",
+        "capacity"
+      ],
+      "related": [
+        "backpressure",
+        "workload-admission",
+        "resilience"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "async-streams-and-channels",
+      "title": "Async streams and channels",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/async-streams-and-channels.md",
+      "status": "reviewed",
+      "summary": "Use streaming and bounded channels for incremental, backpressured work",
+      "tags": [
+        "streams",
+        "channels",
+        "producer-consumer"
+      ],
+      "related": [
+        "backpressure",
+        "async-await",
+        "queues"
+      ],
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "delivery-guarantees",
+      "title": "Message delivery guarantees",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/delivery-guarantees.md",
+      "status": "reviewed",
+      "summary": "Differentiate transport and end-to-end business-effect delivery semantics",
+      "tags": [
+        "delivery",
+        "duplicates",
+        "at-least-once"
+      ],
+      "related": [
+        "idempotency",
+        "queues",
+        "outbox-pattern"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "outbox-pattern",
+      "title": "Transactional outbox pattern",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/outbox-pattern.md",
+      "status": "reviewed",
+      "summary": "Coordinate local state commit with recoverable event publication",
+      "tags": [
+        "outbox",
+        "dual-write",
+        "integration"
+      ],
+      "related": [
+        "transactions",
+        "idempotency",
+        "delivery-guarantees",
+        "event-driven"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "sagas-and-compensation",
+      "title": "Sagas and compensation",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/sagas-and-compensation.md",
+      "status": "reviewed",
+      "summary": "Coordinate distributed workflow steps using recoverable business compensation",
+      "tags": [
+        "sagas",
+        "compensation",
+        "distributed-transactions"
+      ],
+      "related": [
+        "consistency",
+        "transactions",
+        "idempotency",
+        "outbox-pattern"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "schema-and-event-versioning",
+      "title": "Event schema and contract versioning",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/schema-and-event-versioning.md",
+      "status": "reviewed",
+      "summary": "Protect asynchronous producers and consumers across schema evolution",
+      "tags": [
+        "event-schema",
+        "compatibility",
+        "versioning"
+      ],
+      "related": [
+        "event-driven",
+        "api-contracts",
+        "schema-evolution"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "service-boundaries",
+      "title": "Service boundaries and autonomy",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/service-boundaries.md",
+      "status": "reviewed",
+      "summary": "Evaluate independent deployables using business ownership and operational costs",
+      "tags": [
+        "service-boundaries",
+        "microservices",
+        "autonomy"
+      ],
+      "related": [
+        "bounded-contexts",
+        "multi-project-structure",
+        "event-driven",
+        "consistency"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "cache-invalidation-and-stampedes",
+      "title": "Cache invalidation and stampede control",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/cache-invalidation-and-stampedes.md",
+      "status": "reviewed",
+      "summary": "Limit synchronized origin misses and enforce safe freshness boundaries",
+      "tags": [
+        "cache",
+        "invalidation",
+        "stampedes"
+      ],
+      "related": [
+        "caching",
+        "backpressure",
+        "consistency"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "load-testing-and-baselines",
+      "title": "Load testing and performance baselines",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/load-testing-and-baselines.md",
+      "status": "reviewed",
+      "summary": "Establish reproducible workload baselines and tail-latency checks",
+      "tags": [
+        "load-testing",
+        "benchmark",
+        "latency"
+      ],
+      "related": [
+        "scalability",
+        "observability",
+        "resource-budgets"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "rate-limiting",
+      "title": "Rate limiting and throttling",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/rate-limiting.md",
+      "status": "reviewed",
+      "summary": "Protect service capacity with appropriate request, concurrency and cost limits",
+      "tags": [
+        "rate-limiting",
+        "throttling",
+        "quotas"
+      ],
+      "related": [
+        "workload-admission",
+        "backpressure",
+        "resource-budgets"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "partitioning-and-sharding",
+      "title": "Partitioning and sharding trade-offs",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/partitioning-and-sharding.md",
+      "status": "reviewed",
+      "summary": "Assess data distribution, skew and transactional costs before splitting storage",
+      "tags": [
+        "partitioning",
+        "sharding",
+        "skew"
+      ],
+      "related": [
+        "scalability",
+        "data-access-boundaries",
+        "consistency"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "resource-budgets",
+      "title": "Resource budgets and capacity constraints",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/resource-budgets.md",
+      "status": "reviewed",
+      "summary": "Set measured CPU, memory, I/O and workload limits against service objectives",
+      "tags": [
+        "capacity",
+        "budgets",
+        "resources"
+      ],
+      "related": [
+        "scalability",
+        "workload-admission",
+        "operational-costs"
+      ],
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "adr-lifecycle",
+      "title": "ADR lifecycle and supersession",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/adr-lifecycle.md",
+      "status": "reviewed",
+      "summary": "Maintain decision statuses, replacement links and revisit triggers",
+      "tags": [
+        "adr",
+        "governance",
+        "supersession",
+        "decision-history"
+      ],
+      "related": [
+        "decision-records",
+        "architecture-drivers",
+        "knowledge-index-validation"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "dotnet-and-csharp-overlay",
+      "title": ".NET and C# architecture overlay",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/dotnet-and-csharp-overlay.md",
+      "status": "reviewed",
+      "summary": "Choose .NET project and feature boundaries using TFM, DI and deployment constraints",
+      "tags": [
+        "dotnet",
+        "csharp",
+        "aspnet",
+        "csproj",
+        "azure-functions"
+      ],
+      "related": [
+        "project-structure-selection",
+        "multi-project-structure",
+        "functions-project-structure",
+        "libraries-project-structure"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "typescript-and-node-overlay",
+      "title": "TypeScript and Node.js architecture overlay",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/typescript-and-node-overlay.md",
+      "status": "reviewed",
+      "summary": "Preserve Node package exports and TypeScript runtime/bundler module boundaries",
+      "tags": [
+        "typescript",
+        "nodejs",
+        "javascript",
+        "esm",
+        "package-exports"
+      ],
+      "related": [
+        "ui-project-structure",
+        "api-project-structure",
+        "module-public-contracts",
+        "monorepo-vs-multirepo"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "java-and-scala-overlay",
+      "title": "Java and Scala architecture overlay",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/java-and-scala-overlay.md",
+      "status": "reviewed",
+      "summary": "Evaluate JVM package exports, Scala build modules and verified interoperability",
+      "tags": [
+        "java",
+        "scala",
+        "jvm",
+        "jpms",
+        "sbt",
+        "gradle"
+      ],
+      "related": [
+        "package-by-feature-vs-layer",
+        "module-public-contracts",
+        "cyclic-dependency-prevention"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "python-overlay",
+      "title": "Python architecture and packaging overlay",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/python-overlay.md",
+      "status": "reviewed",
+      "summary": "Choose Python installable packages and src/flat layouts with real imports and entrypoints",
+      "tags": [
+        "python",
+        "pyproject",
+        "src-layout",
+        "packaging"
+      ],
+      "related": [
+        "libraries-project-structure",
+        "functions-project-structure",
+        "project-structure-selection"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "knowledge-index-validation",
+      "title": "Knowledge index validation and evidence integrity",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/knowledge-index-validation.md",
+      "status": "reviewed",
+      "summary": "Validate canonical catalog metadata and separately review citation-to-claim support",
+      "tags": [
+        "catalog",
+        "schema",
+        "validation",
+        "citations",
+        "evidence"
+      ],
+      "related": [
+        "retrieval-evaluation",
+        "decision-records",
+        "testing-strategy"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "retrieval-evaluation",
+      "title": "Agent retrieval evaluation and query disambiguation",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/retrieval-evaluation.md",
+      "status": "reviewed",
+      "summary": "Test human paraphrases and canonical IDs with deterministic evidence-bound retrieval",
+      "tags": [
+        "retrieval",
+        "agent-search",
+        "evaluation",
+        "aliases",
+        "disambiguation"
+      ],
+      "related": [
+        "knowledge-index-validation",
+        "project-structure-selection",
+        "decision-records"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"

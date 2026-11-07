@@ -55,3 +55,12 @@ Prioritize realistic simplicity and developer comprehension over maximal archite
 ## Agent-friendly search
 
 Run `python scripts/search_catalog.py "dependency hell" --json` for deterministic offline, machine-readable concept lookup, or `python scripts/search_catalog.py "idempotency" --expand 2 --json` to traverse related concepts. See [agentic search guide](docs/agentic-search.md) for result schema, evidence handling, limitations and examples. Run `python -m unittest discover -s tests -v` for retrieval tests.
+
+## B7–B14 campaign and architecture overlays
+
+- [Shared research and completion board](docs/b7-b14-campaign.md)
+- [B14 agent retrieval and cross-language review](docs/batch-14-agent-retrieval.md)
+- [Language overlays](concepts/code-organization/README.md): C#/.NET, TypeScript/Node, Java/Scala and Python
+- [Evidence and agent search governance](concepts/governance/README.md): ADR lifecycle, index validation and retrieval evaluation
+
+A `reviewed` page means scoped references and curation metadata are present, **not** that its source claims or recommendations were independently validated on the reader's application.

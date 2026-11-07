@@ -2,63 +2,50 @@
 id: project-structure-selection
 title: "Application file and project structure selection"
 category: code-organization
-status: stub
-reviewed_at: null
+status: reviewed
+reviewed_at: 2026-11-07
 ---
 
 # Application file and project structure selection
 
-> **Status: research stub.** This is a knowledge gap and research plan, **not a validated recommendation**. No target application or production metrics have been inspected.
+> **Reviewed, scoped guidance.** Sources establish platform choices or tooling behavior; decision examples and stage recommendations are inferences pending evaluation in a real application.
 
-## Question and impact
-How should application code, project and file boundaries evolve to reduce accidental code and navigation friction while improving maintainability, proven reuse, modularity and extensibility without overengineering?
+## Problem and context
+A product includes a web UI, API, scheduled jobs and a library. A team wants fewer maintained files and easier feature discovery, but the current deployment constraints are not known.
 
-## Dimensions to investigate
-- **Project kind:** UI/web/mobile/desktop; API; serverless Functions; scheduled/background WebJobs/workers; shared libraries/packages; multi-project solutions.
-- **Growth stage:** prototype; MVP; growing business with several collaborating projects; enterprise with multiple teams, compliance and independent lifecycles.
-- **Architecture evidence:** framework/runtime conventions; capability ownership; deployment cadence; coupling and dependency graph; build time; tested contracts; representative developer change tasks.
-- **Layout alternatives:** flat structure; framework-native conventions; feature-first/vertical slices; layered folders; modular monolith; separately deployable services; selective shared packages.
-- **Reuse:** distinguish shared business behavior from superficially identical code; guard against general-purpose `Common`/ `Shared` dumping grounds.
-- **Code reduction:** safe deletion, unnecessary indirection, duplicate mapping/boilerplate, and accidental abstraction versus readability/correctness.
+## Applicability
+Compare project kind (UI/API/Functions/WebJobs/libraries/multi-project), framework and version, prototype/MVP/growth/enterprise stage, business ownership, execution and deployment topology. Source-specific claims apply only to the named platform or tool. No runtime results or developer navigation measurements were observed for a target application.
 
-## Research matrix (questions, not rules)
+## Decision and trade-offs
+Choose boundaries separately for repository, deployable, module and directory. First preserve framework-required entrypoints and build conventions. Where a feature's route, policy, persistence and tests change together, evaluate co-location; where independent contracts or releases are genuinely needed, evaluate modules or packages.
 
-| Application type | Prototype / MVP to examine | Growing / enterprise to examine |
-| --- | --- | --- |
-| UI | Route- or feature-local views, state and tests versus framework folders | Shared design system, domain features, contract boundaries and team ownership |
-| API | Endpoint-centric slices versus controller/service/repository layers | Modular business capabilities, contract versioning and deployment boundaries |
-| Functions | Trigger-local entrypoints with focused business logic | Independent triggers, packaging, retries/idempotency and common code ownership |
-| WebJobs / background workers | Job-centric handler, schedule, tests | Worker-specific deployment, queues, checkpoints and operational ownership |
-| Libraries | Local module versus publishing a separate library | Stable public API, versioning, dependency direction and consumer count |
-| Multi-project systems | One deployable with clear internal modules | Multiple UI/API/functions/workers and selectively shared contracts versus over-fragmentation |
+### No-change and alternative approaches
+A prototype may keep one project and native framework folders; an MVP may group feature-owned files within it; a growing system may add explicit modules and only proven shared libraries; an enterprise may need ownership and version controls yet still remain a modular monolith. These are hypotheses, not stage-based requirements.
 
-Do not equate enterprise with microservices or prototype with zero tests. Split along observed business/deployment boundaries, not a fixed number of files.
+### Failure modes, costs and counterexamples
+A central Shared project carrying all data models and dependencies increases coupling; aggressive fragmentation multiplies DI registrations, versioning and debugging hops. Moving a serverless entrypoint can break function discovery; moving framework routes can break routing.
 
-## Proposed evidence gathering and validation
-1. Inspect a representative real repository tree, language/framework versions, dependency graph, deployables and tests; inventory developers' navigation tasks.
-2. Record a no-change baseline: time/file hops to find a feature, files changed per ticket, accidental duplication, module/package count, circular references, build/test duration, release coordination.
-3. Compare minimal folder relocation, feature grouping, module extraction and cross-project sharing; document their trade-offs and counterexamples.
-4. Prototype one isolated change, preserve public behavior, test and measure before/after navigation, coupling, net maintained code (excluding generated output), clarity, compilation and regression risks.
-5. Report recommendation confidence: observed, inferred, provisional or unknown. Include affected paths, tests, incremental migration and rollback.
-6. Research authoritative platform documentation and architecture case studies for each selected runtime. Do not promote until applicability, competing approaches and primary-source links are documented.
+## Worked example (illustrative, not prescribed)
+Illustrative: `apps/web/`, `apps/api/`, `workers/settlement/`, `modules/orders/`, `tests/`. An equally reasonable small solution is `app/features/orders/` plus its tests within one deployable. Choose after inspecting the actual framework, release graph and representative changes.
 
-## Agent search aliases
-- UI API Functions WebJobs libraries application file structure
-- prototype MVP growing business enterprise project organization
-- feature first folders vertical slice modular monolith code navigation
-- reduce code duplication improve reuse modularity extensibility
-- multi project solution library sharing and developer discoverability
+## Verification, migration and rollback
+Record framework/version, build graph, deployable and data boundaries, team ownership, two realistic feature-change tasks, file hops/time, files touched, dependency cycles and build/test costs. Prototype moving one feature. Run routing/trigger discovery, build, contract and integration tests, compare no-change baseline, and revert if navigation or compatibility worsens. Record no-change outcome, impacted files and evidence; if introducing a project/package, assess dependency versioning, builds and release overhead. Revisit on changed platform conventions, team ownership or measured navigation friction.
+
+## Search aliases
+project structure selection; application file and project structure selection; developer navigation; module boundaries; code reuse; application code structure
 
 ## Related concepts
 - [feature-first-folders](feature-first-folders.md)
 - [modularity](modularity.md)
-- [code-simplification](code-simplification.md)
-- [dependency-inversion](dependency-inversion.md)
+- [multi-project-structure](multi-project-structure.md)
+- [architecture-evolution](architecture-evolution.md)
+- [package-by-feature-vs-layer](package-by-feature-vs-layer.md)
+- [monorepo-vs-multirepo](monorepo-vs-multirepo.md)
 
 ## Evidence and sources
-_None curated yet; do not cite this stub as verified guidance._
+1. Microsoft Learn, Common web application architectures: https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures (accessed 2026-11-07). Supports: Single-project and multi-project trade-offs in .NET web apps.
+2. Microsoft Learn, Developing ASP.NET Core MVC apps: https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/develop-asp-net-core-mvc-apps (accessed 2026-11-07). Supports: Feature folders and navigation costs in larger MVC projects.
+3. Microsoft Learn, Azure Functions .NET isolated worker guide: https://learn.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-process-guide (accessed 2026-11-07). Supports: Function runtime entrypoints and constraints.
 
 ## Maintenance
-- Research status: backlog / P0 candidate for developer-experience focused reviews
-- Owner: unassigned curator
-- Revisit: new platform conventions, real application review or measured developer friction
+Reviewed 2026-11-07. Do not infer measured code reduction, Sonar compliance or production readiness from this article. Independently recheck source versions and applicability on future reviews.

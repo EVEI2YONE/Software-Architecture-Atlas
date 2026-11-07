@@ -13,15 +13,15 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertEqual(search("concurrency", limit=4), search("concurrency", limit=4))
 
     def test_filter(self):
-        result = search("testing quality", category="quality", status="stub")
+        result = search("caching", category="performance", status="reviewed")
         self.assertTrue(result["results"])
-        self.assertTrue(all(hit["category"] == "quality" and hit["status"] == "stub" for hit in result["results"]))
+        self.assertTrue(all(hit["category"] == "performance" and hit["status"] == "reviewed" for hit in result["results"]))
 
     def test_project_structure_gap_discoverable(self):
         result = search("file structure for UI API Functions WebJobs enterprise")
         self.assertEqual(result["results"][0]["id"], "project-structure-selection")
-        self.assertEqual(result["results"][0]["status"], "stub")
-        self.assertEqual(result["results"][0]["evidence"], "unknown")
+        self.assertEqual(result["results"][0]["status"], "reviewed")
+        self.assertEqual(result["results"][0]["evidence"], "requires-source-inspection")
 
     def test_b3_retrieval(self):
         self.assertEqual(search("threat model")["results"][0]["id"], "threat-modeling")
@@ -41,12 +41,12 @@ class SearchCatalogTests(unittest.TestCase):
             hit = search(query)["results"][0]
             self.assertEqual(hit["id"], expected, query)
             self.assertEqual(hit["status"], "reviewed")
-        self.assertEqual(search("project-structure-selection")["results"][0]["status"], "stub")
+        self.assertEqual(search("project-structure-selection")["results"][0]["status"], "reviewed")
 
     def test_b5_growth_and_migration_retrieval(self):
         self.assertEqual(search("prototype MVP enterprise")["results"][0]["id"], "architecture-evolution")
         self.assertEqual(search("strangler migration")["results"][0]["id"], "incremental-boundary-migration")
-        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "unknown")
+        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "requires-source-inspection")
 
     def test_b6_operational_retrieval(self):
         for query, expected in [
@@ -58,13 +58,107 @@ class SearchCatalogTests(unittest.TestCase):
             result = search(query)
             self.assertEqual(result["results"][0]["id"], expected, query)
             self.assertEqual(result["results"][0]["status"], "reviewed")
-        self.assertEqual(search("caching")["results"][0]["status"], "stub")
+        self.assertEqual(search("caching")["results"][0]["status"], "reviewed")
 
     def test_unmatched(self):
         self.assertEqual(search("zzzzzzzzzzzz")["results"], [])
 
-    def test_no_stub_as_evidence(self):
-        self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "unknown")
+    def test_no_reviewed_hit_claims_verified_evidence(self):
+        hit = search("caching")["results"][0]
+        self.assertEqual(hit["status"], "reviewed")
+        self.assertEqual(hit["evidence"], "requires-source-inspection")
+        self.assertEqual(search("caching", status="stub")["results"], [])
+
+    def test_b8_canonical_retrieval(self):
+        for concept_id in [
+            "project-structure-selection", "vertical-slice-architecture",
+            "package-by-feature-vs-layer", "module-public-contracts",
+            "architecture-dependency-rules", "monorepo-vs-multirepo",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b9_canonical_retrieval(self):
+        for concept_id in [
+            "dependency-conflicts", "supply-chain", "cognitive-complexity",
+            "quality-gates", "testing-strategy", "transitive-dependency-resolution",
+            "package-locking-and-version-policy", "cyclic-dependency-prevention",
+            "dead-code-and-dependency-removal", "sonar-rules-and-quality-profiles",
+            "mutation-and-contract-testing", "architecture-fitness-functions",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b10_canonical_retrieval(self):
+        for concept_id in [
+            "bounded-contexts", "aggregates", "domain-events", "cqrs",
+            "ubiquitous-language", "context-mapping",
+            "domain-services-vs-application-services", "transactional-invariants",
+            "anti-corruption-layers", "data-access-boundaries", "isolation-levels",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b11_canonical_retrieval(self):
+        for concept_id in [
+            "async-await", "thread-safety", "backpressure",
+            "cancellation-propagation", "structured-concurrency",
+            "lock-contention-and-deadlocks", "workload-isolation",
+            "async-streams-and-channels",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b12_canonical_retrieval(self):
+        for concept_id in [
+            "consistency", "event-driven", "queues", "delivery-guarantees",
+            "outbox-pattern", "sagas-and-compensation",
+            "schema-and-event-versioning", "service-boundaries",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b13_canonical_retrieval(self):
+        for concept_id in [
+            "caching", "cache-invalidation-and-stampedes",
+            "load-testing-and-baselines", "rate-limiting",
+            "partitioning-and-sharding", "resource-budgets",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
+    def test_b14_canonical_and_paraphrased_retrieval(self):
+        targets = [
+            ("adr-lifecycle", "adr superseded lifecycle"),
+            ("dotnet-and-csharp-overlay", "dotnet csharp solution boundaries"),
+            ("typescript-and-node-overlay", "typescript node package exports"),
+            ("java-and-scala-overlay", "java scala modular build"),
+            ("python-overlay", "python wheel src layout"),
+            ("knowledge-index-validation", "catalog source claim audit"),
+            ("retrieval-evaluation", "agent search evaluation"),
+        ]
+        for expected, paraphrase in targets:
+            for query in (expected, paraphrase):
+                with self.subTest(query=query):
+                    hit = search(query)["results"][0]
+                    self.assertEqual(hit["id"], expected)
+                    self.assertEqual(hit["status"], "reviewed")
+                    self.assertEqual(hit["evidence"], "requires-source-inspection")
+        self.assertEqual(
+            search("typescript node package exports in my very different project", status="stub")["results"], []
+        )
 
     def test_related_expansion_deduped(self):
         hits = search("idempotency", limit=1, expand=2)["results"]

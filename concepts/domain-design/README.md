@@ -1,9 +1,14 @@
-# domain-design
+# Domain design
 
-Domain-driven design and business boundaries. All linked concept pages currently have **stub** status until independently researched.
+Source-scoped DDD concepts: select boundaries from real business semantics and transactional rules, not a requirement for microservices or maximal layering.
 
-- [DDD bounded contexts](bounded-contexts.md) — `bounded-contexts`
+- [Bounded contexts](bounded-contexts.md) — `bounded-contexts`
 - [Aggregates and invariants](aggregates.md) — `aggregates`
 - [Domain events](domain-events.md) — `domain-events`
+- [Ubiquitous language](ubiquitous-language.md) — `ubiquitous-language`
+- [Context mapping](context-mapping.md) — `context-mapping`
+- [Domain services versus application services](domain-services-vs-application-services.md) — `domain-services-vs-application-services`
+- [Transactional invariants](transactional-invariants.md) — `transactional-invariants`
+- [Anti-corruption layers](anti-corruption-layers.md) — `anti-corruption-layers`
 
-[Index](../../catalog/index.json) · [Catalog overview](../../README.md)
+[Index](../../catalog/index.json) · [B10 research](../../docs/batch-10-domain-data.md)

@@ -44,3 +44,33 @@ Three existing concepts (`observability`, `resilience`, `scalability`) and four 
 ## B0 catalog hygiene
 
 [Batch B0](batch-0-catalog-integrity.md) added stricter metadata/source-count validation and a fixed agent retrieval benchmark without altering concept review statuses. The catalog remains **47 indexed, 26 reviewed, 21 stubs**; source claims require separate evidence inspection.
+
+## B7–B8 shared-PR curation (2026-11-07)
+
+On draft PR #3, B7 adds five new source-scoped reviewed concepts and upgrades four previous principle stubs. B8 adds five code-organization concepts and upgrades `project-structure-selection`. The branch index therefore records **57 concepts: 41 reviewed, 16 stubs**. These numbers apply to the PR branch until merged, not necessarily to `main`. [B7–B14 campaign tracking](b7-b14-campaign.md) and [B8 context/selection matrix](batch-8-structure-navigation.md) document scope, sources, remaining unknowns and verification. No real project-navigation timings, LOC reduction, production changes or Sonar results have been observed.
+
+## B9 dependency and quality research (campaign PR #3)
+
+After B9, the shared PR branch records **64 indexed, 53 reviewed, 11 stubs** (not necessarily the merged `main` state). Five existing stubs were promoted and seven scoped dependency/quality concepts were indexed. See [B9 research and validation matrix](batch-9-dependencies-quality.md). Reviewed status records dated sources and scoped decision guidance, not confirmed application dependency health, code reduction, security or Sonar scan passes.
+
+## B10 domain design and data architecture (campaign PR #3)
+
+The shared campaign branch adds seven dedicated domain/data concepts and upgrades `bounded-contexts`, `aggregates`, `domain-events`, and `cqrs` to scoped reviewed guidance. It now records **71 indexed / 64 reviewed / 7 stubs**. [B10 research and decisions](batch-10-domain-data.md) describe database isolation, transactional invariants, language/context mapping, event timing and CQRS trade-offs. This is a branch-level inventory, not necessarily merged `main`; reviewed status is not proof of an application’s consistency, performance or correctness.
+
+## B11 async and concurrency (campaign PR #3)
+
+The campaign branch upgraded the three remaining runtime stubs and indexed five new runtime concepts. It now contains **76 concepts, 72 reviewed and 4 stubs**. See [B11 source review and decision matrix](batch-11-async-concurrency.md) for async/await, cancellation, structured concurrency, locks, backpressure, workload isolation and channels. These are scoped references: no target application task leaks, races, load behavior or throughput improvements were measured.
+
+## B12 distributed systems integration (campaign PR #3)
+
+The shared PR branch now records **81 indexed concepts / 80 reviewed / 1 stub** after three distributed concept stub upgrades and five new source-scoped integration concepts. The remaining stub is `caching` (B13). See [B12 evidence review and decision matrix](batch-12-distributed-integration.md). This count is a branch inventory until merged; no target broker, production transaction, delivery or exactly-once business-effect guarantee was validated by catalog curation.
+
+## B13 performance research (shared draft PR #3)
+
+The shared branch now contains **86 indexed concepts, all 86 reviewed, zero stubs** after upgrading `caching` and adding five source-scoped performance concepts. See [B13 decisions and research](batch-13-performance.md). Reviewed means the pages provide dated source-backed scoped guidance, not an independent guarantee of applicability, performance, cache correctness, security or cost savings for any target app. **B14's proposed agent-friendly retrieval/governance concepts remain to be implemented**; zero stubs does not mean all campaign gaps are filled.
+
+## B14 agent retrieval, governance and language overlays (shared PR #3)
+
+The campaign branch contains **93 indexed / 93 scoped reviewed / 0 stubs** after B14's seven additional reviewed concepts: four language overlays (.NET/C#, TypeScript/Node, Java/Scala and Python) plus ADR lifecycle, catalog index evidence integrity and retrieval evaluation. The [B14 report](batch-14-agent-retrieval.md) documents context, sources, intent-scoped lexical retrieval, and the 83-case golden evaluation. [Full campaign tracker](b7-b14-campaign.md) shows the batch gates and PR status.
+
+**Important:** Reviewed catalog metadata, passing index validation, and deterministic retrieval do **not** independently certify 93 source claims, source freshness, application security/performance, or semantic search relevance. The campaign's planned corpus and stub backlog is complete, but these empirical/independent review gaps remain separate follow-up work.
