@@ -64,3 +64,7 @@ The campaign branch upgraded the three remaining runtime stubs and indexed five 
 ## B12 distributed systems integration (campaign PR #3)
 
 The shared PR branch now records **81 indexed concepts / 80 reviewed / 1 stub** after three distributed concept stub upgrades and five new source-scoped integration concepts. The remaining stub is `caching` (B13). See [B12 evidence review and decision matrix](batch-12-distributed-integration.md). This count is a branch inventory until merged; no target broker, production transaction, delivery or exactly-once business-effect guarantee was validated by catalog curation.
+
+## B13 performance research (shared draft PR #3)
+
+The shared branch now contains **86 indexed concepts, all 86 reviewed, zero stubs** after upgrading `caching` and adding five source-scoped performance concepts. See [B13 decisions and research](batch-13-performance.md). Reviewed means the pages provide dated source-backed scoped guidance, not an independent guarantee of applicability, performance, cache correctness, security or cost savings for any target app. **B14's proposed agent-friendly retrieval/governance concepts remain to be implemented**; zero stubs does not mean all campaign gaps are filled.
