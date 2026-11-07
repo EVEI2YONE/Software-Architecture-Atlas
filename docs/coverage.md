@@ -39,3 +39,7 @@ B17 added [Trading market-data integrity and decision eligibility](../concepts/d
 ## B18 targeted reference extensions
 
 B18 extended five existing canonical concepts—[observability](../concepts/operations/observability.md), [reliability objectives](../concepts/operations/reliability-objectives.md), [identity/access](../concepts/governance/identity-and-access.md), [package-locking](../concepts/dependencies/package-locking-and-version-policy.md), and [testing strategy](../concepts/quality/testing-strategy.md)—without increasing catalog concept count. See [B18 verification runbook](batch-18-production-verification.md). Research references are not hosted implementation verification.
+
+## B19 integration review
+
+[B19 consolidation and Final Expanse handoff](batch-19-final-integration-validation.md) audits cross-batch definitions, samples primary sources, and maps the six current blockers to the relevant concepts and unexecuted application checks. No new concept category or canonical entry is introduced; the index remains at 96 reviewed/scoped entries. Catalog tests are not production certification.
