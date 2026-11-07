@@ -39,7 +39,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | GitHub Actions 42358088882 succeeded; 11 direct page checks passed | Complete (scoped catalog curation) |
 | B11 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358308490 success; 8 direct checks passed | Complete (scoped catalog curation) |
 | B12 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358524699 success; 8 direct checks passed | Complete (scoped catalog curation) |
-| B13 | Yes | 6/6 reviewed pages (1 stub upgrade, 5 new) | 6 direct checks passed; GitHub Actions pending | Curated, pending CI |
+| B13 | Yes | 6/6 reviewed pages (1 stub upgrade, 5 new) | GitHub Actions 42359097375 succeeded; 6 direct checks passed | Complete (scoped catalog curation) |
 | B14 | Yes | Not started | Not run | 0% |
 
 ## Open constraints
@@ -123,3 +123,8 @@ No target application's repository, performance traces, measured developer navig
 - Index: **86 total / 86 reviewed / 0 stubs**, updated performance README, branch coverage, 69-case retrieval fixture and search regression suite.
 - Six pages passed direct index-frontmatter/source-count/related-ID/internal link validation with no errors. GitHub Actions must be checked before full completion.
 - Zero stubs does **not** complete B14; its proposed agent-retrieval and governance topics remain planned. No measured target-app performance, security, capacity or cache correctness is claimed.
+
+## B13 verification and completion
+- Initial workflow `42359033902` showed catalog validation passed but one retrieval test assumed `caching` was still a stub. Updated `tests/test_retrieval_gold.py` to check `reviewed` and `requires-source-inspection`; there are now no remaining stubs in the branch index.
+- GitHub Actions run `42359097375` on commit `94a2785c80f3c24da1696f5c6bf4c43d8d9071ab` completed **success**, including catalog validator and retrieval regression tests. Six direct concept page metadata/source-count/local-link checks passed with zero errors.
+- Campaign **7/8 batches (87.5%)**. B14 agent retrieval/governance is the final planned batch; zero stubs does not imply B14 is done. No application performance was measured.
