@@ -11,3 +11,6 @@ Architecture decisions, trust boundaries and identity/access research. The entri
 [B2 decision framework](../../docs/batch-2-architecture-boundaries.md)
 
 [B3 security and contracts research](../../docs/batch-3-security-contracts-data.md)
+
+- [Architecture drivers and quality attributes](architecture-drivers.md) — `architecture-drivers`
+- [Architecture styles and boundary selection](architecture-styles.md) — `architecture-styles`
