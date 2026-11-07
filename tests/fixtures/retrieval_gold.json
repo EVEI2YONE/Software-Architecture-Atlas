@@ -186,6 +186,61 @@
       "query": "architecture-fitness-functions",
       "expected_id": "architecture-fitness-functions",
       "expected_status": "reviewed"
+    },
+    {
+      "query": "bounded-contexts",
+      "expected_id": "bounded-contexts",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "aggregates",
+      "expected_id": "aggregates",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "domain-events",
+      "expected_id": "domain-events",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "cqrs",
+      "expected_id": "cqrs",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "ubiquitous-language",
+      "expected_id": "ubiquitous-language",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "context-mapping",
+      "expected_id": "context-mapping",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "domain-services-vs-application-services",
+      "expected_id": "domain-services-vs-application-services",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "transactional-invariants",
+      "expected_id": "transactional-invariants",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "anti-corruption-layers",
+      "expected_id": "anti-corruption-layers",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "data-access-boundaries",
+      "expected_id": "data-access-boundaries",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "isolation-levels",
+      "expected_id": "isolation-levels",
+      "expected_status": "reviewed"
     }
   ]
 }
