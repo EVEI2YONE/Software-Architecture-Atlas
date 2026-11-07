@@ -24,7 +24,7 @@ A **batch** is a research and verification milestone, not a release or blanket p
 
 ## B0 — Evidence, catalog integrity and agent retrieval
 
-**Research:** Audit the canonical indexed entries (35 after B3, including new contract/security/data concepts), checking current statuses rather than assuming all are stubs; identify missing sources, duplicate tags/related IDs, outdated applicability and retrieval misses. Preserve the distinction between discoverability and verified advice.
+**Research:** Audit the canonical indexed entries (41 after B4, including six application-type archetypes), checking current statuses rather than assuming all are stubs; identify missing sources, duplicate tags/related IDs, outdated applicability and retrieval misses. Preserve the distinction between discoverability and verified advice.
 
 **Deliverables:**
 - Evidence rubric with source quality, technology versions, applicability, failure modes, counterexamples and review dates.
@@ -69,6 +69,8 @@ A **batch** is a research and verification milestone, not a release or blanket p
 **Exit check:** Separate illustrative examples from verified production evidence, cite official standards/platform sources, and document version-specific security and data guarantees. Do not claim an architecture is secure solely from structure.
 
 ## B4 — Project-type file-structure archetypes
+
+**Execution report:** [B4 platform-specific research and six indexed archetypes](batch-4-project-archetypes.md). Six framework-scoped reviewed concepts added; no real application refactor benchmark.
 
 **Research:** Cross-check each type against **prototype/MVP** and **growing/enterprise** contexts; these are candidate layouts, not mandated templates.
 
@@ -132,6 +134,6 @@ Every batch starts **proposed / not completed**. Completion requires reviewable 
 | B1 | Partially curated — 2 scoped concepts reviewed; application metrics pending | Unassigned | [B1 context and assessment](batch-1-code-organization.md) |
 | B2 | Partially curated — 3 scoped concepts reviewed; target evidence pending | Unassigned | [B2 context and decision matrix](batch-2-architecture-boundaries.md) |
 | B3 | Partially curated — 6 scoped concepts reviewed; application testing pending | Unassigned | [B3 context and validation matrix](batch-3-security-contracts-data.md) |
-| B4 | Proposed | Unassigned | Not yet linked |
+| B4 | Partially curated — 6 scoped archetypes indexed; app metrics and broader runtimes pending | Unassigned | [B4 source review and decisions](batch-4-project-archetypes.md) |
 | B5 | Proposed | Unassigned | Not yet linked |
 | B6 | Proposed | Unassigned | Not yet linked |
