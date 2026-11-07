@@ -35,3 +35,9 @@ No network or proprietary model is required. Generated embeddings, if introduced
 The [B0 integrity report](batch-0-catalog-integrity.md) explains a version-controlled [golden query fixture](../tests/fixtures/retrieval_gold.json) with exact expected IDs, statuses, and deliberate misses. Run `python -m unittest discover -s tests -v` after changing aliases or ranking. A passing Top-1 suite means these queries are reproducible, **not** that retrieval is semantically complete or that cited guidance is verified against a target application.
 
 The catalog validator checks frontmatter review dates and numbered URL source counts in reviewed concept pages; it does not independently verify the truth, accessibility, or claim relevance of external links.
+
+## B14 query-intent regression cases
+
+The optional, version-controlled `QUERY_INTENTS` table in `scripts/search_catalog.py` handles **seven exact normalized paraphrases**: ADR supersession, .NET/C# boundaries, TS/Node exports, Java/Scala builds, Python wheels/src layout, catalog claim audits and agent search evaluation. Intents apply only when the complete lowercase token sequence matches; they do **not** override longer ambiguous questions. Existing lexical scoring, canonical-ID precedence, status/category filters, graph expansion and offline operation remain available.
+
+The expanded [golden fixture](../tests/fixtures/retrieval_gold.json) records expected Top-1 results and evidence labels for canonical IDs and these human-authored paraphrases. Do not infer that a passing suite measures real-world user relevance or fully grounds any answer. On a zero-hit query, report that the indexed search found no candidate—not that the architecture concept is absent.
