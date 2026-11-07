@@ -20,6 +20,13 @@ ALIASES = {
     "project organization": "project-structure-selection",
     "webjobs": "project-structure-selection",
     "vertical slice": "project-structure-selection feature-first-folders",
+    "threat model": "threat-modeling",
+    "cross tenant": "identity-and-access threat-modeling",
+    "authorization": "identity-and-access",
+    "api versioning": "api-contracts",
+    "breaking api change": "api-contracts",
+    "database migration": "schema-evolution transactions",
+    "duplicate request": "idempotency",
 }
 
 def terms(value):
