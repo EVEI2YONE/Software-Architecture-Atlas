@@ -33,7 +33,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 ## Completion board (update only after verified deliverables)
 | Batch | Context gathered | Concept curation | Validation | State |
 | --- | --- | --- | --- | --- |
-| B7 | Yes | Not started | Not run | 0% |
+| B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | Local Python tests blocked by GitHub DNS; connector checks pending | Curation committed, validation pending |
 | B8 | Yes | Not started | Not run | 0% |
 | B9 | Yes | Not started | Not run | 0% |
 | B10 | Yes | Not started | Not run | 0% |
@@ -44,3 +44,9 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 
 ## Open constraints
 No target application's repository, performance traces, measured developer navigation or project-specific Sonar profile was supplied for this campaign. Accordingly no page may assert measured code reduction, compliance, capacity, security or deployment improvements. External primary-source verification remains topic-by-topic, not automatically satisfied by this context capture.
+
+## B7 implementation record (2026-11-07)
+- Source pages: `solid`, `separation-of-concerns`, `dry-vs-abstraction`, `kiss-yagni` upgraded from stub, plus new `composition-vs-inheritance`, `cohesion-and-coupling`, `information-hiding`, `architecture-drivers`, `architecture-styles`.
+- Index: 52 total, 35 reviewed, 17 stubs; category READMEs updated.
+- Source leads examined: Microsoft Learn architecture styles, common .NET web architectures and microservices; Martin Fowler Yagni, Beck Design Rules and Is Design Dead?; Refactoring.Guru Replace Inheritance with Delegation.
+- B7 limitations: scoped conceptual research; no production code evaluation, independent expert review or claims of measured improvement. `git clone` failed in the local container because `github.com` DNS could not resolve; therefore `scripts/validate_catalog.py` and Python unit tests have NOT been executed locally. Remote CI status must be inspected separately.
