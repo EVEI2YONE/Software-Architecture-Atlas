@@ -349,7 +349,8 @@
       ],
       "related": [
         "transactions",
-        "event-driven"
+        "event-driven",
+        "durable-worker-leases-and-fencing"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -410,7 +411,8 @@
       ],
       "related": [
         "backpressure",
-        "idempotency"
+        "idempotency",
+        "durable-worker-leases-and-fencing"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -1661,7 +1663,8 @@
       "related": [
         "idempotency",
         "queues",
-        "outbox-pattern"
+        "outbox-pattern",
+        "durable-worker-leases-and-fencing"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -2041,7 +2044,36 @@
         "isolation-levels",
         "transactional-invariants",
         "data-access-boundaries",
-        "idempotency"
+        "idempotency",
+        "durable-worker-leases-and-fencing"
+      ],
+      "source_count": 6,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "durable-worker-leases-and-fencing",
+      "title": "Durable worker leases, fencing and restart recovery",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/durable-worker-leases-and-fencing.md",
+      "status": "reviewed",
+      "summary": "Database-backed worker lease claims, generation fencing, renewal, replay and crash-recovery safety",
+      "tags": [
+        "distributed-systems",
+        "worker-leases",
+        "fencing-tokens",
+        "stale-workers",
+        "crash-recovery",
+        "heartbeat",
+        "scheduling"
+      ],
+      "related": [
+        "idempotency",
+        "queues",
+        "delivery-guarantees",
+        "postgresql-transactional-concurrency",
+        "lock-contention-and-deadlocks",
+        "reliability-objectives"
       ],
       "source_count": 6,
       "reviewed_at": "2026-11-07"
