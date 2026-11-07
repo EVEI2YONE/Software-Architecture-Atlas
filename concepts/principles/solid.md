@@ -37,6 +37,10 @@ SOLID principles; solid; design tradeoffs; architecture decision; simpler altern
 - [dependency-inversion](../code-organization/dependency-inversion.md)
 - [decision records](../governance/decision-records.md)
 
+## Evidence scope and uncertainty
+
+The references below support adjacent architectural design and DI decisions but do not constitute independent primary evidence for all five SOLID principle formulations. Treat claims about SOLID as general design heuristics; consult original principle definitions and inspect substitution/consumer contracts in the target design. Additional claim-level source review remains open.
+
 ## Evidence and sources
 1. Microsoft Learn, Common web application architectures, https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures (accessed 2026-11-07). Supports the scoped design decision discussion; not a benchmark of this catalog.
 2. Microsoft Learn, Dependency injection guidelines, https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-guidelines (accessed 2026-11-07). Provides an alternative or complementary context and trade-offs.
