@@ -622,6 +622,39 @@
       ],
       "source_count": 0,
       "reviewed_at": null
+    },
+    {
+      "id": "project-structure-selection",
+      "title": "Application file and project structure selection",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/project-structure-selection.md",
+      "status": "stub",
+      "summary": "Research file and project organization for UI, API, Functions, WebJobs, libraries and multi-project systems across prototype, MVP, growth and enterprise; optimize navigation, code reduction and modularity",
+      "tags": [
+        "file-structure",
+        "project-structure",
+        "ui",
+        "api",
+        "functions",
+        "webjobs",
+        "libraries",
+        "prototype",
+        "mvp",
+        "enterprise",
+        "navigation",
+        "reuse",
+        "modularity",
+        "extensibility"
+      ],
+      "related": [
+        "feature-first-folders",
+        "modularity",
+        "code-simplification",
+        "dependency-inversion"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
     }
   ]
 }
