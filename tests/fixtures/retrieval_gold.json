@@ -10,7 +10,7 @@
     {
       "query": "dependency hell",
       "expected_id": "dependency-conflicts",
-      "expected_status": "stub"
+      "expected_status": "reviewed"
     },
     {
       "query": "threat model",
@@ -125,6 +125,66 @@
     {
       "query": "monorepo-vs-multirepo",
       "expected_id": "monorepo-vs-multirepo",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "dependency-conflicts",
+      "expected_id": "dependency-conflicts",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "supply-chain",
+      "expected_id": "supply-chain",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "cognitive-complexity",
+      "expected_id": "cognitive-complexity",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "quality-gates",
+      "expected_id": "quality-gates",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "testing-strategy",
+      "expected_id": "testing-strategy",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "transitive-dependency-resolution",
+      "expected_id": "transitive-dependency-resolution",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "package-locking-and-version-policy",
+      "expected_id": "package-locking-and-version-policy",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "cyclic-dependency-prevention",
+      "expected_id": "cyclic-dependency-prevention",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "dead-code-and-dependency-removal",
+      "expected_id": "dead-code-and-dependency-removal",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "sonar-rules-and-quality-profiles",
+      "expected_id": "sonar-rules-and-quality-profiles",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "mutation-and-contract-testing",
+      "expected_id": "mutation-and-contract-testing",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "architecture-fitness-functions",
+      "expected_id": "architecture-fitness-functions",
       "expected_status": "reviewed"
     }
   ]
