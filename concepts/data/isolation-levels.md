@@ -43,6 +43,10 @@ database isolation levels; isolation levels; domain boundaries; transactional co
 
 PostgreSQL-specific isolation behavior should be checked against the exact database engine/version; Azure CQRS guidance is background context for read/write model separation rather than an authority for SQL isolation-level semantics. Do not transpose PostgreSQL guarantees to SQL Server, MySQL, or other engines without their vendor documentation.
 
+## PostgreSQL isolation implementation reference
+
+The concrete relationship between READ COMMITTED, explicit row locks, SKIP LOCKED and whole-transaction retries is described in [PostgreSQL transactional concurrency](postgresql-transactional-concurrency.md). Do not mistake queue-claim SKIP LOCKED for a consistent analytical snapshot or a durable worker lease.
+
 ## Evidence and sources
 1. PostgreSQL 18, Transaction isolation, https://www.postgresql.org/docs/18/transaction-iso.html (accessed 2026-11-07). Applies to the named framework/database architecture or platform behavior; not verified on the user's applications.
 2. Azure Architecture Center, CQRS pattern, https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs (accessed 2026-11-07). Applies to the named framework/database architecture or platform behavior; not verified on the user's applications.
