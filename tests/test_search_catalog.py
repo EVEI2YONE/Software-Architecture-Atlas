@@ -92,6 +92,18 @@ class SearchCatalogTests(unittest.TestCase):
             self.assertEqual(hit["status"], "reviewed")
             self.assertEqual(hit["evidence"], "requires-source-inspection")
 
+    def test_b10_canonical_retrieval(self):
+        for concept_id in [
+            "bounded-contexts", "aggregates", "domain-events", "cqrs",
+            "ubiquitous-language", "context-mapping",
+            "domain-services-vs-application-services", "transactional-invariants",
+            "anti-corruption-layers", "data-access-boundaries", "isolation-levels",
+        ]:
+            hit = search(concept_id)["results"][0]
+            self.assertEqual(hit["id"], concept_id)
+            self.assertEqual(hit["status"], "reviewed")
+            self.assertEqual(hit["evidence"], "requires-source-inspection")
+
     def test_related_expansion_deduped(self):
         hits = search("idempotency", limit=1, expand=2)["results"]
         self.assertEqual(len({hit["id"] for hit in hits}), len(hits))
