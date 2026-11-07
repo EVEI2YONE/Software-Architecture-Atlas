@@ -68,3 +68,9 @@ The shared PR branch now records **81 indexed concepts / 80 reviewed / 1 stub** 
 ## B13 performance research (shared draft PR #3)
 
 The shared branch now contains **86 indexed concepts, all 86 reviewed, zero stubs** after upgrading `caching` and adding five source-scoped performance concepts. See [B13 decisions and research](batch-13-performance.md). Reviewed means the pages provide dated source-backed scoped guidance, not an independent guarantee of applicability, performance, cache correctness, security or cost savings for any target app. **B14's proposed agent-friendly retrieval/governance concepts remain to be implemented**; zero stubs does not mean all campaign gaps are filled.
+
+## B14 agent retrieval, governance and language overlays (shared PR #3)
+
+The campaign branch contains **93 indexed / 93 scoped reviewed / 0 stubs** after B14's seven additional reviewed concepts: four language overlays (.NET/C#, TypeScript/Node, Java/Scala and Python) plus ADR lifecycle, catalog index evidence integrity and retrieval evaluation. The [B14 report](batch-14-agent-retrieval.md) documents context, sources, intent-scoped lexical retrieval, and the 83-case golden evaluation. [Full campaign tracker](b7-b14-campaign.md) shows the batch gates and PR status.
+
+**Important:** Reviewed catalog metadata, passing index validation, and deterministic retrieval do **not** independently certify 93 source claims, source freshness, application security/performance, or semantic search relevance. The campaign's planned corpus and stub backlog is complete, but these empirical/independent review gaps remain separate follow-up work.
