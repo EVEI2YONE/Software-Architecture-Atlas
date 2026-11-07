@@ -2,7 +2,7 @@
 
 A **human-readable and agent-searchable** knowledge catalog covering software architecture, design principles, dependency health, clean code, asynchronous and distributed systems, scalability, and maintainability.
 
-This is a **knowledge/reference repository**, not a claim that every scaffolded concept is vetted. The initial 30 concept pages are explicitly marked `stub` until evidence-backed curation occurs.
+This is a **knowledge/reference repository**, not a claim that every scaffolded concept is vetted. The initial 30 concept pages began as research stubs. Concept status now varies; always check the canonical index, reviewed source evidence and applicable runtime constraints.
 
 ## Start here
 
@@ -13,6 +13,7 @@ This is a **knowledge/reference repository**, not a claim that every scaffolded 
 - [Sequenced knowledge-gap research batches](docs/knowledge-gap-batches.md)
 - [Batch B1: code organization research and measurement guide](docs/batch-1-code-organization.md)
 - [Batch B2: architectural drivers and boundary decisions](docs/batch-2-architecture-boundaries.md)
+- [Batch B3: security, contracts, data and correctness](docs/batch-3-security-contracts-data.md)
 - [Navigation and retrieval guide](docs/agent-search.md)
 - [Source and evidence policy](docs/evidence-policy.md)
 - [Knowledge-gap and curation workflow](docs/curation-workflow.md)
