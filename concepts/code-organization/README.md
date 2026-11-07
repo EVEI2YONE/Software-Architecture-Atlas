@@ -39,3 +39,11 @@ Modularity, human navigation and code reduction. Eighteen pages contain **scoped
 [B5 maturity and migration research](../../docs/batch-5-maturity-evolution.md)
 
 [B8 context and implementation report](../../docs/batch-8-structure-navigation.md)
+
+## Language and runtime overlays (B14)
+- [.NET and C# architecture overlay](dotnet-and-csharp-overlay.md) — `dotnet-and-csharp-overlay`
+- [TypeScript and Node.js architecture overlay](typescript-and-node-overlay.md) — `typescript-and-node-overlay`
+- [Java and Scala architecture overlay](java-and-scala-overlay.md) — `java-and-scala-overlay`
+- [Python architecture and packaging overlay](python-overlay.md) — `python-overlay`
+
+[Agent retrieval and governance research](../../docs/batch-14-agent-retrieval.md)
