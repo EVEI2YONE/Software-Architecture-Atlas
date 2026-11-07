@@ -38,7 +38,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | GitHub Actions run 42357794660 succeeded; connector links and metadata passed | Complete (scoped catalog curation) |
 | B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | GitHub Actions 42358088882 succeeded; 11 direct page checks passed | Complete (scoped catalog curation) |
 | B11 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358308490 success; 8 direct checks passed | Complete (scoped catalog curation) |
-| B12 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | 8 direct checks passed; PR CI pending | Curated, pending CI |
+| B12 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358524699 success; 8 direct checks passed | Complete (scoped catalog curation) |
 | B13 | Yes | Not started | Not run | 0% |
 | B14 | Yes | Not started | Not run | 0% |
 
@@ -111,3 +111,8 @@ No target application's repository, performance traces, measured developer navig
 - Branch index **81 total / 80 reviewed / 1 stub (`caching`)**. Updated distributed README, coverage and search tests with 64-case gold fixture. Preserved the caching stub as unknown evidence.
 - Direct connector checks: eight B12 pages, zero metadata/source-count/related-ID/link errors; PR GitHub Actions validation to be recorded separately.
 - Material distinctions: broker duplicate detection is bounded, not universal exactly-once effects; outbox does not prevent duplicate delivery; saga compensation is not ACID rollback; schema compatibility depends on format and direction. No actual application integration was executed.
+
+## B12 completed verification
+- GitHub Actions workflow run `42358524699` succeeded on commit `e971c36b0a41e93b37fcfe7b143d017c91475fbc`, including configured catalog validator and retrieval regression suite; earlier retrieval fixture commit `1d3ca40` also passed CI.
+- Eight B12 pages passed direct frontmatter, numbered source metadata, related IDs and internal concept-link checks with no errors. This validates catalog consistency, not real queue delivery semantics or business correctness.
+- Overall progress: **6 of 8 batches (75%)**. B13 caching and performance next, on the same PR #3.
