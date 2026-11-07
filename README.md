@@ -43,3 +43,7 @@ Add one concept per stable canonical ID. Follow [CONTRIBUTING.md](CONTRIBUTING.m
 ## Scope and boundaries
 
 Prioritize realistic simplicity and developer comprehension over maximal architectural sophistication. Do not encourage blanket microservices, CQRS, layers, interfaces, caching, or async for their own sake. Security and correctness outweigh line-count reduction. Catalog reviews do not substitute for running tests, profiling, dependency resolution, security scanning, or Sonar analysis on a target repository.
+
+## Agent-friendly search
+
+Run `python scripts/search_catalog.py "dependency hell" --json` for deterministic offline, machine-readable concept lookup, or `python scripts/search_catalog.py "idempotency" --expand 2 --json` to traverse related concepts. See [agentic search guide](docs/agentic-search.md) for result schema, evidence handling, limitations and examples. Run `python -m unittest discover -s tests -v` for retrieval tests.

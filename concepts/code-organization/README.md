@@ -7,4 +7,6 @@ Modularity, human navigation and code reduction. All linked concept pages curren
 - [Code reduction and readability](code-simplification.md) — `code-simplification`
 - [Dependency direction and injection](dependency-inversion.md) — `dependency-inversion`
 
+- [Application file and project structure selection](project-structure-selection.md) — `project-structure-selection` (**research gap; stub**)
+
 [Index](../../catalog/index.json) · [Catalog overview](../../README.md)

@@ -1,12 +1,12 @@
 # Initial architecture coverage
 
-**All 30 initial topics are research stubs, not independently curated guidance.** Each is a discoverable research target.
+**All 30 initial topics and the additional project-structure-selection topic are research stubs, not independently curated guidance.** Each is a discoverable research target.
 
 | Category | Count | Scope |
 |---|---:|---|
 | [principles](../concepts/principles/README.md) | 4 | Design principles and practical trade-offs |
 | [domain-design](../concepts/domain-design/README.md) | 3 | Domain-driven design and business boundaries |
-| [code-organization](../concepts/code-organization/README.md) | 4 | Modularity, human navigation and code reduction |
+| [code-organization](../concepts/code-organization/README.md) | 5 | Modularity, human navigation and code reduction |
 | [dependencies](../concepts/dependencies/README.md) | 2 | Dependency resolution, third-party packages and supply chain |
 | [runtime](../concepts/runtime/README.md) | 3 | Asynchrony, threading and concurrency safety |
 | [distributed-systems](../concepts/distributed-systems/README.md) | 4 | Distributed communication, failure and consistency |
@@ -18,3 +18,7 @@
 
 ## Initial backlog beyond the scaffold
 Language-specific implementation standards (C#/.NET, Java, Scala, JavaScript/TypeScript, Python), lockfile/package-manager examples, Sonar rule mapping, static complexity metrics by language, API versioning, data migration, security architecture, threat modeling, rate limiting, tenancy, resource budgets, deployment topology, integration contracts, and operational cost models. Add only when properly scoped and sourced.
+
+## Added research gap: application code/file structure
+
+[project-structure-selection](../concepts/code-organization/project-structure-selection.md) is a new **stub**, not reviewed guidance. It covers UI, API, Functions, WebJobs, libraries and multi-project layouts from prototype through enterprise, emphasizing navigation, net code reduction, reuse, modularity and extensibility. Validate alternatives against actual repositories and runtime conventions before recommending changes. See [GAP-13](foundational-gap-assessment.md#gap-13--application-code-and-file-structure-guidance-across-types-and-scale).
