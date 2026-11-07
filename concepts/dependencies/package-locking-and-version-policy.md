@@ -38,6 +38,12 @@ package locking and version policy; package locking and version policy; maintain
 - [transitive-dependency-resolution](../dependencies/transitive-dependency-resolution.md)
 - [supply-chain](../dependencies/supply-chain.md)
 
+## B18: reproducible React/Vite install and build gate
+
+For an application, commit the npm lockfile and compatible project npm configuration, pin the supported Node/npm versions in CI, and run `npm ci` on a **clean** runner. npm ci rejects lock/manifest disagreement rather than silently modifying the lock [npm CLI v11](https://docs.npmjs.com/cli/v11/commands/npm-ci/). Run a separate applicable TypeScript project typecheck (`tsc --noEmit` or `tsc -b`) because a Vite production build alone is not a type-safety check, then run tests and Vite's production build. A locally unavailable npm registry is a **blocked local gate**, not proof of a passing build.
+
+See the [B18 clean-build and browser verification runbook](../../docs/batch-18-production-verification.md), plus [Vite production builds](https://vite.dev/guide/build) (checked 2026-11-07). Actual scripts must be read from the target project's package.json before using example commands.
+
 ## Evidence and sources
 1. npm ci v11, https://docs.npmjs.com/cli/v11/commands/npm-ci/ (accessed 2026-11-07). Applicability: the named ecosystem/tool and the specific behavior described above; not a benchmark of architectural success.
 2. NuGet PackageReference and lock files, https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files (accessed 2026-11-07). Applicability: the named ecosystem/tool and the specific behavior described above; not a benchmark of architectural success.
