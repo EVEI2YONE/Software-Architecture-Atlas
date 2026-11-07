@@ -29,8 +29,9 @@ class RetrievalGoldTests(unittest.TestCase):
         hit = search("idempotency")["results"][0]
         self.assertNotEqual(hit["evidence"], "verified")
         self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "requires-source-inspection")
-        self.assertEqual(search("caching")["results"][0]["status"], "stub")
-        self.assertEqual(search("caching")["results"][0]["evidence"], "unknown")
+        self.assertEqual(search("caching")["results"][0]["status"], "reviewed")
+        self.assertEqual(search("caching")["results"][0]["evidence"], "requires-source-inspection")
+        self.assertEqual(search("caching", status="stub")["results"], [])
 
 
 if __name__ == "__main__":
