@@ -178,6 +178,10 @@ distributed lease; worker fencing token; stale worker; split brain job; lease ge
 5. Kubernetes Documentation, Leases: https://kubernetes.io/docs/concepts/architecture/leases/ (accessed 2026-11-07). Example of lease/heartbeat and leader-election coordination; Kubernetes Lease is **not** used in the proposed PostgreSQL pattern.
 6. SQLAlchemy 2.0 Documentation, Session Transactions: https://docs.sqlalchemy.org/en/20/orm/session_transaction.html (accessed 2026-11-07). Application transaction ownership; not cross-process lease certification.
 
+## Trading-data validity handoff
+
+A fenced worker must still validate its strategy inputs. See [Trading market-data integrity](../data/trading-market-data-integrity.md) for closed candles, timestamps, source availability and independent market/account eligibility. No worker lease makes data trustworthy.
+
 ## Maintenance
 
 Reviewed 2026-11-07. Reassess for deployed database versions, actual scheduling topology, partner idempotency contracts, recovery drills, measurements and new evidence. Do not interpret this as a working financial trading scheduler.
