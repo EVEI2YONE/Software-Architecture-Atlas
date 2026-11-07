@@ -90,7 +90,7 @@
     {
       "query": "project-structure-selection",
       "expected_id": "project-structure-selection",
-      "expected_status": "stub"
+      "expected_status": "reviewed"
     },
     {
       "query": "caching",
@@ -101,6 +101,31 @@
       "query": "zzzzzzzzzzzz",
       "expected_id": null,
       "expected_status": null
+    },
+    {
+      "query": "vertical-slice-architecture",
+      "expected_id": "vertical-slice-architecture",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "package-by-feature-vs-layer",
+      "expected_id": "package-by-feature-vs-layer",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "module-public-contracts",
+      "expected_id": "module-public-contracts",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "architecture-dependency-rules",
+      "expected_id": "architecture-dependency-rules",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "monorepo-vs-multirepo",
+      "expected_id": "monorepo-vs-multirepo",
+      "expected_status": "reviewed"
     }
   ]
 }
