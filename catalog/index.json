@@ -278,8 +278,8 @@
       "domain": "concurrency",
       "category": "runtime",
       "path": "concepts/runtime/async-await.md",
-      "status": "stub",
-      "summary": "Avoid sync-over-async, propagate cancellation and bound concurrent work",
+      "status": "reviewed",
+      "summary": "Choose awaited I/O, cancellation and task ownership without blocking or orphaned errors",
       "tags": [
         "runtime",
         "concurrency",
@@ -290,8 +290,8 @@
         "thread-safety",
         "backpressure"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "thread-safety",
@@ -299,8 +299,8 @@
       "domain": "concurrency",
       "category": "runtime",
       "path": "concepts/runtime/thread-safety.md",
-      "status": "stub",
-      "summary": "Identify races, lock contention, deadlocks and ownership boundaries",
+      "status": "reviewed",
+      "summary": "Control shared mutable state and synchronization to prevent races and deadlocks",
       "tags": [
         "runtime",
         "concurrency",
@@ -311,8 +311,8 @@
         "async-await",
         "backpressure"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "backpressure",
@@ -320,8 +320,8 @@
       "domain": "concurrency",
       "category": "runtime",
       "path": "concepts/runtime/backpressure.md",
-      "status": "stub",
-      "summary": "Limit work admission, queue depth and resource saturation",
+      "status": "reviewed",
+      "summary": "Bound producer/consumer work and choose explicit wait, reject or loss semantics",
       "tags": [
         "runtime",
         "concurrency",
@@ -331,8 +331,8 @@
         "async-await",
         "queues"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "idempotency",
@@ -1533,6 +1533,111 @@
         "schema-evolution"
       ],
       "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "cancellation-propagation",
+      "title": "Cancellation propagation and cleanup",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/cancellation-propagation.md",
+      "status": "reviewed",
+      "summary": "Propagate cooperative cancellation and guarantee scoped cleanup",
+      "tags": [
+        "cancellation",
+        "timeouts",
+        "cleanup"
+      ],
+      "related": [
+        "async-await",
+        "structured-concurrency",
+        "resilience"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "structured-concurrency",
+      "title": "Structured concurrency and task ownership",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/structured-concurrency.md",
+      "status": "reviewed",
+      "summary": "Keep child tasks scoped, observable and cancellable across runtimes",
+      "tags": [
+        "structured-concurrency",
+        "taskgroup",
+        "task-ownership"
+      ],
+      "related": [
+        "async-await",
+        "cancellation-propagation",
+        "workload-isolation"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "lock-contention-and-deadlocks",
+      "title": "Lock contention and deadlocks",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/lock-contention-and-deadlocks.md",
+      "status": "reviewed",
+      "summary": "Manage synchronization ordering, contention and deadlock verification",
+      "tags": [
+        "locks",
+        "deadlocks",
+        "contention"
+      ],
+      "related": [
+        "thread-safety",
+        "workload-isolation",
+        "async-streams-and-channels"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "workload-isolation",
+      "title": "Workload isolation and concurrency budgets",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/workload-isolation.md",
+      "status": "reviewed",
+      "summary": "Protect critical work from noisy workloads using measured concurrency budgets",
+      "tags": [
+        "bulkheads",
+        "isolation",
+        "capacity"
+      ],
+      "related": [
+        "backpressure",
+        "workload-admission",
+        "resilience"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "async-streams-and-channels",
+      "title": "Async streams and channels",
+      "domain": "runtime",
+      "category": "runtime",
+      "path": "concepts/runtime/async-streams-and-channels.md",
+      "status": "reviewed",
+      "summary": "Use streaming and bounded channels for incremental, backpressured work",
+      "tags": [
+        "streams",
+        "channels",
+        "producer-consumer"
+      ],
+      "related": [
+        "backpressure",
+        "async-await",
+        "queues"
+      ],
+      "source_count": 3,
       "reviewed_at": "2026-11-07"
     }
   ]
