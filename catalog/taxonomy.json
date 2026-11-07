@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "description": "Canonical architecture knowledge categories",
+  "categories": [
+    {
+      "id": "principles",
+      "description": "Design principles and practical trade-offs"
+    },
+    {
+      "id": "domain-design",
+      "description": "Domain-driven design and business boundaries"
+    },
+    {
+      "id": "code-organization",
+      "description": "Modularity, human navigation and code reduction"
+    },
+    {
+      "id": "dependencies",
+      "description": "Dependency resolution, third-party packages and supply chain"
+    },
+    {
+      "id": "runtime",
+      "description": "Asynchrony, threading and concurrency safety"
+    },
+    {
+      "id": "distributed-systems",
+      "description": "Distributed communication, failure and consistency"
+    },
+    {
+      "id": "data",
+      "description": "Data models, transactions and access patterns"
+    },
+    {
+      "id": "performance",
+      "description": "Caching, capacity and scalability"
+    },
+    {
+      "id": "quality",
+      "description": "Readability, tests, Sonar and static quality gates"
+    },
+    {
+      "id": "operations",
+      "description": "Resilience, observability and delivery"
+    },
+    {
+      "id": "governance",
+      "description": "Architecture decisions and lifecycle"
+    }
+  ]
+}

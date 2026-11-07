@@ -1,0 +1,627 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-07",
+  "description": "Searchable canonical concept inventory. status=stub denotes no verified guidance.",
+  "concepts": [
+    {
+      "id": "solid",
+      "title": "SOLID principles",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/solid.md",
+      "status": "stub",
+      "summary": "Applying SRP, OCP, LSP, ISP and DIP without abstraction inflation",
+      "tags": [
+        "principles",
+        "design",
+        "solid"
+      ],
+      "related": [
+        "modularity",
+        "dependency-inversion"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "separation-of-concerns",
+      "title": "Separation of concerns",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/separation-of-concerns.md",
+      "status": "stub",
+      "summary": "Keep independent reasons to change isolated while avoiding ceremonial layering",
+      "tags": [
+        "principles",
+        "design",
+        "separation",
+        "of",
+        "concerns"
+      ],
+      "related": [
+        "cohesion",
+        "modularity"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "dry-vs-abstraction",
+      "title": "DRY versus premature abstraction",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/dry-vs-abstraction.md",
+      "status": "stub",
+      "summary": "Prefer understandable duplication when shared behavior has not stabilized",
+      "tags": [
+        "principles",
+        "design",
+        "dry",
+        "vs",
+        "abstraction"
+      ],
+      "related": [
+        "code-simplification",
+        "cohesion"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "kiss-yagni",
+      "title": "KISS and YAGNI",
+      "domain": "design",
+      "category": "principles",
+      "path": "concepts/principles/kiss-yagni.md",
+      "status": "stub",
+      "summary": "Prefer requirements-led simplicity over speculative generalization",
+      "tags": [
+        "principles",
+        "design",
+        "kiss",
+        "yagni"
+      ],
+      "related": [
+        "code-simplification",
+        "decision-records"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "bounded-contexts",
+      "title": "DDD bounded contexts",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/bounded-contexts.md",
+      "status": "stub",
+      "summary": "Align context boundaries with business language and ownership",
+      "tags": [
+        "domain-design",
+        "domain",
+        "bounded",
+        "contexts"
+      ],
+      "related": [
+        "aggregates",
+        "modularity"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "aggregates",
+      "title": "Aggregates and invariants",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/aggregates.md",
+      "status": "stub",
+      "summary": "Define consistency boundaries and transaction-scoped invariants",
+      "tags": [
+        "domain-design",
+        "domain",
+        "aggregates"
+      ],
+      "related": [
+        "bounded-contexts",
+        "transactions"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "domain-events",
+      "title": "Domain events",
+      "domain": "domain",
+      "category": "domain-design",
+      "path": "concepts/domain-design/domain-events.md",
+      "status": "stub",
+      "summary": "Model business-significant changes without incidental coupling",
+      "tags": [
+        "domain-design",
+        "domain",
+        "domain",
+        "events"
+      ],
+      "related": [
+        "bounded-contexts",
+        "event-driven"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "modularity",
+      "title": "Module boundaries and cohesion",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/modularity.md",
+      "status": "stub",
+      "summary": "Group code by ownership, capability and reasons to change",
+      "tags": [
+        "code-organization",
+        "maintainability",
+        "modularity"
+      ],
+      "related": [
+        "separation-of-concerns",
+        "dependency-inversion"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "feature-first-folders",
+      "title": "Feature-first file structure",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/feature-first-folders.md",
+      "status": "stub",
+      "summary": "Optimize finding, changing and deleting cohesive features",
+      "tags": [
+        "code-organization",
+        "maintainability",
+        "feature",
+        "first",
+        "folders"
+      ],
+      "related": [
+        "modularity",
+        "code-simplification"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "code-simplification",
+      "title": "Code reduction and readability",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/code-simplification.md",
+      "status": "stub",
+      "summary": "Remove accidental complexity without sacrificing clarity or explicit behavior",
+      "tags": [
+        "code-organization",
+        "maintainability",
+        "code",
+        "simplification"
+      ],
+      "related": [
+        "dry-vs-abstraction",
+        "cognitive-complexity"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "dependency-inversion",
+      "title": "Dependency direction and injection",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/dependency-inversion.md",
+      "status": "stub",
+      "summary": "Place stable contracts at appropriate boundaries and avoid service locator patterns",
+      "tags": [
+        "code-organization",
+        "maintainability",
+        "dependency",
+        "inversion"
+      ],
+      "related": [
+        "modularity",
+        "dependency-conflicts"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "dependency-conflicts",
+      "title": "Dependency conflict management",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/dependency-conflicts.md",
+      "status": "stub",
+      "summary": "Control package versions, transitive resolution and compatibility drift",
+      "tags": [
+        "dependencies",
+        "dependencies",
+        "dependency",
+        "conflicts"
+      ],
+      "related": [
+        "supply-chain",
+        "dependency-inversion"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "supply-chain",
+      "title": "Software supply chain hygiene",
+      "domain": "dependencies",
+      "category": "dependencies",
+      "path": "concepts/dependencies/supply-chain.md",
+      "status": "stub",
+      "summary": "Review provenance, licensing, vulnerabilities and update policy",
+      "tags": [
+        "dependencies",
+        "dependencies",
+        "supply",
+        "chain"
+      ],
+      "related": [
+        "dependency-conflicts",
+        "quality-gates"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "async-await",
+      "title": "Async/await and cancellation",
+      "domain": "concurrency",
+      "category": "runtime",
+      "path": "concepts/runtime/async-await.md",
+      "status": "stub",
+      "summary": "Avoid sync-over-async, propagate cancellation and bound concurrent work",
+      "tags": [
+        "runtime",
+        "concurrency",
+        "async",
+        "await"
+      ],
+      "related": [
+        "thread-safety",
+        "backpressure"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "thread-safety",
+      "title": "Thread safety and shared state",
+      "domain": "concurrency",
+      "category": "runtime",
+      "path": "concepts/runtime/thread-safety.md",
+      "status": "stub",
+      "summary": "Identify races, lock contention, deadlocks and ownership boundaries",
+      "tags": [
+        "runtime",
+        "concurrency",
+        "thread",
+        "safety"
+      ],
+      "related": [
+        "async-await",
+        "backpressure"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "backpressure",
+      "title": "Backpressure and bounded concurrency",
+      "domain": "concurrency",
+      "category": "runtime",
+      "path": "concepts/runtime/backpressure.md",
+      "status": "stub",
+      "summary": "Limit work admission, queue depth and resource saturation",
+      "tags": [
+        "runtime",
+        "concurrency",
+        "backpressure"
+      ],
+      "related": [
+        "async-await",
+        "queues"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "idempotency",
+      "title": "Idempotency and retries",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/idempotency.md",
+      "status": "stub",
+      "summary": "Protect against duplicate effects, replay and partial failures",
+      "tags": [
+        "distributed-systems",
+        "distributed",
+        "idempotency"
+      ],
+      "related": [
+        "transactions",
+        "event-driven"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "consistency",
+      "title": "Consistency and trade-offs",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/consistency.md",
+      "status": "stub",
+      "summary": "Select consistency models using domain invariants and availability needs",
+      "tags": [
+        "distributed-systems",
+        "distributed",
+        "consistency"
+      ],
+      "related": [
+        "transactions",
+        "aggregates"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "event-driven",
+      "title": "Event-driven integration",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/event-driven.md",
+      "status": "stub",
+      "summary": "Choose events versus direct calls with delivery, ordering and schema evolution in mind",
+      "tags": [
+        "distributed-systems",
+        "distributed",
+        "event",
+        "driven"
+      ],
+      "related": [
+        "idempotency",
+        "domain-events"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "queues",
+      "title": "Queues and messaging",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/queues.md",
+      "status": "stub",
+      "summary": "Handle ordering, dead-letter routing, throughput and consumer ownership",
+      "tags": [
+        "distributed-systems",
+        "distributed",
+        "queues"
+      ],
+      "related": [
+        "backpressure",
+        "idempotency"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "transactions",
+      "title": "Transactions and boundaries",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/transactions.md",
+      "status": "stub",
+      "summary": "Choose transaction scope, isolation, and distributed consistency strategy",
+      "tags": [
+        "data",
+        "data",
+        "transactions"
+      ],
+      "related": [
+        "aggregates",
+        "consistency"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "cqrs",
+      "title": "CQRS decision framework",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/cqrs.md",
+      "status": "stub",
+      "summary": "Separate read and write models only when complexity and workload justify it",
+      "tags": [
+        "data",
+        "data",
+        "cqrs"
+      ],
+      "related": [
+        "transactions",
+        "event-driven"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "caching",
+      "title": "Caching and invalidation",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/caching.md",
+      "status": "stub",
+      "summary": "Evaluate TTL, consistency, eviction, invalidation and cache stampedes",
+      "tags": [
+        "performance",
+        "performance",
+        "caching"
+      ],
+      "related": [
+        "consistency",
+        "observability"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "scalability",
+      "title": "Scalability and capacity planning",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/scalability.md",
+      "status": "stub",
+      "summary": "Use measured bottlenecks to choose scaling, sharding and workload controls",
+      "tags": [
+        "performance",
+        "performance",
+        "scalability"
+      ],
+      "related": [
+        "backpressure",
+        "caching"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "cognitive-complexity",
+      "title": "Cognitive complexity and human readability",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/cognitive-complexity.md",
+      "status": "stub",
+      "summary": "Prioritize clear control flow over metric gaming",
+      "tags": [
+        "quality",
+        "quality",
+        "cognitive",
+        "complexity"
+      ],
+      "related": [
+        "code-simplification",
+        "quality-gates"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "quality-gates",
+      "title": "Sonar quality gates and static analysis",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/quality-gates.md",
+      "status": "stub",
+      "summary": "Use configured Sonar profiles for bugs, vulnerabilities, hotspots, smells and duplication",
+      "tags": [
+        "quality",
+        "quality",
+        "quality",
+        "gates"
+      ],
+      "related": [
+        "cognitive-complexity",
+        "testing-strategy"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "testing-strategy",
+      "title": "Architecture-focused testing strategy",
+      "domain": "quality",
+      "category": "quality",
+      "path": "concepts/quality/testing-strategy.md",
+      "status": "stub",
+      "summary": "Balance unit, integration, contract and end-to-end tests",
+      "tags": [
+        "quality",
+        "quality",
+        "testing",
+        "strategy"
+      ],
+      "related": [
+        "quality-gates",
+        "modularity"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "observability",
+      "title": "Observability and diagnostics",
+      "domain": "operations",
+      "category": "operations",
+      "path": "concepts/operations/observability.md",
+      "status": "stub",
+      "summary": "Instrument traces, logs and metrics across ownership boundaries",
+      "tags": [
+        "operations",
+        "operations",
+        "observability"
+      ],
+      "related": [
+        "scalability",
+        "caching"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "resilience",
+      "title": "Resilience patterns",
+      "domain": "operations",
+      "category": "operations",
+      "path": "concepts/operations/resilience.md",
+      "status": "stub",
+      "summary": "Use timeout, retry budgets, bulkheads and circuit breakers purposefully",
+      "tags": [
+        "operations",
+        "operations",
+        "resilience"
+      ],
+      "related": [
+        "idempotency",
+        "observability"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    },
+    {
+      "id": "decision-records",
+      "title": "Architecture decision records",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/decision-records.md",
+      "status": "stub",
+      "summary": "Record context, constraints, alternatives, consequences and revisit triggers",
+      "tags": [
+        "governance",
+        "governance",
+        "decision",
+        "records"
+      ],
+      "related": [
+        "kiss-yagni",
+        "quality-gates"
+      ],
+      "source_count": 0,
+      "reviewed_at": null
+    }
+  ]
+}
