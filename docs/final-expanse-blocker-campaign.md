@@ -13,7 +13,7 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 | B16 | Worker leases, fencing, retry and crash-recovery ownership | Research complete; CI passed | Failure matrix and no-stale-worker verification protocol |
 | B17 | Trusted exchange market data and trading-decision eligibility | Research complete; CI passed | Data validation states and reject/skip fixture matrix |
 | B18 | Worker telemetry, hosted OIDC/tenant isolation, reproducible frontend build | Research complete; CI passed | Domain-specific verification recipes and security boundaries |
-| B19 | Consistency, source audits and agent retrieval evaluation | Research delivered; CI pending | Catalog validation, golden queries, blocker-to-concept handoff |
+| B19 | Consistency, source audits and agent retrieval evaluation | Research complete; CI passed | Catalog validation, golden queries, blocker-to-concept handoff |
 
 ## Operating rules
 
@@ -59,5 +59,5 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 
 - [B19 source/audit and six-blocker handoff](batch-19-final-integration-validation.md) identifies canonical owners, cross-batch terminology, sampled source verification, retrieval limits and real application test gates.
 - [B19 regression checks](../tests/test_b19_campaign_integrity.py) verify three focused concepts, B18 overlays, blockers, terminology and canonical Kraken error reference.
-- **Research status:** all five batches delivered in this one PR; final CI required before marking B19 complete.
+- **Research status:** all five batches delivered in one PR. GitHub Actions passed canonical index/link, documentation, and agent-search regression steps with the B19 tests and handoff present. The tracker status edit should also be checked at the final PR head.
 - **Product status:** all six Final Expanse implementation blockers remain open until the actual cloud/browser/PostgreSQL/Kraken/identity checks succeed.
