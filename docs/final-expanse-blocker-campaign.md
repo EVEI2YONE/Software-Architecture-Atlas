@@ -9,7 +9,7 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 
 | Batch | Blocker scope | Status | Exit evidence |
 | --- | --- | --- | --- |
-| B15 | PostgreSQL transaction invariants, SQLAlchemy sessions, contention and concurrency tests | In progress | Focused patterns, decision matrix, negative-case test plan, indexed retrieval |
+| B15 | PostgreSQL transaction invariants, SQLAlchemy sessions, contention and concurrency tests | Research complete; CI passed | Focused patterns, decision matrix, negative-case test plan, indexed retrieval |
 | B16 | Worker leases, fencing, retry and crash-recovery ownership | Pending | Failure matrix and no-stale-worker verification protocol |
 | B17 | Trusted exchange market data and trading-decision eligibility | Pending | Data validation states and reject/skip fixture matrix |
 | B18 | Worker telemetry, hosted OIDC/tenant isolation, reproducible frontend build | Pending | Domain-specific verification recipes and security boundaries |
@@ -29,3 +29,9 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 - **Unresolved:** PostgreSQL row-lock choices, `SKIP LOCKED` semantics, a bounded SQLAlchemy 2.x unit-of-work pattern, retry ownership, monetary/tenant invariants and a runnable real-PostgreSQL concurrency test plan.
 - **Not evidence:** Final Expanse's earlier SQLite tests do not validate PostgreSQL row locks or multi-process contention.
 - **Boundary:** B15 documents transactions and safe concurrency. B16 owns cross-process lease/heartbeat/fencing semantics.
+
+## B15 outcome
+
+- [B15 research report](batch-15-postgresql-concurrency.md) and [new indexed concept](../concepts/data/postgresql-transactional-concurrency.md) delivered.
+- GitHub Actions catalog, documentation and retrieval tests passed on the B15 report revision; re-run after any later changes.
+- Real-PostgreSQL Final Expanse concurrency and load/failure tests remain application-level blockers, not resolved by the Atlas.
