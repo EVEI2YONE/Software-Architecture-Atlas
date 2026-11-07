@@ -744,6 +744,159 @@
       ],
       "source_count": 3,
       "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "ui-project-structure",
+      "title": "UI application project structure",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/ui-project-structure.md",
+      "status": "reviewed",
+      "summary": "Framework-native UI routing, colocated feature components and navigation trade-offs",
+      "tags": [
+        "ui",
+        "frontend",
+        "nextjs",
+        "react",
+        "routes",
+        "components",
+        "structure"
+      ],
+      "related": [
+        "project-structure-selection",
+        "feature-first-folders",
+        "modularity",
+        "code-simplification"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "api-project-structure",
+      "title": "API endpoint and feature structure",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/api-project-structure.md",
+      "status": "reviewed",
+      "summary": "Group HTTP endpoints and domain features without mandatory service layers",
+      "tags": [
+        "api",
+        "http",
+        "aspnet",
+        "minimal",
+        "endpoints",
+        "route-groups",
+        "structure"
+      ],
+      "related": [
+        "project-structure-selection",
+        "feature-first-folders",
+        "modularity",
+        "code-simplification"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "functions-project-structure",
+      "title": "Serverless Functions project structure",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/functions-project-structure.md",
+      "status": "reviewed",
+      "summary": "Organize Azure Functions isolated-worker trigger entrypoints and shared business behavior",
+      "tags": [
+        "functions",
+        "serverless",
+        "azure",
+        "dotnet",
+        "triggers",
+        "structure"
+      ],
+      "related": [
+        "project-structure-selection",
+        "feature-first-folders",
+        "modularity",
+        "code-simplification"
+      ],
+      "source_count": 1,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "webjobs-project-structure",
+      "title": "Background WebJobs and worker structure",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/webjobs-project-structure.md",
+      "status": "reviewed",
+      "summary": "Organize continuous and scheduled WebJobs with deployment and concurrency considerations",
+      "tags": [
+        "webjobs",
+        "workers",
+        "background",
+        "jobs",
+        "scheduled",
+        "structure"
+      ],
+      "related": [
+        "project-structure-selection",
+        "feature-first-folders",
+        "modularity",
+        "code-simplification"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "libraries-project-structure",
+      "title": "Reusable library and package structure",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/libraries-project-structure.md",
+      "status": "reviewed",
+      "summary": "Choose internal modules versus publishable Python or .NET libraries",
+      "tags": [
+        "libraries",
+        "packages",
+        "python",
+        "nuget",
+        "src-layout",
+        "reuse"
+      ],
+      "related": [
+        "project-structure-selection",
+        "feature-first-folders",
+        "modularity",
+        "code-simplification"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "multi-project-structure",
+      "title": "Multi-project solution and deployable boundaries",
+      "domain": "maintainability",
+      "category": "code-organization",
+      "path": "concepts/code-organization/multi-project-structure.md",
+      "status": "reviewed",
+      "summary": "Evaluate multi-project UI API Functions WebJobs and shared contracts",
+      "tags": [
+        "multi-project",
+        "deployables",
+        "ui",
+        "api",
+        "functions",
+        "webjobs",
+        "libraries"
+      ],
+      "related": [
+        "project-structure-selection",
+        "feature-first-folders",
+        "modularity",
+        "code-simplification"
+      ],
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     }
   ]
 }
