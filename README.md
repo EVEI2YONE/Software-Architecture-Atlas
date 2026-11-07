@@ -71,6 +71,7 @@ A `reviewed` page means scoped references and curation metadata are present, **n
 
 - [Shared campaign tracker](docs/final-expanse-blocker-campaign.md)
 - [B15: PostgreSQL transactional concurrency](docs/batch-15-postgresql-concurrency.md)
+- [B16: Durable worker leases, fencing and recovery](docs/batch-16-worker-leases-fencing.md)
 - This focused research extends architecture guidance and does not certify the Final Expanse application.
 
 ## Support This Project
