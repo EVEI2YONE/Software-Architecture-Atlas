@@ -346,6 +346,76 @@
       "query": "resource-budgets",
       "expected_id": "resource-budgets",
       "expected_status": "reviewed"
+    },
+    {
+      "query": "adr-lifecycle",
+      "expected_id": "adr-lifecycle",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "adr superseded lifecycle",
+      "expected_id": "adr-lifecycle",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "dotnet-and-csharp-overlay",
+      "expected_id": "dotnet-and-csharp-overlay",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "dotnet csharp solution boundaries",
+      "expected_id": "dotnet-and-csharp-overlay",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "typescript-and-node-overlay",
+      "expected_id": "typescript-and-node-overlay",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "typescript node package exports",
+      "expected_id": "typescript-and-node-overlay",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "java-and-scala-overlay",
+      "expected_id": "java-and-scala-overlay",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "java scala modular build",
+      "expected_id": "java-and-scala-overlay",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "python-overlay",
+      "expected_id": "python-overlay",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "python wheel src layout",
+      "expected_id": "python-overlay",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "knowledge-index-validation",
+      "expected_id": "knowledge-index-validation",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "catalog source claim audit",
+      "expected_id": "knowledge-index-validation",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "retrieval-evaluation",
+      "expected_id": "retrieval-evaluation",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "agent search evaluation",
+      "expected_id": "retrieval-evaluation",
+      "expected_status": "reviewed"
     }
   ]
 }
