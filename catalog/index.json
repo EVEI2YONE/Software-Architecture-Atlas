@@ -360,8 +360,8 @@
       "domain": "distributed",
       "category": "distributed-systems",
       "path": "concepts/distributed-systems/consistency.md",
-      "status": "stub",
-      "summary": "Select consistency models using domain invariants and availability needs",
+      "status": "reviewed",
+      "summary": "Choose local atomic invariants and explicit cross-service convergence guarantees",
       "tags": [
         "distributed-systems",
         "distributed",
@@ -371,8 +371,8 @@
         "transactions",
         "aggregates"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "event-driven",
@@ -380,8 +380,8 @@
       "domain": "distributed",
       "category": "distributed-systems",
       "path": "concepts/distributed-systems/event-driven.md",
-      "status": "stub",
-      "summary": "Choose events versus direct calls with delivery, ordering and schema evolution in mind",
+      "status": "reviewed",
+      "summary": "Choose event integration with delivery, schema, lag and failure ownership",
       "tags": [
         "distributed-systems",
         "distributed",
@@ -392,8 +392,8 @@
         "idempotency",
         "domain-events"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "queues",
@@ -401,8 +401,8 @@
       "domain": "distributed",
       "category": "distributed-systems",
       "path": "concepts/distributed-systems/queues.md",
-      "status": "stub",
-      "summary": "Handle ordering, dead-letter routing, throughput and consumer ownership",
+      "status": "reviewed",
+      "summary": "Understand durable queues, ordered sessions, retries and dead-letter operations",
       "tags": [
         "distributed-systems",
         "distributed",
@@ -412,8 +412,8 @@
         "backpressure",
         "idempotency"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "transactions",
@@ -1638,6 +1638,114 @@
         "queues"
       ],
       "source_count": 3,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "delivery-guarantees",
+      "title": "Message delivery guarantees",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/delivery-guarantees.md",
+      "status": "reviewed",
+      "summary": "Differentiate transport and end-to-end business-effect delivery semantics",
+      "tags": [
+        "delivery",
+        "duplicates",
+        "at-least-once"
+      ],
+      "related": [
+        "idempotency",
+        "queues",
+        "outbox-pattern"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "outbox-pattern",
+      "title": "Transactional outbox pattern",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/outbox-pattern.md",
+      "status": "reviewed",
+      "summary": "Coordinate local state commit with recoverable event publication",
+      "tags": [
+        "outbox",
+        "dual-write",
+        "integration"
+      ],
+      "related": [
+        "transactions",
+        "idempotency",
+        "delivery-guarantees",
+        "event-driven"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "sagas-and-compensation",
+      "title": "Sagas and compensation",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/sagas-and-compensation.md",
+      "status": "reviewed",
+      "summary": "Coordinate distributed workflow steps using recoverable business compensation",
+      "tags": [
+        "sagas",
+        "compensation",
+        "distributed-transactions"
+      ],
+      "related": [
+        "consistency",
+        "transactions",
+        "idempotency",
+        "outbox-pattern"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "schema-and-event-versioning",
+      "title": "Event schema and contract versioning",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/schema-and-event-versioning.md",
+      "status": "reviewed",
+      "summary": "Protect asynchronous producers and consumers across schema evolution",
+      "tags": [
+        "event-schema",
+        "compatibility",
+        "versioning"
+      ],
+      "related": [
+        "event-driven",
+        "api-contracts",
+        "schema-evolution"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "service-boundaries",
+      "title": "Service boundaries and autonomy",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/service-boundaries.md",
+      "status": "reviewed",
+      "summary": "Evaluate independent deployables using business ownership and operational costs",
+      "tags": [
+        "service-boundaries",
+        "microservices",
+        "autonomy"
+      ],
+      "related": [
+        "bounded-contexts",
+        "multi-project-structure",
+        "event-driven",
+        "consistency"
+      ],
+      "source_count": 2,
       "reviewed_at": "2026-11-07"
     }
   ]
