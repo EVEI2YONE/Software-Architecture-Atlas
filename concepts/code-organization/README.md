@@ -1,6 +1,6 @@
 # code-organization
 
-Modularity, human navigation and code reduction. Eighteen pages contain **scoped reviewed** source-based guidance, including the B8 structure-selection framework. Application-specific navigation, code reduction, and growth-stage outcomes remain unmeasured. A reviewed concept is not proof of improvements in a target codebase.
+Modularity, human navigation and code reduction. Twenty-two pages contain **scoped reviewed** source-based guidance, including the B8 structure-selection framework. Application-specific navigation, code reduction, and growth-stage outcomes remain unmeasured. A reviewed concept is not proof of improvements in a target codebase.
 
 - [Module boundaries and cohesion](modularity.md) — `modularity` (reviewed, scoped)
 - [Feature-first file structure](feature-first-folders.md) — `feature-first-folders` (reviewed, scoped)

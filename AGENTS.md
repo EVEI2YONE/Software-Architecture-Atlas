@@ -36,3 +36,7 @@ When a user or validation flags omissions, wrong links, weak evidence or broken 
 ## Knowledge-gap batching
 - For backlog prioritization, consult `docs/knowledge-gap-batches.md` and the numbered gaps in `docs/foundational-gap-assessment.md`. Batch labels are research units, not verified architectural guidance.
 - Record project type, growth stage, platform/runtime and observed developer-navigation tasks before suggesting file-layout refactors. Prefer no-change and low-risk simplifications when supported.
+
+## Documentation lifecycle
+
+Treat `docs/coverage.md` as a current summary and `research/archive/` as historical snapshots. Prefer canonical `catalog/index.json` over archived counts. Report whether a result is metadata-validated, source-supported, or verified against the target application; never collapse these into a single `reviewed` assertion.
