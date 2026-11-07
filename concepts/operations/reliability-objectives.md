@@ -33,6 +33,12 @@ reliability objectives; operations; service reliability; enterprise runtime; res
 - [observability](../operations/observability.md)
 - [transactions](../data/transactions.md)
 
+## B18: background worker recovery measures
+
+For durable background jobs, define SLIs around **eligible due-work completion**, bounded processing lag, stale-lease detection and recovery time after worker loss. Distinguish paused or intentionally stopped bots from due jobs in denominators. Track job business outcomes separately from process availability: a skipped evaluation from stale market data is not a successful trade. Select thresholds and SLO windows only after measuring real deployments and getting product/operations sign-off. Rehearse loss of database connectivity, crashed workers and failed alert delivery rather than inferring recovery from health probes.
+
+See the [B18 reliability and failure-drill runbook](../../docs/batch-18-production-verification.md). The exercises and numeric targets remain **unexecuted proposals** for Final Expanse.
+
 ## Evidence and sources
 1. Google SRE Service Level Objectives: https://sre.google/sre-book/service-level-objectives/ (accessed 2026-11-07).
 2. Google SRE Implementing SLOs: https://sre.google/workbook/implementing-slos/ (accessed 2026-11-07).
