@@ -241,6 +241,46 @@
       "query": "isolation-levels",
       "expected_id": "isolation-levels",
       "expected_status": "reviewed"
+    },
+    {
+      "query": "async-await",
+      "expected_id": "async-await",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "thread-safety",
+      "expected_id": "thread-safety",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "backpressure",
+      "expected_id": "backpressure",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "cancellation-propagation",
+      "expected_id": "cancellation-propagation",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "structured-concurrency",
+      "expected_id": "structured-concurrency",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "lock-contention-and-deadlocks",
+      "expected_id": "lock-contention-and-deadlocks",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "workload-isolation",
+      "expected_id": "workload-isolation",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "async-streams-and-channels",
+      "expected_id": "async-streams-and-channels",
+      "expected_status": "reviewed"
     }
   ]
 }
