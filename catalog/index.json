@@ -459,18 +459,19 @@
       "domain": "performance",
       "category": "performance",
       "path": "concepts/performance/caching.md",
-      "status": "stub",
-      "summary": "Evaluate TTL, consistency, eviction, invalidation and cache stampedes",
+      "status": "reviewed",
+      "summary": "Evaluate cache-aside, consistency, key ownership, TTL and measured origin benefits",
       "tags": [
         "performance",
         "caching"
       ],
       "related": [
+        "cache-invalidation-and-stampedes",
         "consistency",
         "observability"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "scalability",
@@ -1746,6 +1747,111 @@
         "consistency"
       ],
       "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "cache-invalidation-and-stampedes",
+      "title": "Cache invalidation and stampede control",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/cache-invalidation-and-stampedes.md",
+      "status": "reviewed",
+      "summary": "Limit synchronized origin misses and enforce safe freshness boundaries",
+      "tags": [
+        "cache",
+        "invalidation",
+        "stampedes"
+      ],
+      "related": [
+        "caching",
+        "backpressure",
+        "consistency"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "load-testing-and-baselines",
+      "title": "Load testing and performance baselines",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/load-testing-and-baselines.md",
+      "status": "reviewed",
+      "summary": "Establish reproducible workload baselines and tail-latency checks",
+      "tags": [
+        "load-testing",
+        "benchmark",
+        "latency"
+      ],
+      "related": [
+        "scalability",
+        "observability",
+        "resource-budgets"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "rate-limiting",
+      "title": "Rate limiting and throttling",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/rate-limiting.md",
+      "status": "reviewed",
+      "summary": "Protect service capacity with appropriate request, concurrency and cost limits",
+      "tags": [
+        "rate-limiting",
+        "throttling",
+        "quotas"
+      ],
+      "related": [
+        "workload-admission",
+        "backpressure",
+        "resource-budgets"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "partitioning-and-sharding",
+      "title": "Partitioning and sharding trade-offs",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/partitioning-and-sharding.md",
+      "status": "reviewed",
+      "summary": "Assess data distribution, skew and transactional costs before splitting storage",
+      "tags": [
+        "partitioning",
+        "sharding",
+        "skew"
+      ],
+      "related": [
+        "scalability",
+        "data-access-boundaries",
+        "consistency"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "resource-budgets",
+      "title": "Resource budgets and capacity constraints",
+      "domain": "performance",
+      "category": "performance",
+      "path": "concepts/performance/resource-budgets.md",
+      "status": "reviewed",
+      "summary": "Set measured CPU, memory, I/O and workload limits against service objectives",
+      "tags": [
+        "capacity",
+        "budgets",
+        "resources"
+      ],
+      "related": [
+        "scalability",
+        "workload-admission",
+        "operational-costs"
+      ],
+      "source_count": 3,
       "reviewed_at": "2026-11-07"
     }
   ]
