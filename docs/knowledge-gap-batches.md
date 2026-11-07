@@ -36,6 +36,8 @@ A **batch** is a research and verification milestone, not a release or blanket p
 
 ## B1 — Code reduction, file structure and developer navigation
 
+**Execution report:** [B1 context and assessment](batch-1-code-organization.md). Two scoped concepts curated; no application-specific benchmark has been performed.
+
 **Research:** Expand `project-structure-selection` alongside `feature-first-folders`, `code-simplification`, `modularity`, `dependency-inversion`, `dry-vs-abstraction`. Evaluate flat, framework-native, feature-first/vertical-slice, layered and modular-monolith layouts *against observed developer tasks*.
 
 **Questions:** Which code is unnecessary? Which abstractions or cross-project helpers create more complexity than reuse? Does finding one feature require scanning unrelated folders? Would moving files reduce change footprint or merely add indirection? When does shared code deserve its own package?
@@ -104,7 +106,7 @@ A **batch** is a research and verification milestone, not a release or blanket p
 
 ## Suggested research work units
 
-Use small, reviewable pull requests per **one concept or one coherent example pack**. Each PR should identify `batch_id`, `gap_ids`, canonical concept IDs, source URLs and dates, status transitions, evidence classification, applicability, a simpler alternative, tests, migration and rollback. Add a link to the batch plan. Research notes can be merged as draft/stub without treating the guidance as reviewed.
+For the current research campaign, use the **same branch and PR #2** for all batches, with separate, reviewable commits per concept or coherent example pack. Subsequent changes should update that PR rather than open a new PR. Use small, reviewable changes per **one concept or one coherent example pack**. Each PR should identify `batch_id`, `gap_ids`, canonical concept IDs, source URLs and dates, status transitions, evidence classification, applicability, a simpler alternative, tests, migration and rollback. Add a link to the batch plan. Research notes can be merged as draft/stub without treating the guidance as reviewed.
 
 ### Agent retrieval and task planning
 
@@ -123,7 +125,7 @@ Every batch starts **proposed / not completed**. Completion requires reviewable 
 | Batch | State | Owner | Review evidence |
 | --- | --- | --- | --- |
 | B0 | Proposed | Unassigned | Not yet linked |
-| B1 | Proposed | Unassigned | Not yet linked |
+| B1 | Partially curated — 2 scoped concepts reviewed; application metrics pending | Unassigned | [B1 context and assessment](batch-1-code-organization.md) |
 | B2 | Proposed | Unassigned | Not yet linked |
 | B3 | Proposed | Unassigned | Not yet linked |
 | B4 | Proposed | Unassigned | Not yet linked |
