@@ -36,7 +36,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | 9 pages passed metadata/source/link checks; GitHub Actions succeeded on commit 9a61420 | Complete (scoped catalog curation) |
 | B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | GitHub Actions succeeded on commit 2e48665; catalog and retrieval tests | Complete (scoped catalog curation) |
 | B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | GitHub Actions run 42357794660 succeeded; connector links and metadata passed | Complete (scoped catalog curation) |
-| B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | 11 direct metadata/source/link checks passed; CI pending | Curated, pending CI |
+| B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | GitHub Actions 42358088882 succeeded; 11 direct page checks passed | Complete (scoped catalog curation) |
 | B11 | Yes | Not started | Not run | 0% |
 | B12 | Yes | Not started | Not run | 0% |
 | B13 | Yes | Not started | Not run | 0% |
@@ -89,3 +89,8 @@ No target application's repository, performance traces, measured developer navig
 - Catalog index: 71 total, 64 reviewed, 7 stubs. Updated domain-design/data READMEs, coverage matrix, B10 research report, and retrieval corpus (48 gold queries).
 - Direct checks on all 11 B10 pages: frontmatter, source counts, internal concept links and related ID integrity, **0 errors**. Remote CI must be checked before final completion classification.
 - DDD source guidance from Microsoft .NET materials and Azure patterns; transaction isolation is PostgreSQL 18-specific. No target application data model, actual database isolation tests or production consistency observed.
+
+## B10 completed verification
+- GitHub Actions PR workflow run `42358088882` on commit `4d68681222ebc78662faa276f6b04d9f4c2939cf`: **success**, covering configured catalog validation and retrieval regression tests. The prior retrieval-fixture commit also passed CI.
+- Direct B10 checks: 11 pages, zero metadata/source-count/related-ID/local concept link failures.
+- Campaign progress: **4/8 batches (50%)**. Next B11 — async and concurrency; same branch and PR #3.
