@@ -11,7 +11,7 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 | --- | --- | --- | --- |
 | B15 | PostgreSQL transaction invariants, SQLAlchemy sessions, contention and concurrency tests | Research complete; CI passed | Focused patterns, decision matrix, negative-case test plan, indexed retrieval |
 | B16 | Worker leases, fencing, retry and crash-recovery ownership | Research complete; CI passed | Failure matrix and no-stale-worker verification protocol |
-| B17 | Trusted exchange market data and trading-decision eligibility | Pending | Data validation states and reject/skip fixture matrix |
+| B17 | Trusted exchange market data and trading-decision eligibility | Research delivered; CI pending | Data validation states and reject/skip fixture matrix |
 | B18 | Worker telemetry, hosted OIDC/tenant isolation, reproducible frontend build | Pending | Domain-specific verification recipes and security boundaries |
 | B19 | Consistency, source audits and agent retrieval evaluation | Pending | Catalog validation, golden queries, blocker-to-concept handoff |
 
@@ -40,4 +40,11 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 
 - [B16 research handoff](batch-16-worker-leases-fencing.md) and [canonical lease/fencing concept](../concepts/distributed-systems/durable-worker-leases-and-fencing.md) added, with failure tests and retrieval cases.
 - Source-scoped guidance only; real PostgreSQL cross-process fencing, worker heartbeat and failure injection have **not** been executed on Final Expanse.
-- Next batch: B17 market-data integrity. Continue on the same PR.
+- B17 has been delivered on the same PR; B18 follows.
+
+## B17 outcome
+
+- [B17 source review and verification handoff](batch-17-trading-market-data-integrity.md) and [indexed trading market-data integrity concept](../concepts/data/trading-market-data-integrity.md) delivered with negative fixture and retrieval coverage.
+- Kraken documentation supports unfinished last REST OHLC candle, bounded history and instrument metadata; threshold decisions and normalized schema remain architectural proposals.
+- Live read-only network, customer-specific eligibility, execution safety and paper-fill realism have **not** been verified in Final Expanse.
+- Next batch: B18 production observability, OIDC/tenancy and frontend verification.
