@@ -39,7 +39,7 @@
         "concerns"
       ],
       "related": [
-        "cohesion",
+        "modularity",
         "modularity"
       ],
       "source_count": 0,
@@ -62,7 +62,7 @@
       ],
       "related": [
         "code-simplification",
-        "cohesion"
+        "modularity"
       ],
       "source_count": 0,
       "reviewed_at": null
