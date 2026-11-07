@@ -24,6 +24,8 @@ A **batch** is a research and verification milestone, not a release or blanket p
 
 ## B0 — Evidence, catalog integrity and agent retrieval
 
+**Execution report:** [B0 catalog integrity and retrieval benchmark](batch-0-catalog-integrity.md). Duplicate metadata cleaned, evidence validation hardened and 20 golden queries added. Independent claim-source audits and representative user-query evaluation remain open.
+
 **Research:** Audit the canonical indexed entries (47 after B6, including six application-type archetypes), checking current statuses rather than assuming all are stubs; identify missing sources, duplicate tags/related IDs, outdated applicability and retrieval misses. Preserve the distinction between discoverability and verified advice.
 
 **Deliverables:**
@@ -134,7 +136,7 @@ Every batch starts **proposed / not completed**. Completion requires reviewable 
 
 | Batch | State | Owner | Review evidence |
 | --- | --- | --- | --- |
-| B0 | Proposed | Unassigned | Not yet linked |
+| B0 | Partially completed — integrity checks and retrieval benchmark; independent source audit pending | Unassigned | [B0 audit and benchmark](batch-0-catalog-integrity.md) |
 | B1 | Partially curated — 2 scoped concepts reviewed; application metrics pending | Unassigned | [B1 context and assessment](batch-1-code-organization.md) |
 | B2 | Partially curated — 3 scoped concepts reviewed; target evidence pending | Unassigned | [B2 context and decision matrix](batch-2-architecture-boundaries.md) |
 | B3 | Partially curated — 6 scoped concepts reviewed; application testing pending | Unassigned | [B3 context and validation matrix](batch-3-security-contracts-data.md) |
