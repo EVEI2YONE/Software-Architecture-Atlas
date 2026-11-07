@@ -27,6 +27,16 @@ ALIASES = {
     "breaking api change": "api-contracts",
     "database migration": "schema-evolution transactions",
     "duplicate request": "idempotency",
+    "nextjs": "ui-project-structure",
+    "frontend structure": "ui-project-structure",
+    "api project structure": "api-project-structure",
+    "minimal api": "api-project-structure",
+    "azure functions project": "functions-project-structure",
+    "webjobs scheduled worker": "webjobs-project-structure",
+    "webjobs project structure": "webjobs-project-structure",
+    "python library": "libraries-project-structure",
+    "src layout": "libraries-project-structure",
+    "multi project solution": "multi-project-structure",
 }
 
 def terms(value):
