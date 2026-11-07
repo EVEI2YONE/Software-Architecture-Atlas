@@ -33,7 +33,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 ## Completion board (update only after verified deliverables)
 | Batch | Context gathered | Concept curation | Validation | State |
 | --- | --- | --- | --- | --- |
-| B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | Local Python tests blocked by GitHub DNS; connector checks pending | Curation committed, validation pending |
+| B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | 9 pages passed metadata/source/link checks; GitHub Actions succeeded on commit 9a61420 | Complete (scoped catalog curation) |
 | B8 | Yes | Not started | Not run | 0% |
 | B9 | Yes | Not started | Not run | 0% |
 | B10 | Yes | Not started | Not run | 0% |
@@ -50,3 +50,7 @@ No target application's repository, performance traces, measured developer navig
 - Index: 52 total, 35 reviewed, 17 stubs; category READMEs updated.
 - Source leads examined: Microsoft Learn architecture styles, common .NET web architectures and microservices; Martin Fowler Yagni, Beck Design Rules and Is Design Dead?; Refactoring.Guru Replace Inheritance with Delegation.
 - B7 limitations: scoped conceptual research; no production code evaluation, independent expert review or claims of measured improvement. `git clone` failed in the local container because `github.com` DNS could not resolve; therefore `scripts/validate_catalog.py` and Python unit tests have NOT been executed locally. Remote CI status must be inspected separately.
+
+## B7 verification (follow-up)
+- Connector-based checks of all nine B7 pages: frontmatter/index consistency, `source_count` vs numbered source URLs, and local concept links: 9 checked, 0 errors.
+- GitHub Actions pull-request workflow on commit `9a61420781e80390bec4defe47d61946c936c8f9`: completed with **success**. The local Python commands were not run due to container DNS. Verify the associated workflow logs for exact test coverage before asserting the specific commands passed.
