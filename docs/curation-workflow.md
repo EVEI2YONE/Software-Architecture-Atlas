@@ -14,3 +14,6 @@ When a recurring misclassification, misleading stub, dead link, missing topic or
 
 ## Maintainability policies
 Favor meaningful module boundaries over forced layers, explicit flow over abstraction sprawl, and fewer dependencies over incompatible overlapping packages. Track code reduction together with readability, defects, and measured complexity; never optimize line count alone.
+
+## Sequenced research batches
+Use [knowledge-gap batches](knowledge-gap-batches.md) to group the numbered [foundational gaps](foundational-gap-assessment.md) by dependencies and deliverables. Do not interpret inclusion in a batch as a reviewed or verified concept. Promote individual concepts only after source, applicability, trade-off and validation checks are complete.
