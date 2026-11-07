@@ -48,6 +48,18 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertEqual(search("strangler migration")["results"][0]["id"], "incremental-boundary-migration")
         self.assertEqual(search("project-structure-selection")["results"][0]["evidence"], "unknown")
 
+    def test_b6_operational_retrieval(self):
+        for query, expected in [
+            ("slo error budget", "reliability-objectives"),
+            ("canary deployment", "deployment-strategies"),
+            ("load shedding", "workload-admission"),
+            ("operational costs", "operational-costs"),
+        ]:
+            result = search(query)
+            self.assertEqual(result["results"][0]["id"], expected, query)
+            self.assertEqual(result["results"][0]["status"], "reviewed")
+        self.assertEqual(search("caching")["results"][0]["status"], "stub")
+
     def test_unmatched(self):
         self.assertEqual(search("zzzzzzzzzzzz")["results"], [])
 
