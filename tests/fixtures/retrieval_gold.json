@@ -95,7 +95,7 @@
     {
       "query": "caching",
       "expected_id": "caching",
-      "expected_status": "stub"
+      "expected_status": "reviewed"
     },
     {
       "query": "zzzzzzzzzzzz",
@@ -320,6 +320,31 @@
     {
       "query": "service-boundaries",
       "expected_id": "service-boundaries",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "cache-invalidation-and-stampedes",
+      "expected_id": "cache-invalidation-and-stampedes",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "load-testing-and-baselines",
+      "expected_id": "load-testing-and-baselines",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "rate-limiting",
+      "expected_id": "rate-limiting",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "partitioning-and-sharding",
+      "expected_id": "partitioning-and-sharding",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "resource-budgets",
+      "expected_id": "resource-budgets",
       "expected_status": "reviewed"
     }
   ]
