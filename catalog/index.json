@@ -429,7 +429,8 @@
       ],
       "related": [
         "aggregates",
-        "consistency"
+        "consistency",
+        "postgresql-transactional-concurrency"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -1468,7 +1469,8 @@
       "related": [
         "aggregates",
         "transactions",
-        "isolation-levels"
+        "isolation-levels",
+        "postgresql-transactional-concurrency"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -1510,7 +1512,8 @@
       "related": [
         "transactions",
         "module-public-contracts",
-        "schema-evolution"
+        "schema-evolution",
+        "postgresql-transactional-concurrency"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -1531,7 +1534,8 @@
       "related": [
         "transactions",
         "transactional-invariants",
-        "schema-evolution"
+        "schema-evolution",
+        "postgresql-transactional-concurrency"
       ],
       "source_count": 2,
       "reviewed_at": "2026-11-07"
@@ -2014,6 +2018,32 @@
         "decision-records"
       ],
       "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "postgresql-transactional-concurrency",
+      "title": "PostgreSQL transactional concurrency and SQLAlchemy",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/postgresql-transactional-concurrency.md",
+      "status": "reviewed",
+      "summary": "PostgreSQL row locking, SQLAlchemy transaction scope, safe retries and real-database concurrency verification",
+      "tags": [
+        "postgresql",
+        "sqlalchemy",
+        "row-locking",
+        "concurrency",
+        "financial-invariants",
+        "skip-locked"
+      ],
+      "related": [
+        "transactions",
+        "isolation-levels",
+        "transactional-invariants",
+        "data-access-boundaries",
+        "idempotency"
+      ],
+      "source_count": 6,
       "reviewed_at": "2026-11-07"
     }
   ]
