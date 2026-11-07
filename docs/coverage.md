@@ -1,6 +1,6 @@
 # Current architecture catalog coverage
 
-**Canonical inventory (2026-11-07): 93 indexed concepts, 93 with status `reviewed`, 0 stubs.** These are metadata statuses, not independently certified architectural claims. This table is a current snapshot derived from [the canonical index](../catalog/index.json); update it when that index changes.
+**Canonical inventory (2026-11-07): 96 indexed concepts, 96 with status `reviewed`, 0 stubs.** These are metadata statuses, not independently certified architectural claims. This table is a current snapshot derived from [the canonical index](../catalog/index.json); update it when that index changes.
 
 | Category | Indexed concepts |
 | --- | ---: |
@@ -9,13 +9,13 @@
 | [code-organization](../concepts/code-organization/README.md) | 22 |
 | [dependencies](../concepts/dependencies/README.md) | 6 |
 | [runtime](../concepts/runtime/README.md) | 9 |
-| [distributed-systems](../concepts/distributed-systems/README.md) | 10 |
-| [data](../concepts/data/README.md) | 5 |
+| [distributed-systems](../concepts/distributed-systems/README.md) | 11 |
+| [data](../concepts/data/README.md) | 7 |
 | [performance](../concepts/performance/README.md) | 7 |
 | [quality](../concepts/quality/README.md) | 6 |
 | [operations](../concepts/operations/README.md) | 5 |
 | [governance](../concepts/governance/README.md) | 8 |
-| **Total** | **93** |
+| **Total** | **96** |
 
 ## Interpreting coverage
 
@@ -23,3 +23,23 @@
 - Metadata validation, retrieval benchmarks and passing CI are different from technical accuracy audits, performance tests, vulnerability scans or Sonar quality-gate results.
 - Remaining work is primarily independent claim/source review, version freshness, real-workload validation and retrieval relevance, not an indexed-stub backlog. See [active research gaps](../research/open-gaps.md).
 - Historical inventories, batch counts and campaign reports are retained under [research/archive](../research/README.md). Do not use historical batch totals as current catalog counts.
+
+## B15 extension
+
+B15 added one source-scoped, indexed PostgreSQL/SQLAlchemy concurrency concept. It is a knowledge reference, not evidence of executed financial or multi-process PostgreSQL tests. [B15 report](batch-15-postgresql-concurrency.md).
+
+## B16 extension
+
+B16 added [Durable worker leases, fencing and restart recovery](../concepts/distributed-systems/durable-worker-leases-and-fencing.md). The reference is indexed with source-backed methods and proposed tests, but Final Expanse's multi-worker PostgreSQL safety remains unverified. [B16 report](batch-16-worker-leases-fencing.md).
+
+## B17 extension
+
+B17 added [Trading market-data integrity and decision eligibility](../concepts/data/trading-market-data-integrity.md), a Kraken Spot-specific source-scoped validation reference and unexecuted fault-fixture matrix. Live market access, account eligibility and trading safety remain Final Expanse implementation/verification work. [B17 report](batch-17-trading-market-data-integrity.md).
+
+## B18 targeted reference extensions
+
+B18 extended five existing canonical concepts—[observability](../concepts/operations/observability.md), [reliability objectives](../concepts/operations/reliability-objectives.md), [identity/access](../concepts/governance/identity-and-access.md), [package-locking](../concepts/dependencies/package-locking-and-version-policy.md), and [testing strategy](../concepts/quality/testing-strategy.md)—without increasing catalog concept count. See [B18 verification runbook](batch-18-production-verification.md). Research references are not hosted implementation verification.
+
+## B19 integration review
+
+[B19 consolidation and Final Expanse handoff](batch-19-final-integration-validation.md) audits cross-batch definitions, samples primary sources, and maps the six current blockers to the relevant concepts and unexecuted application checks. No new concept category or canonical entry is introduced; the index remains at 96 reviewed/scoped entries. Catalog tests are not production certification.

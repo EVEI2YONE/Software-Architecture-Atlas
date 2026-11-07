@@ -29,6 +29,10 @@ resilience; operational diagnostics; application performance; incident investiga
 - [idempotency](../distributed-systems/idempotency.md)
 - [observability](../operations/observability.md)
 
+## Trading data failure behavior
+
+For source timeouts, stale observations, missing candles and explicit SKIP decisions rather than unverified fallback prices, see [Trading market-data integrity](../data/trading-market-data-integrity.md). Retry policies must not make stale trading data appear current.
+
 ## Evidence and sources
 1. Google SRE Addressing Cascading Failures: https://sre.google/sre-book/addressing-cascading-failures/ (accessed 2026-11-07).
 2. Google SRE Production Services Best Practices: https://sre.google/sre-book/service-best-practices/ (accessed 2026-11-07).

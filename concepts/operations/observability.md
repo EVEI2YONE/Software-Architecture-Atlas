@@ -29,6 +29,12 @@ observability; operational diagnostics; application performance; incident invest
 - [scalability](../performance/scalability.md)
 - [caching](../performance/caching.md)
 
+## B18: durable worker observability overlay
+
+Instrument **business progress**, not merely HTTP process health. A responding worker can still have an expired lease or an indefinitely stale due queue. Proposed monitored signals include oldest due-job age, last successfully persisted evaluation age, lease renewal failures, claim conflicts, expired lease count, retry/terminal-failure counts and B17 market-data rejection reasons. Treat metric names, units, bounds and alert thresholds as **application choices**, not predefined OpenTelemetry conventions. Keep customer identifiers and credentials out of public/high-cardinality metric labels. Verify actual alert delivery and redaction with failure injection before asserting readiness.
+
+See the [B18 monitoring and verification runbook](../../docs/batch-18-production-verification.md) for a proposed telemetry table and restart/recovery drills. B16 owns lease fencing; instrumentation does not prove it is correct. References: [OpenTelemetry Metrics Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/general/metrics/) and [Google SRE SLOs](https://sre.google/sre-book/service-level-objectives/), checked 2026-11-07.
+
 ## Evidence and sources
 1. OpenTelemetry Documentation: https://opentelemetry.io/docs/ (accessed 2026-11-07).
 2. OpenTelemetry Semantic Conventions: https://opentelemetry.io/docs/concepts/semantic-conventions/ (accessed 2026-11-07).

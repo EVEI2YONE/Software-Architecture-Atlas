@@ -40,6 +40,10 @@ queues and messaging; queues; distributed delivery; integration reliability; mes
 - [delivery-guarantees](../distributed-systems/delivery-guarantees.md)
 - [event-driven](../distributed-systems/event-driven.md)
 
+## Durable worker ownership
+
+Broker delivery, message visibility and acknowledgment do not themselves fence a stale application's database writes. See [Durable worker leases and fencing](durable-worker-leases-and-fencing.md) for a database-backed coordination alternative and its limitations.
+
 ## Evidence and sources
 1. Microsoft Learn, Azure Service Bus message sessions, https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-sessions (accessed 2026-11-07). Primary vendor/platform guidance supports scoped technology behavior; real application guarantees require independent tests.
 2. Microsoft Learn, Azure Service Bus duplicate detection, https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection (accessed 2026-11-07). Primary vendor/platform guidance supports scoped technology behavior; real application guarantees require independent tests.

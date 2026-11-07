@@ -416,6 +416,36 @@
       "query": "agent search evaluation",
       "expected_id": "retrieval-evaluation",
       "expected_status": "reviewed"
+    },
+    {
+      "query": "postgresql-transactional-concurrency",
+      "expected_id": "postgresql-transactional-concurrency",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "postgresql transactional concurrency",
+      "expected_id": "postgresql-transactional-concurrency",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "durable-worker-leases-and-fencing",
+      "expected_id": "durable-worker-leases-and-fencing",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "durable worker leases fencing",
+      "expected_id": "durable-worker-leases-and-fencing",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "trading-market-data-integrity",
+      "expected_id": "trading-market-data-integrity",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "trading market data integrity",
+      "expected_id": "trading-market-data-integrity",
+      "expected_status": "reviewed"
     }
   ]
 }

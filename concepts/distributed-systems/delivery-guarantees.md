@@ -39,6 +39,10 @@ message delivery guarantees; delivery guarantees; distributed delivery; integrat
 - [queues](../distributed-systems/queues.md)
 - [outbox-pattern](../distributed-systems/outbox-pattern.md)
 
+## Reclaimed worker boundary
+
+A message redelivery or reclaimed job may carry a new lease generation but the same business operation. See [Durable worker leases and fencing](durable-worker-leases-and-fencing.md) for a concrete crash-after-commit and stale-generation verification plan.
+
 ## Evidence and sources
 1. Microsoft Learn, Azure Service Bus duplicate detection, https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection (accessed 2026-11-07). Primary vendor/platform guidance supports scoped technology behavior; real application guarantees require independent tests.
 2. AWS Prescriptive Guidance, Transactional outbox pattern, https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html (accessed 2026-11-07). Primary vendor/platform guidance supports scoped technology behavior; real application guarantees require independent tests.

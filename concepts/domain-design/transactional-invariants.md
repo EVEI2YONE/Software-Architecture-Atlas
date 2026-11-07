@@ -39,6 +39,10 @@ transactional invariants; transactional invariants; domain boundaries; transacti
 - [transactions](../data/transactions.md)
 - [isolation-levels](../data/isolation-levels.md)
 
+## Application-specific concurrency proof
+
+For monetary overspend, tenant-scoped receipts, crash recovery and multi-process PostgreSQL test interleavings, follow [PostgreSQL transactional concurrency](../data/postgresql-transactional-concurrency.md). A metadata-valid architectural example is not a production financial-integrity test.
+
 ## Evidence and sources
 1. PostgreSQL 18, Transaction isolation, https://www.postgresql.org/docs/18/transaction-iso.html (accessed 2026-11-07). Applies to the named framework/database architecture or platform behavior; not verified on the user's applications.
 2. Microsoft Learn, Domain model, https://learn.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/microservice-domain-model (accessed 2026-11-07). Applies to the named framework/database architecture or platform behavior; not verified on the user's applications.
