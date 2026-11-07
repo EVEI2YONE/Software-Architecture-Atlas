@@ -31,8 +31,8 @@ Remove accidental complexity without sacrificing clarity or explicit behavior.
 - code simplification
 
 ## Related concepts
-- [dry-vs-abstraction](../../principles/dry-vs-abstraction.md)
-- [cognitive-complexity](../../quality/cognitive-complexity.md)
+- [dry-vs-abstraction](../principles/dry-vs-abstraction.md)
+- [cognitive-complexity](../quality/cognitive-complexity.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

@@ -31,8 +31,8 @@ Avoid sync-over-async, propagate cancellation and bound concurrent work.
 - async await
 
 ## Related concepts
-- [thread-safety](../../runtime/thread-safety.md)
-- [backpressure](../../runtime/backpressure.md)
+- [thread-safety](../runtime/thread-safety.md)
+- [backpressure](../runtime/backpressure.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

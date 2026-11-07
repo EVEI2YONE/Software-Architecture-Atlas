@@ -31,8 +31,8 @@ Handle ordering, dead-letter routing, throughput and consumer ownership.
 - queues
 
 ## Related concepts
-- [backpressure](../../runtime/backpressure.md)
-- [idempotency](../../distributed-systems/idempotency.md)
+- [backpressure](../runtime/backpressure.md)
+- [idempotency](../distributed-systems/idempotency.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

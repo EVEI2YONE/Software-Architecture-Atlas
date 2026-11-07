@@ -31,8 +31,8 @@ Model business-significant changes without incidental coupling.
 - domain events
 
 ## Related concepts
-- [bounded-contexts](../../domain-design/bounded-contexts.md)
-- [event-driven](../../distributed-systems/event-driven.md)
+- [bounded-contexts](../domain-design/bounded-contexts.md)
+- [event-driven](../distributed-systems/event-driven.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

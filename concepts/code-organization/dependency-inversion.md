@@ -31,8 +31,8 @@ Place stable contracts at appropriate boundaries and avoid service locator patte
 - dependency inversion
 
 ## Related concepts
-- [modularity](../../code-organization/modularity.md)
-- [dependency-conflicts](../../dependencies/dependency-conflicts.md)
+- [modularity](../code-organization/modularity.md)
+- [dependency-conflicts](../dependencies/dependency-conflicts.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

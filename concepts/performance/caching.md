@@ -31,8 +31,8 @@ Evaluate TTL, consistency, eviction, invalidation and cache stampedes.
 - caching
 
 ## Related concepts
-- [consistency](../../distributed-systems/consistency.md)
-- [observability](../../operations/observability.md)
+- [consistency](../distributed-systems/consistency.md)
+- [observability](../operations/observability.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

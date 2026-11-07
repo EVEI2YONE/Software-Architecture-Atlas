@@ -31,8 +31,8 @@ Limit work admission, queue depth and resource saturation.
 - backpressure
 
 ## Related concepts
-- [async-await](../../runtime/async-await.md)
-- [queues](../../distributed-systems/queues.md)
+- [async-await](../runtime/async-await.md)
+- [queues](../distributed-systems/queues.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

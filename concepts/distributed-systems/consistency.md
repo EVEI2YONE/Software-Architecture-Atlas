@@ -31,8 +31,8 @@ Select consistency models using domain invariants and availability needs.
 - consistency
 
 ## Related concepts
-- [transactions](../../data/transactions.md)
-- [aggregates](../../domain-design/aggregates.md)
+- [transactions](../data/transactions.md)
+- [aggregates](../domain-design/aggregates.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

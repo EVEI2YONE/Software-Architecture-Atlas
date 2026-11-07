@@ -31,8 +31,8 @@ Prioritize clear control flow over metric gaming.
 - cognitive complexity
 
 ## Related concepts
-- [code-simplification](../../code-organization/code-simplification.md)
-- [quality-gates](../../quality/quality-gates.md)
+- [code-simplification](../code-organization/code-simplification.md)
+- [quality-gates](../quality/quality-gates.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

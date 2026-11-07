@@ -31,8 +31,8 @@ Choose events versus direct calls with delivery, ordering and schema evolution i
 - event driven
 
 ## Related concepts
-- [idempotency](../../distributed-systems/idempotency.md)
-- [domain-events](../../domain-design/domain-events.md)
+- [idempotency](../distributed-systems/idempotency.md)
+- [domain-events](../domain-design/domain-events.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

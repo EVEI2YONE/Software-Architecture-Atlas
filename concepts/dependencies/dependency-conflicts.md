@@ -31,8 +31,8 @@ Control package versions, transitive resolution and compatibility drift.
 - dependency conflicts
 
 ## Related concepts
-- [supply-chain](../../dependencies/supply-chain.md)
-- [dependency-inversion](../../code-organization/dependency-inversion.md)
+- [supply-chain](../dependencies/supply-chain.md)
+- [dependency-inversion](../code-organization/dependency-inversion.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

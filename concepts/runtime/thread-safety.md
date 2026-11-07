@@ -31,8 +31,8 @@ Identify races, lock contention, deadlocks and ownership boundaries.
 - thread safety
 
 ## Related concepts
-- [async-await](../../runtime/async-await.md)
-- [backpressure](../../runtime/backpressure.md)
+- [async-await](../runtime/async-await.md)
+- [backpressure](../runtime/backpressure.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

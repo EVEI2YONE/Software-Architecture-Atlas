@@ -31,8 +31,8 @@ Protect against duplicate effects, replay and partial failures.
 - idempotency
 
 ## Related concepts
-- [transactions](../../data/transactions.md)
-- [event-driven](../../distributed-systems/event-driven.md)
+- [transactions](../data/transactions.md)
+- [event-driven](../distributed-systems/event-driven.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

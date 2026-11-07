@@ -29,12 +29,12 @@ for entry in entries:
         continue
     text = file.read_text(encoding='utf-8')
     for key, value in [('id', cid), ('category', entry['category']), ('status', entry['status'])]:
-        if not re.search(rf'(?m)^{key}:\\s*{re.escape(value)}\\s*$', text):
+        if not re.search(rf'(?m)^{key}:\s*{re.escape(value)}\s*$', text):
             errors.append(f'{path}: frontmatter mismatch for {key}')
     if entry['status'] not in {'stub','draft','reviewed','deprecated'}: errors.append(f'{cid}: invalid status')
     if entry['status'] == 'reviewed' and (not entry['reviewed_at'] or entry['source_count'] < 1):
         errors.append(f'{cid}: reviewed requires date and sources')
-    for url in re.findall(r'(?<!!)\\[[^]]+\\]\\(([^)]+)\\)', text):
+    for url in re.findall(r'(?<!!)\[[^]]+\]\(([^)]+)\)', text):
         if url.startswith(('https://','http://','#','mailto:')): continue
         target = (file.parent / url.split('#')[0]).resolve()
         if not target.is_file(): errors.append(f'{path}: broken link {url}')

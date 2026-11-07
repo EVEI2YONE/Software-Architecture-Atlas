@@ -31,8 +31,8 @@ Separate read and write models only when complexity and workload justify it.
 - cqrs
 
 ## Related concepts
-- [transactions](../../data/transactions.md)
-- [event-driven](../../distributed-systems/event-driven.md)
+- [transactions](../data/transactions.md)
+- [event-driven](../distributed-systems/event-driven.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

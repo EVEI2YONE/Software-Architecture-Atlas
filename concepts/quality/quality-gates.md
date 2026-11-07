@@ -31,8 +31,8 @@ Use configured Sonar profiles for bugs, vulnerabilities, hotspots, smells and du
 - quality gates
 
 ## Related concepts
-- [cognitive-complexity](../../quality/cognitive-complexity.md)
-- [testing-strategy](../../quality/testing-strategy.md)
+- [cognitive-complexity](../quality/cognitive-complexity.md)
+- [testing-strategy](../quality/testing-strategy.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

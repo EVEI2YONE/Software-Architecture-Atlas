@@ -31,8 +31,8 @@ Group code by ownership, capability and reasons to change.
 - modularity
 
 ## Related concepts
-- [separation-of-concerns](../../principles/separation-of-concerns.md)
-- [dependency-inversion](../../code-organization/dependency-inversion.md)
+- [separation-of-concerns](../principles/separation-of-concerns.md)
+- [dependency-inversion](../code-organization/dependency-inversion.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

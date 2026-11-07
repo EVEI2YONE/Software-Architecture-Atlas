@@ -31,8 +31,8 @@ Applying SRP, OCP, LSP, ISP and DIP without abstraction inflation.
 - solid
 
 ## Related concepts
-- [modularity](../../code-organization/modularity.md)
-- [dependency-inversion](../../code-organization/dependency-inversion.md)
+- [modularity](../code-organization/modularity.md)
+- [dependency-inversion](../code-organization/dependency-inversion.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

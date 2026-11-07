@@ -31,8 +31,8 @@ Balance unit, integration, contract and end-to-end tests.
 - testing strategy
 
 ## Related concepts
-- [quality-gates](../../quality/quality-gates.md)
-- [modularity](../../code-organization/modularity.md)
+- [quality-gates](../quality/quality-gates.md)
+- [modularity](../code-organization/modularity.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

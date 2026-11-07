@@ -31,8 +31,8 @@ Choose transaction scope, isolation, and distributed consistency strategy.
 - transactions
 
 ## Related concepts
-- [aggregates](../../domain-design/aggregates.md)
-- [consistency](../../distributed-systems/consistency.md)
+- [aggregates](../domain-design/aggregates.md)
+- [consistency](../distributed-systems/consistency.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

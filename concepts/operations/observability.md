@@ -31,8 +31,8 @@ Instrument traces, logs and metrics across ownership boundaries.
 - observability
 
 ## Related concepts
-- [scalability](../../performance/scalability.md)
-- [caching](../../performance/caching.md)
+- [scalability](../performance/scalability.md)
+- [caching](../performance/caching.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

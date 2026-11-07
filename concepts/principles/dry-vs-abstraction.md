@@ -31,8 +31,8 @@ Prefer understandable duplication when shared behavior has not stabilized.
 - dry vs abstraction
 
 ## Related concepts
-- [code-simplification](../../code-organization/code-simplification.md)
-- [cohesion](../../principles/cohesion.md)
+- [code-simplification](../code-organization/code-simplification.md)
+- [cohesion](../principles/cohesion.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

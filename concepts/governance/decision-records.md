@@ -31,8 +31,8 @@ Record context, constraints, alternatives, consequences and revisit triggers.
 - decision records
 
 ## Related concepts
-- [kiss-yagni](../../principles/kiss-yagni.md)
-- [quality-gates](../../quality/quality-gates.md)
+- [kiss-yagni](../principles/kiss-yagni.md)
+- [quality-gates](../quality/quality-gates.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

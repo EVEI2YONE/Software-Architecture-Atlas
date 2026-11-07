@@ -31,8 +31,8 @@ Review provenance, licensing, vulnerabilities and update policy.
 - supply chain
 
 ## Related concepts
-- [dependency-conflicts](../../dependencies/dependency-conflicts.md)
-- [quality-gates](../../quality/quality-gates.md)
+- [dependency-conflicts](../dependencies/dependency-conflicts.md)
+- [quality-gates](../quality/quality-gates.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

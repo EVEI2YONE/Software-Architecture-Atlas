@@ -31,8 +31,8 @@ Prefer requirements-led simplicity over speculative generalization.
 - kiss yagni
 
 ## Related concepts
-- [code-simplification](../../code-organization/code-simplification.md)
-- [decision-records](../../governance/decision-records.md)
+- [code-simplification](../code-organization/code-simplification.md)
+- [decision-records](../governance/decision-records.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

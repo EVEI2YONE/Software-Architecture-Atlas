@@ -31,8 +31,8 @@ Align context boundaries with business language and ownership.
 - bounded contexts
 
 ## Related concepts
-- [aggregates](../../domain-design/aggregates.md)
-- [modularity](../../code-organization/modularity.md)
+- [aggregates](../domain-design/aggregates.md)
+- [modularity](../code-organization/modularity.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

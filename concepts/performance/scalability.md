@@ -31,8 +31,8 @@ Use measured bottlenecks to choose scaling, sharding and workload controls.
 - scalability
 
 ## Related concepts
-- [backpressure](../../runtime/backpressure.md)
-- [caching](../../performance/caching.md)
+- [backpressure](../runtime/backpressure.md)
+- [caching](../performance/caching.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

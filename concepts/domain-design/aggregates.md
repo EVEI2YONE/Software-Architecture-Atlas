@@ -31,8 +31,8 @@ Define consistency boundaries and transaction-scoped invariants.
 - aggregates
 
 ## Related concepts
-- [bounded-contexts](../../domain-design/bounded-contexts.md)
-- [transactions](../../data/transactions.md)
+- [bounded-contexts](../domain-design/bounded-contexts.md)
+- [transactions](../data/transactions.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

@@ -31,8 +31,8 @@ Keep independent reasons to change isolated while avoiding ceremonial layering.
 - separation of concerns
 
 ## Related concepts
-- [cohesion](../../principles/cohesion.md)
-- [modularity](../../code-organization/modularity.md)
+- [cohesion](../principles/cohesion.md)
+- [modularity](../code-organization/modularity.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

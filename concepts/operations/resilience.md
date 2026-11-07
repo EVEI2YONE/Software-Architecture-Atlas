@@ -31,8 +31,8 @@ Use timeout, retry budgets, bulkheads and circuit breakers purposefully.
 - resilience
 
 ## Related concepts
-- [idempotency](../../distributed-systems/idempotency.md)
-- [observability](../../operations/observability.md)
+- [idempotency](../distributed-systems/idempotency.md)
+- [observability](../operations/observability.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._

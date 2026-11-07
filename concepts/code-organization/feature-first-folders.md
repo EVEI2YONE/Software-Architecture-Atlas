@@ -31,8 +31,8 @@ Optimize finding, changing and deleting cohesive features.
 - feature first folders
 
 ## Related concepts
-- [modularity](../../code-organization/modularity.md)
-- [code-simplification](../../code-organization/code-simplification.md)
+- [modularity](../code-organization/modularity.md)
+- [code-simplification](../code-organization/code-simplification.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._
