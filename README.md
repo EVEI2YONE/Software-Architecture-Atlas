@@ -12,6 +12,7 @@ This is a **knowledge/reference repository**, not a claim that every scaffolded 
 - [Concept coverage matrix](docs/coverage.md)
 - [Sequenced knowledge-gap research batches](docs/knowledge-gap-batches.md)
 - [Batch B1: code organization research and measurement guide](docs/batch-1-code-organization.md)
+- [Batch B2: architectural drivers and boundary decisions](docs/batch-2-architecture-boundaries.md)
 - [Navigation and retrieval guide](docs/agent-search.md)
 - [Source and evidence policy](docs/evidence-policy.md)
 - [Knowledge-gap and curation workflow](docs/curation-workflow.md)
