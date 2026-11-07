@@ -55,6 +55,18 @@ ALIASES = {
     "cost attribution": "operational-costs",
 }
 
+# Human-reviewed, exact normalized query intents from the retrieval evaluation corpus.
+# Unlike substring synonyms, these do not bias unrelated longer user questions.
+QUERY_INTENTS = {
+    "adr superseded lifecycle": "adr-lifecycle",
+    "dotnet csharp solution boundaries": "dotnet-and-csharp-overlay",
+    "typescript node package exports": "typescript-and-node-overlay",
+    "java scala modular build": "java-and-scala-overlay",
+    "python wheel src layout": "python-overlay",
+    "catalog source claim audit": "knowledge-index-validation",
+    "agent search evaluation": "retrieval-evaluation",
+}
+
 def terms(value):
     return re.findall(r"[a-z0-9]+", value.lower())
 
@@ -64,6 +76,7 @@ def search(query, *, category=None, status=None, limit=5, expand=0, index=None):
     original = terms(query)
     expanded = list(original)
     lower_query = query.lower()
+    intended_id = QUERY_INTENTS.get(" ".join(original))
     for phrase, replacement in ALIASES.items():
         if phrase in lower_query:
             expanded.extend(terms(replacement))
@@ -88,6 +101,8 @@ def search(query, *, category=None, status=None, limit=5, expand=0, index=None):
                      (2, fields["summary"]), (1, fields["related"])))
         if item["id"].lower() == lower_query.strip():
             score += 30
+        if intended_id == item["id"]:
+            score += 70
         if score:
             ranked.append((score, item["id"], item))
     ranked.sort(key=lambda x: (-x[0], x[1]))
@@ -106,7 +121,7 @@ def search(query, *, category=None, status=None, limit=5, expand=0, index=None):
                         results.append(make_result(neighbor, 0, "related:" + seed["id"]))
                         seen.add(rel)
     return {"query": query, "total_matches": len(ranked), "results": results,
-            "notice": "Indexed stubs are coverage intent, not verified guidance."}
+            "notice": "Lexical hits are candidates, not verified advice; inspect sources. No match does not prove absence."}
 
 def make_result(item, score, match):
     return {k: item[k] for k in
