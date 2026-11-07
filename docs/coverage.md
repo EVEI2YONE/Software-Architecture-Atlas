@@ -1,6 +1,6 @@
 # Initial architecture coverage
 
-**The original 30 topics began as research stubs.** In B1, `feature-first-folders` and `code-simplification` were promoted to scoped `reviewed` guidance with cited sources; the remaining 29 topics (including `project-structure-selection`) remain stubs. Reviewed principles are not evidence of improvements in any target application.
+**The original 30 topics began as research stubs.** In B1, `feature-first-folders` and `code-simplification` were promoted to scoped `reviewed` guidance with cited sources; the remaining 29 topics initially remained stubs. B2 subsequently curated `modularity`, `dependency-inversion`, and `decision-records`, bringing the catalog to **5 reviewed and 26 stubs**. Reviewed principles are not evidence of improvements in any target application.
 
 | Category | Count | Scope |
 |---|---:|---|
@@ -24,3 +24,5 @@ See [B1 research context and findings](batch-1-code-organization.md) for source-
 ## Added research gap: application code/file structure
 
 [project-structure-selection](../concepts/code-organization/project-structure-selection.md) is a new **stub**, not reviewed guidance. It covers UI, API, Functions, WebJobs, libraries and multi-project layouts from prototype through enterprise, emphasizing navigation, net code reduction, reuse, modularity and extensibility. Validate alternatives against actual repositories and runtime conventions before recommending changes. See [GAP-13](foundational-gap-assessment.md#gap-13--application-code-and-file-structure-guidance-across-types-and-scale).
+
+See [B2 architectural boundaries research](batch-2-architecture-boundaries.md) for scoped source review, options, quality-driver questions and open GAP-02/GAP-05 needs.
