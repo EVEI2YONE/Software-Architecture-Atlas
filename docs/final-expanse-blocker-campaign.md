@@ -12,7 +12,7 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 | B15 | PostgreSQL transaction invariants, SQLAlchemy sessions, contention and concurrency tests | Research complete; CI passed | Focused patterns, decision matrix, negative-case test plan, indexed retrieval |
 | B16 | Worker leases, fencing, retry and crash-recovery ownership | Research complete; CI passed | Failure matrix and no-stale-worker verification protocol |
 | B17 | Trusted exchange market data and trading-decision eligibility | Research complete; CI passed | Data validation states and reject/skip fixture matrix |
-| B18 | Worker telemetry, hosted OIDC/tenant isolation, reproducible frontend build | Research delivered; CI pending | Domain-specific verification recipes and security boundaries |
+| B18 | Worker telemetry, hosted OIDC/tenant isolation, reproducible frontend build | Research complete; CI passed | Domain-specific verification recipes and security boundaries |
 | B19 | Consistency, source audits and agent retrieval evaluation | Pending | Catalog validation, golden queries, blocker-to-concept handoff |
 
 ## Operating rules
@@ -53,4 +53,4 @@ The Atlas already has reviewed concepts for `transactions`, `isolation-levels`, 
 
 - [B18 production verification runbook](batch-18-production-verification.md) adds worker-specific progress/lease telemetry, failure drills, hosted OIDC/PKCE and account-ownership negative tests, plus clean React/Vite install, typecheck, build and accessibility gates.
 - **No new canonical concepts required:** existing observability, reliability, identity, dependency locking and testing strategy entries were extended and linked to the runbook.
-- No Final Expanse identity provider, hosted worker deployment, npm build, browser or accessibility validation was executed by this Atlas batch. B19 is the final research integration/verification batch.
+- GitHub Actions catalog, documentation and agent-search tests passed with the B18 regression file present. No Final Expanse identity provider, hosted worker deployment, npm build, browser or accessibility validation was executed by this Atlas batch. B19 is the final research integration/verification batch.
