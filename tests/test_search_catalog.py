@@ -17,6 +17,12 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertTrue(result["results"])
         self.assertTrue(all(hit["category"] == "quality" and hit["status"] == "stub" for hit in result["results"]))
 
+    def test_project_structure_gap_discoverable(self):
+        result = search("file structure for UI API Functions WebJobs enterprise")
+        self.assertEqual(result["results"][0]["id"], "project-structure-selection")
+        self.assertEqual(result["results"][0]["status"], "stub")
+        self.assertEqual(result["results"][0]["evidence"], "unknown")
+
     def test_unmatched(self):
         self.assertEqual(search("zzzzzzzzzzzz")["results"], [])
 
