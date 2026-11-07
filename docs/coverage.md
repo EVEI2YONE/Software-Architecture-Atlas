@@ -48,3 +48,7 @@ Three existing concepts (`observability`, `resilience`, `scalability`) and four 
 ## B7–B8 shared-PR curation (2026-11-07)
 
 On draft PR #3, B7 adds five new source-scoped reviewed concepts and upgrades four previous principle stubs. B8 adds five code-organization concepts and upgrades `project-structure-selection`. The branch index therefore records **57 concepts: 41 reviewed, 16 stubs**. These numbers apply to the PR branch until merged, not necessarily to `main`. [B7–B14 campaign tracking](b7-b14-campaign.md) and [B8 context/selection matrix](batch-8-structure-navigation.md) document scope, sources, remaining unknowns and verification. No real project-navigation timings, LOC reduction, production changes or Sonar results have been observed.
+
+## B9 dependency and quality research (campaign PR #3)
+
+After B9, the shared PR branch records **64 indexed, 53 reviewed, 11 stubs** (not necessarily the merged `main` state). Five existing stubs were promoted and seven scoped dependency/quality concepts were indexed. See [B9 research and validation matrix](batch-9-dependencies-quality.md). Reviewed status records dated sources and scoped decision guidance, not confirmed application dependency health, code reduction, security or Sonar scan passes.
