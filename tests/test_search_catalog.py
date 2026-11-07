@@ -139,6 +139,27 @@ class SearchCatalogTests(unittest.TestCase):
             self.assertEqual(hit["status"], "reviewed")
             self.assertEqual(hit["evidence"], "requires-source-inspection")
 
+    def test_b14_canonical_and_paraphrased_retrieval(self):
+        targets = [
+            ("adr-lifecycle", "adr superseded lifecycle"),
+            ("dotnet-and-csharp-overlay", "dotnet csharp solution boundaries"),
+            ("typescript-and-node-overlay", "typescript node package exports"),
+            ("java-and-scala-overlay", "java scala modular build"),
+            ("python-overlay", "python wheel src layout"),
+            ("knowledge-index-validation", "catalog source claim audit"),
+            ("retrieval-evaluation", "agent search evaluation"),
+        ]
+        for expected, paraphrase in targets:
+            for query in (expected, paraphrase):
+                with self.subTest(query=query):
+                    hit = search(query)["results"][0]
+                    self.assertEqual(hit["id"], expected)
+                    self.assertEqual(hit["status"], "reviewed")
+                    self.assertEqual(hit["evidence"], "requires-source-inspection")
+        self.assertEqual(
+            search("typescript node package exports in my very different project", status="stub")["results"], []
+        )
+
     def test_related_expansion_deduped(self):
         hits = search("idempotency", limit=1, expand=2)["results"]
         self.assertEqual(len({hit["id"] for hit in hits}), len(hits))
