@@ -35,7 +35,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | --- | --- | --- | --- | --- |
 | B7 | Yes | 9/9 reviewed pages (4 stub upgrades, 5 new) | 9 pages passed metadata/source/link checks; GitHub Actions succeeded on commit 9a61420 | Complete (scoped catalog curation) |
 | B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | GitHub Actions succeeded on commit 2e48665; catalog and retrieval tests | Complete (scoped catalog curation) |
-| B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | 12 connector page checks passed; CI pending | Curated, awaiting workflow validation |
+| B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | GitHub Actions run 42357794660 succeeded; connector links and metadata passed | Complete (scoped catalog curation) |
 | B10 | Yes | Not started | Not run | 0% |
 | B11 | Yes | Not started | Not run | 0% |
 | B12 | Yes | Not started | Not run | 0% |
@@ -78,3 +78,8 @@ No target application's repository, performance traces, measured developer navig
 - Seven scoped reviewed pages added: `transitive-dependency-resolution`, `package-locking-and-version-policy`, `cyclic-dependency-prevention`, `dead-code-and-dependency-removal`, `sonar-rules-and-quality-profiles`, `mutation-and-contract-testing`, `architecture-fitness-functions`.
 - Canonical index: 64 total, 53 reviewed, 11 stubs on campaign branch; category READMEs, coverage, 37-case golden query fixture and search regression tests updated.
 - Connector-side checks on all 12 pages verified index/frontmatter consistency, numbered source counts and related/local concept links; 0 errors. CI status recorded separately. No target app package graph or Sonar scan supplied.
+
+## B9 completed verification
+- GitHub Actions PR workflow run `42357794660` for commit `15719e40650c05bcdf1ac66e9302f4f457400a9b`: **completed successfully**. It includes the configured catalog validation and retrieval-test jobs.
+- The 12 pages' frontmatter, reference counts, internal links and indexed relations also passed direct checks. No application-specific Sonar scan, package conflict, build optimization or runtime test was performed; no such claim should be inferred.
+- Batch campaign progress: **3 of 8 completed (37.5%)**. B10 is the next research batch.
