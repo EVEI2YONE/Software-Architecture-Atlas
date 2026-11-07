@@ -50,6 +50,8 @@ A **batch** is a research and verification milestone, not a release or blanket p
 
 ## B2 — Architecture drivers and modular boundaries
 
+**Execution report:** [B2 research and boundary decision matrix](batch-2-architecture-boundaries.md). Three scoped concept pages reviewed; application-specific outcome and dedicated GAP-02/GAP-05 concepts remain open.
+
 **Research:** GAP-02 and GAP-05; examine `separation-of-concerns`, `solid`, `bounded-contexts`, `aggregates`, `decision-records`.
 
 **Deliverables:** Measurable quality-attribute scenarios; comparison of no-change, pragmatic module boundaries, layered/ports-and-adapters, modular monolith and separate services; dependency direction and ownership rules; architectural decision record template with evidence and revisit triggers.
@@ -106,7 +108,7 @@ A **batch** is a research and verification milestone, not a release or blanket p
 
 ## Suggested research work units
 
-For the current research campaign, use the **same branch and PR #2** for all batches, with separate, reviewable commits per concept or coherent example pack. Subsequent changes should update that PR rather than open a new PR. Use small, reviewable changes per **one concept or one coherent example pack**. Each PR should identify `batch_id`, `gap_ids`, canonical concept IDs, source URLs and dates, status transitions, evidence classification, applicability, a simpler alternative, tests, migration and rollback. Add a link to the batch plan. Research notes can be merged as draft/stub without treating the guidance as reviewed.
+For the current research campaign, use the **same branch and PR #2** for all batches, with separate, reviewable commits per concept or coherent example pack. Subsequent changes should update that PR rather than open a new PR. Use small, reviewable changes per **one concept or one coherent example pack**. Each batch update should identify `batch_id`, `gap_ids`, canonical concept IDs, source URLs and dates, status transitions, evidence classification, applicability, a simpler alternative, tests, migration and rollback. Add a link to the batch plan. Research notes can be merged as draft/stub without treating the guidance as reviewed.
 
 ### Agent retrieval and task planning
 
@@ -126,7 +128,7 @@ Every batch starts **proposed / not completed**. Completion requires reviewable 
 | --- | --- | --- | --- |
 | B0 | Proposed | Unassigned | Not yet linked |
 | B1 | Partially curated — 2 scoped concepts reviewed; application metrics pending | Unassigned | [B1 context and assessment](batch-1-code-organization.md) |
-| B2 | Proposed | Unassigned | Not yet linked |
+| B2 | Partially curated — 3 scoped concepts reviewed; target evidence pending | Unassigned | [B2 context and decision matrix](batch-2-architecture-boundaries.md) |
 | B3 | Proposed | Unassigned | Not yet linked |
 | B4 | Proposed | Unassigned | Not yet linked |
 | B5 | Proposed | Unassigned | Not yet linked |
