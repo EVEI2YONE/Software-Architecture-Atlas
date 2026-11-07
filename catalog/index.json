@@ -344,7 +344,7 @@
       "domain": "distributed",
       "category": "distributed-systems",
       "path": "concepts/distributed-systems/idempotency.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Protect against duplicate effects, replay and partial failures",
       "tags": [
         "distributed-systems",
@@ -355,8 +355,8 @@
         "transactions",
         "event-driven"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "consistency",
@@ -425,7 +425,7 @@
       "domain": "data",
       "category": "data",
       "path": "concepts/data/transactions.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Choose transaction scope, isolation, and distributed consistency strategy",
       "tags": [
         "data",
@@ -436,8 +436,8 @@
         "aggregates",
         "consistency"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "cqrs",
@@ -655,6 +655,95 @@
       ],
       "source_count": 0,
       "reviewed_at": null
+    },
+    {
+      "id": "threat-modeling",
+      "title": "Threat modeling and trust boundaries",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/threat-modeling.md",
+      "status": "reviewed",
+      "summary": "Identify assets, data flows and trust boundaries; map threat mitigations to verification",
+      "tags": [
+        "security",
+        "threat",
+        "modeling",
+        "trust-boundaries"
+      ],
+      "related": [
+        "decision-records",
+        "supply-chain"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "api-contracts",
+      "title": "API contracts and compatibility",
+      "domain": "distributed",
+      "category": "distributed-systems",
+      "path": "concepts/distributed-systems/api-contracts.md",
+      "status": "reviewed",
+      "summary": "Define HTTP contracts, versioning, compatible evolution and consumer verification",
+      "tags": [
+        "api",
+        "contracts",
+        "openapi",
+        "versioning",
+        "compatibility"
+      ],
+      "related": [
+        "idempotency",
+        "event-driven",
+        "testing-strategy"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "schema-evolution",
+      "title": "Data schema evolution and migration safety",
+      "domain": "data",
+      "category": "data",
+      "path": "concepts/data/schema-evolution.md",
+      "status": "reviewed",
+      "summary": "Plan schema compatibility, staged migrations, backfills and rollback",
+      "tags": [
+        "schema",
+        "migrations",
+        "expand-contract",
+        "data"
+      ],
+      "related": [
+        "transactions",
+        "consistency",
+        "testing-strategy"
+      ],
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
+    },
+    {
+      "id": "identity-and-access",
+      "title": "Identity, authorization and secrets lifecycle",
+      "domain": "governance",
+      "category": "governance",
+      "path": "concepts/governance/identity-and-access.md",
+      "status": "reviewed",
+      "summary": "Model subject-resource permissions, least privilege, credential rotation and revocation",
+      "tags": [
+        "authentication",
+        "authorization",
+        "identity",
+        "secrets",
+        "security"
+      ],
+      "related": [
+        "threat-modeling",
+        "supply-chain",
+        "decision-records"
+      ],
+      "source_count": 3,
+      "reviewed_at": "2026-11-07"
     }
   ]
 }
