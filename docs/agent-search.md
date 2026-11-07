@@ -18,3 +18,7 @@ Use one index lookup, 2–5 relevant concept files, and follow neighboring conce
 - "circular DI with conflicting packages" → `dependency-conflicts`, `dependency-inversion`, `modularity`
 - "we need more throughput" → `scalability`, `backpressure`, `caching` (do not automatically prescribe caching)
 - "DDD microservices?" → `bounded-contexts`, `modularity`, `consistency`
+
+## Executable retrieval interface
+
+For deterministic offline querying, use `python scripts/search_catalog.py "sync over async" --json` (optional `--limit`, `--category`, `--status`, `--expand`). See [agentic search guide](agentic-search.md) for result structure, scoring, evidence handling, tests and limitations. Lexical search is a candidate-finding mechanism, not a verification engine.
