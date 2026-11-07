@@ -29,3 +29,9 @@ python -m unittest discover -s tests -v
 Terms are lowercase alphanumeric tokens; exact ID, ID tokens, title, tags, summary, and related IDs have descending weights. A small explicit synonym table handles common phrases. Sorting uses score descending and ID ascending for reproducible results. The search does not read concept bodies or rank by technical correctness; additions to aliases must be tested and reviewed. Lexical matches can miss a synonym; zero results are a retrieval gap, **not** proof the concept is absent.
 
 No network or proprietary model is required. Generated embeddings, if introduced later, should be optional, versioned, and stored outside the canonical source; lexical fallback must remain functional. No external repository is modified by this search tool.
+
+## B0 retrieval evaluation
+
+The [B0 integrity report](batch-0-catalog-integrity.md) explains a version-controlled [golden query fixture](../tests/fixtures/retrieval_gold.json) with exact expected IDs, statuses, and deliberate misses. Run `python -m unittest discover -s tests -v` after changing aliases or ranking. A passing Top-1 suite means these queries are reproducible, **not** that retrieval is semantically complete or that cited guidance is verified against a target application.
+
+The catalog validator checks frontmatter review dates and numbered URL source counts in reviewed concept pages; it does not independently verify the truth, accessibility, or claim relevance of external links.
