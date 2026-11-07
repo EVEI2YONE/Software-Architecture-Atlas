@@ -29,6 +29,20 @@ class SearchCatalogTests(unittest.TestCase):
         self.assertEqual(search("database migration")["results"][0]["id"], "schema-evolution")
         self.assertEqual(search("identity-and-access")["results"][0]["status"], "reviewed")
 
+    def test_b4_scoped_project_retrieval(self):
+        for query, expected in [
+            ("nextjs", "ui-project-structure"),
+            ("minimal api", "api-project-structure"),
+            ("azure functions project", "functions-project-structure"),
+            ("webjobs scheduled worker", "webjobs-project-structure"),
+            ("python library", "libraries-project-structure"),
+            ("multi project solution", "multi-project-structure"),
+        ]:
+            hit = search(query)["results"][0]
+            self.assertEqual(hit["id"], expected, query)
+            self.assertEqual(hit["status"], "reviewed")
+        self.assertEqual(search("project-structure-selection")["results"][0]["status"], "stub")
+
     def test_unmatched(self):
         self.assertEqual(search("zzzzzzzzzzzz")["results"], [])
 
