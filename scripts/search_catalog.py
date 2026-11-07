@@ -37,6 +37,12 @@ ALIASES = {
     "python library": "libraries-project-structure",
     "src layout": "libraries-project-structure",
     "multi project solution": "multi-project-structure",
+    "prototype mvp enterprise": "architecture-evolution",
+    "growing business architecture": "architecture-evolution",
+    "project maturity": "architecture-evolution",
+    "strangler migration": "incremental-boundary-migration",
+    "branch by abstraction": "incremental-boundary-migration",
+    "consolidate services": "incremental-boundary-migration",
 }
 
 def terms(value):
