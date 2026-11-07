@@ -14,3 +14,10 @@ Architecture decisions, trust boundaries and identity/access research. The entri
 
 - [Architecture drivers and quality attributes](architecture-drivers.md) — `architecture-drivers`
 - [Architecture styles and boundary selection](architecture-styles.md) — `architecture-styles`
+
+## Knowledge lifecycle and retrieval governance (B14)
+- [ADR lifecycle and supersession](adr-lifecycle.md) — `adr-lifecycle`
+- [Knowledge index validation and evidence integrity](knowledge-index-validation.md) — `knowledge-index-validation`
+- [Agent retrieval evaluation and query disambiguation](retrieval-evaluation.md) — `retrieval-evaluation`
+
+[Agent retrieval and governance research](../../docs/batch-14-agent-retrieval.md)
