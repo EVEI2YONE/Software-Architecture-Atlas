@@ -156,7 +156,7 @@
       "domain": "maintainability",
       "category": "code-organization",
       "path": "concepts/code-organization/modularity.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Group code by ownership, capability and reasons to change",
       "tags": [
         "code-organization",
@@ -167,8 +167,8 @@
         "separation-of-concerns",
         "dependency-inversion"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "feature-first-folders",
@@ -219,7 +219,7 @@
       "domain": "maintainability",
       "category": "code-organization",
       "path": "concepts/code-organization/dependency-inversion.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Place stable contracts at appropriate boundaries and avoid service locator patterns",
       "tags": [
         "code-organization",
@@ -231,8 +231,8 @@
         "modularity",
         "dependency-conflicts"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "dependency-conflicts",
@@ -608,7 +608,7 @@
       "domain": "governance",
       "category": "governance",
       "path": "concepts/governance/decision-records.md",
-      "status": "stub",
+      "status": "reviewed",
       "summary": "Record context, constraints, alternatives, consequences and revisit triggers",
       "tags": [
         "governance",
@@ -620,8 +620,8 @@
         "kiss-yagni",
         "quality-gates"
       ],
-      "source_count": 0,
-      "reviewed_at": null
+      "source_count": 2,
+      "reviewed_at": "2026-11-07"
     },
     {
       "id": "project-structure-selection",
