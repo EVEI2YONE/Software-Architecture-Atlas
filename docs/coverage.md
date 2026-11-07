@@ -44,3 +44,7 @@ Three existing concepts (`observability`, `resilience`, `scalability`) and four 
 ## B0 catalog hygiene
 
 [Batch B0](batch-0-catalog-integrity.md) added stricter metadata/source-count validation and a fixed agent retrieval benchmark without altering concept review statuses. The catalog remains **47 indexed, 26 reviewed, 21 stubs**; source claims require separate evidence inspection.
+
+## B7–B8 shared-PR curation (2026-11-07)
+
+On draft PR #3, B7 adds five new source-scoped reviewed concepts and upgrades four previous principle stubs. B8 adds five code-organization concepts and upgrades `project-structure-selection`. The branch index therefore records **57 concepts: 41 reviewed, 16 stubs**. These numbers apply to the PR branch until merged, not necessarily to `main`. [B7–B14 campaign tracking](b7-b14-campaign.md) and [B8 context/selection matrix](batch-8-structure-navigation.md) document scope, sources, remaining unknowns and verification. No real project-navigation timings, LOC reduction, production changes or Sonar results have been observed.
