@@ -281,6 +281,46 @@
       "query": "async-streams-and-channels",
       "expected_id": "async-streams-and-channels",
       "expected_status": "reviewed"
+    },
+    {
+      "query": "consistency",
+      "expected_id": "consistency",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "event-driven",
+      "expected_id": "event-driven",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "queues",
+      "expected_id": "queues",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "delivery-guarantees",
+      "expected_id": "delivery-guarantees",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "outbox-pattern",
+      "expected_id": "outbox-pattern",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "sagas-and-compensation",
+      "expected_id": "sagas-and-compensation",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "schema-and-event-versioning",
+      "expected_id": "schema-and-event-versioning",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "service-boundaries",
+      "expected_id": "service-boundaries",
+      "expected_status": "reviewed"
     }
   ]
 }
