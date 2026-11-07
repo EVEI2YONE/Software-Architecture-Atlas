@@ -37,7 +37,7 @@ Date: 2026-11-07. Base: `main`. Branch: `curation/b7-b14-knowledge-gaps-20261107
 | B8 | Yes | 6/6 reviewed pages (1 stub upgraded, 5 new) | GitHub Actions succeeded on commit 2e48665; catalog and retrieval tests | Complete (scoped catalog curation) |
 | B9 | Yes | 12/12 reviewed pages (5 stub upgrades, 7 new) | GitHub Actions run 42357794660 succeeded; connector links and metadata passed | Complete (scoped catalog curation) |
 | B10 | Yes | 11/11 reviewed pages (4 stub upgrades, 7 new) | GitHub Actions 42358088882 succeeded; 11 direct page checks passed | Complete (scoped catalog curation) |
-| B11 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | 8 direct page checks passed; GitHub Actions pending | Curated, pending CI |
+| B11 | Yes | 8/8 reviewed pages (3 stub upgrades, 5 new) | GitHub Actions 42358308490 success; 8 direct checks passed | Complete (scoped catalog curation) |
 | B12 | Yes | Not started | Not run | 0% |
 | B13 | Yes | Not started | Not run | 0% |
 | B14 | Yes | Not started | Not run | 0% |
@@ -101,3 +101,7 @@ No target application's repository, performance traces, measured developer navig
 - Catalog branch index: **76 indexed / 72 reviewed / 4 stubs**. Runtime README and coverage updated. Retrieval test includes eight B11 IDs and 56-case golden fixture; remaining-stub filter moved to distributed-systems.
 - Direct checks on eight pages: frontmatter, cited-source counts, internal links and related IDs, **zero errors**. GitHub Actions result must be recorded separately.
 - Platform caveats: Java 25 structured concurrency is preview; Python TaskGroup requires cancellation discipline; .NET bounded channel full-mode can wait or drop (loss is a business-policy decision). No project-specific concurrency or load tests were performed.
+
+## B11 completed verification
+- GitHub Actions run `42358308490` on commit `eed56c726b4cf93fa96b9a1810d8e170430b039c` **succeeded**, including configured catalog validation and search regression tests. Eight B11 concept pages passed direct metadata/source-count/local-link checks without discrepancies.
+- Campaign progress **5 of 8 batches = 62.5%**. B12 distributed systems next, on the same draft PR #3. No target application race/throughput correctness has been claimed.
