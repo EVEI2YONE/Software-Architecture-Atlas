@@ -32,7 +32,7 @@ Prefer understandable duplication when shared behavior has not stabilized.
 
 ## Related concepts
 - [code-simplification](../code-organization/code-simplification.md)
-- [cohesion](../principles/cohesion.md)
+- [modularity](../code-organization/modularity.md)
 
 ## Evidence and sources
 _None curated yet. Do not represent this stub as validated guidance._
