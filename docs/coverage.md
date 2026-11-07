@@ -8,12 +8,12 @@
 | [domain-design](../concepts/domain-design/README.md) | 3 | Domain-driven design and business boundaries |
 | [code-organization](../concepts/code-organization/README.md) | 13 | Modularity, human navigation and code reduction |
 | [dependencies](../concepts/dependencies/README.md) | 2 | Dependency resolution, third-party packages and supply chain |
-| [runtime](../concepts/runtime/README.md) | 3 | Asynchrony, threading and concurrency safety |
+| [runtime](../concepts/runtime/README.md) | 4 | Asynchrony, threading and concurrency safety |
 | [distributed-systems](../concepts/distributed-systems/README.md) | 5 | Distributed communication, failure and consistency |
 | [data](../concepts/data/README.md) | 3 | Data models, transactions and access patterns |
 | [performance](../concepts/performance/README.md) | 2 | Caching, capacity and scalability |
 | [quality](../concepts/quality/README.md) | 3 | Readability, tests, Sonar and static quality gates |
-| [operations](../concepts/operations/README.md) | 2 | Resilience, observability and delivery |
+| [operations](../concepts/operations/README.md) | 5 | Resilience, observability and delivery |
 | [governance](../concepts/governance/README.md) | 3 | Architecture decisions and lifecycle |
 
 ## Initial backlog beyond the scaffold
@@ -36,3 +36,7 @@ Six platform-scoped `code-organization` concepts were added as reviewed guidance
 ## B5 evolution and maturity research
 
 Two additional scoped source-backed concepts were indexed: `architecture-evolution` and `incremental-boundary-migration`. The current catalog has **43 concepts: 19 reviewed, 24 stubs**. Growth-stage guidance is explicitly *inferred*, not a mandate that project or enterprise size requires microservices. See [B5 research](batch-5-maturity-evolution.md).
+
+## B6 operations and performance research
+
+Three existing concepts (`observability`, `resilience`, `scalability`) and four new canonical concepts (`deployment-strategies`, `reliability-objectives`, `operational-costs`, `workload-admission`) were curated as scoped reviewed methods. **Current catalog: 47 indexed, 26 reviewed, 21 stubs.** No target workload, incident recovery, cost or production deployment was measured. See [B6 report](batch-6-operations-reliability.md).
