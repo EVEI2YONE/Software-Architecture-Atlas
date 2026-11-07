@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "description": "Human-selected lexical retrieval expectations; not a benchmark of semantic correctness or answer grounding.",
+  "cases": [
+    {
+      "query": "idempotency",
+      "expected_id": "idempotency",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "dependency hell",
+      "expected_id": "dependency-conflicts",
+      "expected_status": "stub"
+    },
+    {
+      "query": "threat model",
+      "expected_id": "threat-modeling",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "api versioning",
+      "expected_id": "api-contracts",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "database migration",
+      "expected_id": "schema-evolution",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "nextjs",
+      "expected_id": "ui-project-structure",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "minimal api",
+      "expected_id": "api-project-structure",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "azure functions project",
+      "expected_id": "functions-project-structure",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "webjobs scheduled worker",
+      "expected_id": "webjobs-project-structure",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "python library",
+      "expected_id": "libraries-project-structure",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "multi project solution",
+      "expected_id": "multi-project-structure",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "prototype MVP enterprise",
+      "expected_id": "architecture-evolution",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "strangler migration",
+      "expected_id": "incremental-boundary-migration",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "slo error budget",
+      "expected_id": "reliability-objectives",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "canary deployment",
+      "expected_id": "deployment-strategies",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "load shedding",
+      "expected_id": "workload-admission",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "operational costs",
+      "expected_id": "operational-costs",
+      "expected_status": "reviewed"
+    },
+    {
+      "query": "project-structure-selection",
+      "expected_id": "project-structure-selection",
+      "expected_status": "stub"
+    },
+    {
+      "query": "caching",
+      "expected_id": "caching",
+      "expected_status": "stub"
+    },
+    {
+      "query": "zzzzzzzzzzzz",
+      "expected_id": null,
+      "expected_status": null
+    }
+  ]
+}

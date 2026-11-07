@@ -11,3 +11,7 @@ Prefer maintained official language/runtime/framework documentation, original re
 
 ## Required reviewed-page content
 Sources with URLs/titles/accessed or published dates where feasible, constraints/versions, trade-offs, counterexamples, failure modes, verification and revisit triggers. Distinguish Sonar rule definitions from organization-specific rule sets and gate thresholds.
+
+## Automated evidence-integrity checks (B0)
+
+`python scripts/validate_catalog.py` now verifies duplicate tags/related IDs, self-relations, frontmatter/index review-date agreement, valid reviewed dates, stub/source consistency, and `source_count` against numbered URL references under `## Evidence and sources` or `## Sources`. This is a **metadata consistency check**, not a manual review of claim-to-source support or source freshness. See [B0 audit](batch-0-catalog-integrity.md). Reviewed entries remain `requires-source-inspection` for agents.

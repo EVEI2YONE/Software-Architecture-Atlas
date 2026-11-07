@@ -2,7 +2,7 @@
 
 A **human-readable and agent-searchable** knowledge catalog covering software architecture, design principles, dependency health, clean code, asynchronous and distributed systems, scalability, and maintainability.
 
-This is a **knowledge/reference repository**, not a claim that every scaffolded concept is vetted. The initial 30 concept pages are explicitly marked `stub` until evidence-backed curation occurs.
+This is a **knowledge/reference repository**, not a claim that every scaffolded concept is vetted. The initial 30 concept pages began as research stubs. Concept status now varies; always check the canonical index, reviewed source evidence and applicable runtime constraints.
 
 ## Start here
 
@@ -10,6 +10,14 @@ This is a **knowledge/reference repository**, not a claim that every scaffolded 
 - [Full concept index](catalog/index.json) (machine-readable)
 - [Topic taxonomy](catalog/taxonomy.json)
 - [Concept coverage matrix](docs/coverage.md)
+- [Sequenced knowledge-gap research batches](docs/knowledge-gap-batches.md)
+- [Batch B0: catalog evidence integrity and agent retrieval benchmark](docs/batch-0-catalog-integrity.md)
+- [Batch B1: code organization research and measurement guide](docs/batch-1-code-organization.md)
+- [Batch B2: architectural drivers and boundary decisions](docs/batch-2-architecture-boundaries.md)
+- [Batch B3: security, contracts, data and correctness](docs/batch-3-security-contracts-data.md)
+- [Batch B4: application type file-structure archetypes](docs/batch-4-project-archetypes.md)
+- [Batch B5: prototype to enterprise evolution](docs/batch-5-maturity-evolution.md)
+- [Batch B6: operations, reliability and scalability](docs/batch-6-operations-reliability.md)
 - [Navigation and retrieval guide](docs/agent-search.md)
 - [Source and evidence policy](docs/evidence-policy.md)
 - [Knowledge-gap and curation workflow](docs/curation-workflow.md)
